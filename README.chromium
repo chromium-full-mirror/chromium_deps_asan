@@ -9,8 +9,10 @@ Description: ASAN (aka AddressSanitizer) is a fast memory error detector.
 
 ASAN consists of a custom LLVM/Clang compiler binary and a run-time library
 which replaces malloc.
-This folder contains the ASAN binaries for Linux built according to the
-instructions at the ASAN site.
+The directory 'asan_clang_Linux' contains the ASAN binaries for Linux
+built according to the instructions at the ASAN site.
 Mac binaries are coming soon.
+
+The directory 'scripts' is a verbatim copy from the ASAN source tree.
 
 Security critical: no
