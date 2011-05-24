@@ -1,0 +1,16 @@
+Name: asan
+URL: http://code.google.com/p/address-sanitizer/
+     http://sites.google.com/a/chromium.org/dev/developers/testing/addresssanitizer
+Version: r202
+Date: 2011-05-23
+License: Apache
+
+Description: ASAN (aka AddressSanitizer) is a fast memory error detector.
+
+ASAN consists of a custom LLVM/Clang compiler binary and a run-time library
+which replaces malloc.
+This folder contains the ASAN binaries for Linux built according to the
+instructions at the ASAN site.
+Mac binaries are coming soon.
+
+Security critical: no
