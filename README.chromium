@@ -1,7 +1,7 @@
 Name: asan
 URL: http://code.google.com/p/address-sanitizer/
      http://sites.google.com/a/chromium.org/dev/developers/testing/addresssanitizer
-Version: r227
+Version: r251
 Date: 2011-05-23
 License: Apache
 
