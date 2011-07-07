@@ -1,0 +1,5 @@
+#!/bin/bash
+# We need this wrapper because xcodebuild doesn't allow to pass arguments to the compiler via env.
+
+# AddressSanitizer doesn't like the -O3 flag, so we force -O2.
+`dirname $0`/clang++ -fasan "$@" -O2
