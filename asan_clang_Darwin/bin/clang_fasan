@@ -3,4 +3,4 @@
 
 DIRNAME=`dirname $0`
 # AddressSanitizer doesn't like the -O3 flag, so we force -O2.
-$DIRNAME/clang++ -fasan "$@" -mllvm -asan-black-list=$DIRNAME/../../ignore.txt -O2
+$DIRNAME/clang -fasan "$@" -mllvm -asan-black-list=$DIRNAME/../../ignore.txt -O2
