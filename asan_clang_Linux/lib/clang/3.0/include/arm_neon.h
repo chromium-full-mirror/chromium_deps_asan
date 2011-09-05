@@ -1363,690 +1363,540 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
   return (uint32x4_t)__builtin_neon_vhsubq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
 
 #define vld1q_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   (uint8x16_t)__builtin_neon_vld1q_v(__a, 24); })
 #define vld1q_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   (uint16x8_t)__builtin_neon_vld1q_v(__a, 25); })
 #define vld1q_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   (uint32x4_t)__builtin_neon_vld1q_v(__a, 26); })
 #define vld1q_u64(__a) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; \
   (uint64x2_t)__builtin_neon_vld1q_v(__a, 27); })
 #define vld1q_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   (int8x16_t)__builtin_neon_vld1q_v(__a, 16); })
 #define vld1q_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   (int16x8_t)__builtin_neon_vld1q_v(__a, 17); })
 #define vld1q_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   (int32x4_t)__builtin_neon_vld1q_v(__a, 18); })
 #define vld1q_s64(__a) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; \
   (int64x2_t)__builtin_neon_vld1q_v(__a, 19); })
 #define vld1q_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   (float16x8_t)__builtin_neon_vld1q_v(__a, 23); })
 #define vld1q_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   (float32x4_t)__builtin_neon_vld1q_v(__a, 20); })
 #define vld1q_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   (poly8x16_t)__builtin_neon_vld1q_v(__a, 21); })
 #define vld1q_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   (poly16x8_t)__builtin_neon_vld1q_v(__a, 22); })
 #define vld1_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   (uint8x8_t)__builtin_neon_vld1_v(__a, 8); })
 #define vld1_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   (uint16x4_t)__builtin_neon_vld1_v(__a, 9); })
 #define vld1_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   (uint32x2_t)__builtin_neon_vld1_v(__a, 10); })
 #define vld1_u64(__a) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; \
   (uint64x1_t)__builtin_neon_vld1_v(__a, 11); })
 #define vld1_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   (int8x8_t)__builtin_neon_vld1_v(__a, 0); })
 #define vld1_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   (int16x4_t)__builtin_neon_vld1_v(__a, 1); })
 #define vld1_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   (int32x2_t)__builtin_neon_vld1_v(__a, 2); })
 #define vld1_s64(__a) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; \
   (int64x1_t)__builtin_neon_vld1_v(__a, 3); })
 #define vld1_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   (float16x4_t)__builtin_neon_vld1_v(__a, 7); })
 #define vld1_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   (float32x2_t)__builtin_neon_vld1_v(__a, 4); })
 #define vld1_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   (poly8x8_t)__builtin_neon_vld1_v(__a, 5); })
 #define vld1_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   (poly16x4_t)__builtin_neon_vld1_v(__a, 6); })
 
 #define vld1q_dup_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   (uint8x16_t)__builtin_neon_vld1q_dup_v(__a, 24); })
 #define vld1q_dup_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   (uint16x8_t)__builtin_neon_vld1q_dup_v(__a, 25); })
 #define vld1q_dup_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   (uint32x4_t)__builtin_neon_vld1q_dup_v(__a, 26); })
 #define vld1q_dup_u64(__a) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; \
   (uint64x2_t)__builtin_neon_vld1q_dup_v(__a, 27); })
 #define vld1q_dup_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   (int8x16_t)__builtin_neon_vld1q_dup_v(__a, 16); })
 #define vld1q_dup_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   (int16x8_t)__builtin_neon_vld1q_dup_v(__a, 17); })
 #define vld1q_dup_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   (int32x4_t)__builtin_neon_vld1q_dup_v(__a, 18); })
 #define vld1q_dup_s64(__a) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; \
   (int64x2_t)__builtin_neon_vld1q_dup_v(__a, 19); })
 #define vld1q_dup_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   (float16x8_t)__builtin_neon_vld1q_dup_v(__a, 23); })
 #define vld1q_dup_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   (float32x4_t)__builtin_neon_vld1q_dup_v(__a, 20); })
 #define vld1q_dup_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   (poly8x16_t)__builtin_neon_vld1q_dup_v(__a, 21); })
 #define vld1q_dup_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   (poly16x8_t)__builtin_neon_vld1q_dup_v(__a, 22); })
 #define vld1_dup_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   (uint8x8_t)__builtin_neon_vld1_dup_v(__a, 8); })
 #define vld1_dup_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   (uint16x4_t)__builtin_neon_vld1_dup_v(__a, 9); })
 #define vld1_dup_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   (uint32x2_t)__builtin_neon_vld1_dup_v(__a, 10); })
 #define vld1_dup_u64(__a) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; \
   (uint64x1_t)__builtin_neon_vld1_dup_v(__a, 11); })
 #define vld1_dup_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   (int8x8_t)__builtin_neon_vld1_dup_v(__a, 0); })
 #define vld1_dup_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   (int16x4_t)__builtin_neon_vld1_dup_v(__a, 1); })
 #define vld1_dup_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   (int32x2_t)__builtin_neon_vld1_dup_v(__a, 2); })
 #define vld1_dup_s64(__a) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; \
   (int64x1_t)__builtin_neon_vld1_dup_v(__a, 3); })
 #define vld1_dup_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   (float16x4_t)__builtin_neon_vld1_dup_v(__a, 7); })
 #define vld1_dup_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   (float32x2_t)__builtin_neon_vld1_dup_v(__a, 4); })
 #define vld1_dup_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   (poly8x8_t)__builtin_neon_vld1_dup_v(__a, 5); })
 #define vld1_dup_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   (poly16x4_t)__builtin_neon_vld1_dup_v(__a, 6); })
 
 #define vld1q_lane_u8(__a, b, __c) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; uint8x16_t __b = (b); \
+  uint8x16_t __b = (b); \
   (uint8x16_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 24); })
 #define vld1q_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; uint16x8_t __b = (b); \
+  uint16x8_t __b = (b); \
   (uint16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 25); })
 #define vld1q_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; uint32x4_t __b = (b); \
+  uint32x4_t __b = (b); \
   (uint32x4_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 26); })
 #define vld1q_lane_u64(__a, b, __c) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; uint64x2_t __b = (b); \
+  uint64x2_t __b = (b); \
   (uint64x2_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 27); })
 #define vld1q_lane_s8(__a, b, __c) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; int8x16_t __b = (b); \
+  int8x16_t __b = (b); \
   (int8x16_t)__builtin_neon_vld1q_lane_v(__a, __b, __c, 16); })
 #define vld1q_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; int16x8_t __b = (b); \
+  int16x8_t __b = (b); \
   (int16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 17); })
 #define vld1q_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; int32x4_t __b = (b); \
+  int32x4_t __b = (b); \
   (int32x4_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 18); })
 #define vld1q_lane_s64(__a, b, __c) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; int64x2_t __b = (b); \
+  int64x2_t __b = (b); \
   (int64x2_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 19); })
 #define vld1q_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; float16x8_t __b = (b); \
+  float16x8_t __b = (b); \
   (float16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 23); })
 #define vld1q_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; float32x4_t __b = (b); \
+  float32x4_t __b = (b); \
   (float32x4_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 20); })
 #define vld1q_lane_p8(__a, b, __c) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; poly8x16_t __b = (b); \
+  poly8x16_t __b = (b); \
   (poly8x16_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 21); })
 #define vld1q_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; poly16x8_t __b = (b); \
+  poly16x8_t __b = (b); \
   (poly16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 22); })
 #define vld1_lane_u8(__a, b, __c) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; uint8x8_t __b = (b); \
+  uint8x8_t __b = (b); \
   (uint8x8_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 8); })
 #define vld1_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; uint16x4_t __b = (b); \
+  uint16x4_t __b = (b); \
   (uint16x4_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 9); })
 #define vld1_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; uint32x2_t __b = (b); \
+  uint32x2_t __b = (b); \
   (uint32x2_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 10); })
 #define vld1_lane_u64(__a, b, __c) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; uint64x1_t __b = (b); \
+  uint64x1_t __b = (b); \
   (uint64x1_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 11); })
 #define vld1_lane_s8(__a, b, __c) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; int8x8_t __b = (b); \
+  int8x8_t __b = (b); \
   (int8x8_t)__builtin_neon_vld1_lane_v(__a, __b, __c, 0); })
 #define vld1_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; int16x4_t __b = (b); \
+  int16x4_t __b = (b); \
   (int16x4_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 1); })
 #define vld1_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; int32x2_t __b = (b); \
+  int32x2_t __b = (b); \
   (int32x2_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 2); })
 #define vld1_lane_s64(__a, b, __c) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; int64x1_t __b = (b); \
+  int64x1_t __b = (b); \
   (int64x1_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 3); })
 #define vld1_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; float16x4_t __b = (b); \
+  float16x4_t __b = (b); \
   (float16x4_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 7); })
 #define vld1_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; float32x2_t __b = (b); \
+  float32x2_t __b = (b); \
   (float32x2_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 4); })
 #define vld1_lane_p8(__a, b, __c) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; poly8x8_t __b = (b); \
+  poly8x8_t __b = (b); \
   (poly8x8_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 5); })
 #define vld1_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; poly16x4_t __b = (b); \
+  poly16x4_t __b = (b); \
   (poly16x4_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 6); })
 
 #define vld2q_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   uint8x16x2_t r; __builtin_neon_vld2q_v(&r, __a, 24); r; })
 #define vld2q_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   uint16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 25); r; })
 #define vld2q_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   uint32x4x2_t r; __builtin_neon_vld2q_v(&r, __a, 26); r; })
 #define vld2q_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   int8x16x2_t r; __builtin_neon_vld2q_v(&r, __a, 16); r; })
 #define vld2q_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   int16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 17); r; })
 #define vld2q_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   int32x4x2_t r; __builtin_neon_vld2q_v(&r, __a, 18); r; })
 #define vld2q_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   float16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 23); r; })
 #define vld2q_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   float32x4x2_t r; __builtin_neon_vld2q_v(&r, __a, 20); r; })
 #define vld2q_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   poly8x16x2_t r; __builtin_neon_vld2q_v(&r, __a, 21); r; })
 #define vld2q_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   poly16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 22); r; })
 #define vld2_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   uint8x8x2_t r; __builtin_neon_vld2_v(&r, __a, 8); r; })
 #define vld2_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   uint16x4x2_t r; __builtin_neon_vld2_v(&r, __a, 9); r; })
 #define vld2_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   uint32x2x2_t r; __builtin_neon_vld2_v(&r, __a, 10); r; })
 #define vld2_u64(__a) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; \
   uint64x1x2_t r; __builtin_neon_vld2_v(&r, __a, 11); r; })
 #define vld2_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   int8x8x2_t r; __builtin_neon_vld2_v(&r, __a, 0); r; })
 #define vld2_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   int16x4x2_t r; __builtin_neon_vld2_v(&r, __a, 1); r; })
 #define vld2_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   int32x2x2_t r; __builtin_neon_vld2_v(&r, __a, 2); r; })
 #define vld2_s64(__a) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; \
   int64x1x2_t r; __builtin_neon_vld2_v(&r, __a, 3); r; })
 #define vld2_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   float16x4x2_t r; __builtin_neon_vld2_v(&r, __a, 7); r; })
 #define vld2_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   float32x2x2_t r; __builtin_neon_vld2_v(&r, __a, 4); r; })
 #define vld2_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   poly8x8x2_t r; __builtin_neon_vld2_v(&r, __a, 5); r; })
 #define vld2_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   poly16x4x2_t r; __builtin_neon_vld2_v(&r, __a, 6); r; })
 
 #define vld2_dup_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   uint8x8x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 8); r; })
 #define vld2_dup_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   uint16x4x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 9); r; })
 #define vld2_dup_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   uint32x2x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 10); r; })
 #define vld2_dup_u64(__a) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; \
   uint64x1x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 11); r; })
 #define vld2_dup_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   int8x8x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 0); r; })
 #define vld2_dup_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   int16x4x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 1); r; })
 #define vld2_dup_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   int32x2x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 2); r; })
 #define vld2_dup_s64(__a) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; \
   int64x1x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 3); r; })
 #define vld2_dup_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   float16x4x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 7); r; })
 #define vld2_dup_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   float32x2x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 4); r; })
 #define vld2_dup_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   poly8x8x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 5); r; })
 #define vld2_dup_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   poly16x4x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 6); r; })
 
 #define vld2q_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; uint16x8x2_t __b = (b); \
+  uint16x8x2_t __b = (b); \
   uint16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 25); r; })
 #define vld2q_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; uint32x4x2_t __b = (b); \
+  uint32x4x2_t __b = (b); \
   uint32x4x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 26); r; })
 #define vld2q_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; int16x8x2_t __b = (b); \
+  int16x8x2_t __b = (b); \
   int16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 17); r; })
 #define vld2q_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; int32x4x2_t __b = (b); \
+  int32x4x2_t __b = (b); \
   int32x4x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 18); r; })
 #define vld2q_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; float16x8x2_t __b = (b); \
+  float16x8x2_t __b = (b); \
   float16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 23); r; })
 #define vld2q_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; float32x4x2_t __b = (b); \
+  float32x4x2_t __b = (b); \
   float32x4x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 20); r; })
 #define vld2q_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; poly16x8x2_t __b = (b); \
+  poly16x8x2_t __b = (b); \
   poly16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 22); r; })
 #define vld2_lane_u8(__a, b, __c) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; uint8x8x2_t __b = (b); \
+  uint8x8x2_t __b = (b); \
   uint8x8x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 8); r; })
 #define vld2_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; uint16x4x2_t __b = (b); \
+  uint16x4x2_t __b = (b); \
   uint16x4x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 9); r; })
 #define vld2_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; uint32x2x2_t __b = (b); \
+  uint32x2x2_t __b = (b); \
   uint32x2x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 10); r; })
 #define vld2_lane_s8(__a, b, __c) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; int8x8x2_t __b = (b); \
+  int8x8x2_t __b = (b); \
   int8x8x2_t r; __builtin_neon_vld2_lane_v(&r, __a, __b.val[0], __b.val[1], __c, 0); r; })
 #define vld2_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; int16x4x2_t __b = (b); \
+  int16x4x2_t __b = (b); \
   int16x4x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 1); r; })
 #define vld2_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; int32x2x2_t __b = (b); \
+  int32x2x2_t __b = (b); \
   int32x2x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 2); r; })
 #define vld2_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; float16x4x2_t __b = (b); \
+  float16x4x2_t __b = (b); \
   float16x4x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 7); r; })
 #define vld2_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; float32x2x2_t __b = (b); \
+  float32x2x2_t __b = (b); \
   float32x2x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 4); r; })
 #define vld2_lane_p8(__a, b, __c) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; poly8x8x2_t __b = (b); \
+  poly8x8x2_t __b = (b); \
   poly8x8x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 5); r; })
 #define vld2_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; poly16x4x2_t __b = (b); \
+  poly16x4x2_t __b = (b); \
   poly16x4x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 6); r; })
 
 #define vld3q_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   uint8x16x3_t r; __builtin_neon_vld3q_v(&r, __a, 24); r; })
 #define vld3q_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   uint16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 25); r; })
 #define vld3q_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   uint32x4x3_t r; __builtin_neon_vld3q_v(&r, __a, 26); r; })
 #define vld3q_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   int8x16x3_t r; __builtin_neon_vld3q_v(&r, __a, 16); r; })
 #define vld3q_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   int16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 17); r; })
 #define vld3q_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   int32x4x3_t r; __builtin_neon_vld3q_v(&r, __a, 18); r; })
 #define vld3q_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   float16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 23); r; })
 #define vld3q_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   float32x4x3_t r; __builtin_neon_vld3q_v(&r, __a, 20); r; })
 #define vld3q_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   poly8x16x3_t r; __builtin_neon_vld3q_v(&r, __a, 21); r; })
 #define vld3q_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   poly16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 22); r; })
 #define vld3_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   uint8x8x3_t r; __builtin_neon_vld3_v(&r, __a, 8); r; })
 #define vld3_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   uint16x4x3_t r; __builtin_neon_vld3_v(&r, __a, 9); r; })
 #define vld3_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   uint32x2x3_t r; __builtin_neon_vld3_v(&r, __a, 10); r; })
 #define vld3_u64(__a) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; \
   uint64x1x3_t r; __builtin_neon_vld3_v(&r, __a, 11); r; })
 #define vld3_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   int8x8x3_t r; __builtin_neon_vld3_v(&r, __a, 0); r; })
 #define vld3_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   int16x4x3_t r; __builtin_neon_vld3_v(&r, __a, 1); r; })
 #define vld3_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   int32x2x3_t r; __builtin_neon_vld3_v(&r, __a, 2); r; })
 #define vld3_s64(__a) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; \
   int64x1x3_t r; __builtin_neon_vld3_v(&r, __a, 3); r; })
 #define vld3_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   float16x4x3_t r; __builtin_neon_vld3_v(&r, __a, 7); r; })
 #define vld3_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   float32x2x3_t r; __builtin_neon_vld3_v(&r, __a, 4); r; })
 #define vld3_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   poly8x8x3_t r; __builtin_neon_vld3_v(&r, __a, 5); r; })
 #define vld3_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   poly16x4x3_t r; __builtin_neon_vld3_v(&r, __a, 6); r; })
 
 #define vld3_dup_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   uint8x8x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 8); r; })
 #define vld3_dup_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   uint16x4x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 9); r; })
 #define vld3_dup_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   uint32x2x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 10); r; })
 #define vld3_dup_u64(__a) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; \
   uint64x1x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 11); r; })
 #define vld3_dup_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   int8x8x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 0); r; })
 #define vld3_dup_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   int16x4x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 1); r; })
 #define vld3_dup_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   int32x2x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 2); r; })
 #define vld3_dup_s64(__a) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; \
   int64x1x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 3); r; })
 #define vld3_dup_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   float16x4x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 7); r; })
 #define vld3_dup_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   float32x2x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 4); r; })
 #define vld3_dup_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   poly8x8x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 5); r; })
 #define vld3_dup_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   poly16x4x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 6); r; })
 
 #define vld3q_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; uint16x8x3_t __b = (b); \
+  uint16x8x3_t __b = (b); \
   uint16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 25); r; })
 #define vld3q_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; uint32x4x3_t __b = (b); \
+  uint32x4x3_t __b = (b); \
   uint32x4x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 26); r; })
 #define vld3q_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; int16x8x3_t __b = (b); \
+  int16x8x3_t __b = (b); \
   int16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 17); r; })
 #define vld3q_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; int32x4x3_t __b = (b); \
+  int32x4x3_t __b = (b); \
   int32x4x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 18); r; })
 #define vld3q_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; float16x8x3_t __b = (b); \
+  float16x8x3_t __b = (b); \
   float16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 23); r; })
 #define vld3q_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; float32x4x3_t __b = (b); \
+  float32x4x3_t __b = (b); \
   float32x4x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 20); r; })
 #define vld3q_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; poly16x8x3_t __b = (b); \
+  poly16x8x3_t __b = (b); \
   poly16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 22); r; })
 #define vld3_lane_u8(__a, b, __c) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; uint8x8x3_t __b = (b); \
+  uint8x8x3_t __b = (b); \
   uint8x8x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 8); r; })
 #define vld3_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; uint16x4x3_t __b = (b); \
+  uint16x4x3_t __b = (b); \
   uint16x4x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 9); r; })
 #define vld3_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; uint32x2x3_t __b = (b); \
+  uint32x2x3_t __b = (b); \
   uint32x2x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 10); r; })
 #define vld3_lane_s8(__a, b, __c) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; int8x8x3_t __b = (b); \
+  int8x8x3_t __b = (b); \
   int8x8x3_t r; __builtin_neon_vld3_lane_v(&r, __a, __b.val[0], __b.val[1], __b.val[2], __c, 0); r; })
 #define vld3_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; int16x4x3_t __b = (b); \
+  int16x4x3_t __b = (b); \
   int16x4x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 1); r; })
 #define vld3_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; int32x2x3_t __b = (b); \
+  int32x2x3_t __b = (b); \
   int32x2x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 2); r; })
 #define vld3_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; float16x4x3_t __b = (b); \
+  float16x4x3_t __b = (b); \
   float16x4x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 7); r; })
 #define vld3_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; float32x2x3_t __b = (b); \
+  float32x2x3_t __b = (b); \
   float32x2x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 4); r; })
 #define vld3_lane_p8(__a, b, __c) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; poly8x8x3_t __b = (b); \
+  poly8x8x3_t __b = (b); \
   poly8x8x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 5); r; })
 #define vld3_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; poly16x4x3_t __b = (b); \
+  poly16x4x3_t __b = (b); \
   poly16x4x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 6); r; })
 
 #define vld4q_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   uint8x16x4_t r; __builtin_neon_vld4q_v(&r, __a, 24); r; })
 #define vld4q_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   uint16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 25); r; })
 #define vld4q_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   uint32x4x4_t r; __builtin_neon_vld4q_v(&r, __a, 26); r; })
 #define vld4q_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   int8x16x4_t r; __builtin_neon_vld4q_v(&r, __a, 16); r; })
 #define vld4q_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   int16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 17); r; })
 #define vld4q_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   int32x4x4_t r; __builtin_neon_vld4q_v(&r, __a, 18); r; })
 #define vld4q_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   float16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 23); r; })
 #define vld4q_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   float32x4x4_t r; __builtin_neon_vld4q_v(&r, __a, 20); r; })
 #define vld4q_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   poly8x16x4_t r; __builtin_neon_vld4q_v(&r, __a, 21); r; })
 #define vld4q_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   poly16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 22); r; })
 #define vld4_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   uint8x8x4_t r; __builtin_neon_vld4_v(&r, __a, 8); r; })
 #define vld4_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   uint16x4x4_t r; __builtin_neon_vld4_v(&r, __a, 9); r; })
 #define vld4_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   uint32x2x4_t r; __builtin_neon_vld4_v(&r, __a, 10); r; })
 #define vld4_u64(__a) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; \
   uint64x1x4_t r; __builtin_neon_vld4_v(&r, __a, 11); r; })
 #define vld4_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   int8x8x4_t r; __builtin_neon_vld4_v(&r, __a, 0); r; })
 #define vld4_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   int16x4x4_t r; __builtin_neon_vld4_v(&r, __a, 1); r; })
 #define vld4_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   int32x2x4_t r; __builtin_neon_vld4_v(&r, __a, 2); r; })
 #define vld4_s64(__a) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; \
   int64x1x4_t r; __builtin_neon_vld4_v(&r, __a, 3); r; })
 #define vld4_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   float16x4x4_t r; __builtin_neon_vld4_v(&r, __a, 7); r; })
 #define vld4_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   float32x2x4_t r; __builtin_neon_vld4_v(&r, __a, 4); r; })
 #define vld4_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   poly8x8x4_t r; __builtin_neon_vld4_v(&r, __a, 5); r; })
 #define vld4_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   poly16x4x4_t r; __builtin_neon_vld4_v(&r, __a, 6); r; })
 
 #define vld4_dup_u8(__a) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; \
   uint8x8x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 8); r; })
 #define vld4_dup_u16(__a) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; \
   uint16x4x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 9); r; })
 #define vld4_dup_u32(__a) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; \
   uint32x2x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 10); r; })
 #define vld4_dup_u64(__a) __extension__ ({ \
-  uint64_t const * __a_ = (__a); (void)__a_; \
   uint64x1x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 11); r; })
 #define vld4_dup_s8(__a) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; \
   int8x8x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 0); r; })
 #define vld4_dup_s16(__a) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; \
   int16x4x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 1); r; })
 #define vld4_dup_s32(__a) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; \
   int32x2x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 2); r; })
 #define vld4_dup_s64(__a) __extension__ ({ \
-  int64_t const * __a_ = (__a); (void)__a_; \
   int64x1x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 3); r; })
 #define vld4_dup_f16(__a) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; \
   float16x4x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 7); r; })
 #define vld4_dup_f32(__a) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; \
   float32x2x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 4); r; })
 #define vld4_dup_p8(__a) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; \
   poly8x8x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 5); r; })
 #define vld4_dup_p16(__a) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; \
   poly16x4x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 6); r; })
 
 #define vld4q_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; uint16x8x4_t __b = (b); \
+  uint16x8x4_t __b = (b); \
   uint16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 25); r; })
 #define vld4q_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; uint32x4x4_t __b = (b); \
+  uint32x4x4_t __b = (b); \
   uint32x4x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 26); r; })
 #define vld4q_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; int16x8x4_t __b = (b); \
+  int16x8x4_t __b = (b); \
   int16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 17); r; })
 #define vld4q_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; int32x4x4_t __b = (b); \
+  int32x4x4_t __b = (b); \
   int32x4x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 18); r; })
 #define vld4q_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; float16x8x4_t __b = (b); \
+  float16x8x4_t __b = (b); \
   float16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 23); r; })
 #define vld4q_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; float32x4x4_t __b = (b); \
+  float32x4x4_t __b = (b); \
   float32x4x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 20); r; })
 #define vld4q_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; poly16x8x4_t __b = (b); \
+  poly16x8x4_t __b = (b); \
   poly16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 22); r; })
 #define vld4_lane_u8(__a, b, __c) __extension__ ({ \
-  uint8_t const * __a_ = (__a); (void)__a_; uint8x8x4_t __b = (b); \
+  uint8x8x4_t __b = (b); \
   uint8x8x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 8); r; })
 #define vld4_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t const * __a_ = (__a); (void)__a_; uint16x4x4_t __b = (b); \
+  uint16x4x4_t __b = (b); \
   uint16x4x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 9); r; })
 #define vld4_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t const * __a_ = (__a); (void)__a_; uint32x2x4_t __b = (b); \
+  uint32x2x4_t __b = (b); \
   uint32x2x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 10); r; })
 #define vld4_lane_s8(__a, b, __c) __extension__ ({ \
-  int8_t const * __a_ = (__a); (void)__a_; int8x8x4_t __b = (b); \
+  int8x8x4_t __b = (b); \
   int8x8x4_t r; __builtin_neon_vld4_lane_v(&r, __a, __b.val[0], __b.val[1], __b.val[2], __b.val[3], __c, 0); r; })
 #define vld4_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t const * __a_ = (__a); (void)__a_; int16x4x4_t __b = (b); \
+  int16x4x4_t __b = (b); \
   int16x4x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 1); r; })
 #define vld4_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t const * __a_ = (__a); (void)__a_; int32x2x4_t __b = (b); \
+  int32x2x4_t __b = (b); \
   int32x2x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 2); r; })
 #define vld4_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t const * __a_ = (__a); (void)__a_; float16x4x4_t __b = (b); \
+  float16x4x4_t __b = (b); \
   float16x4x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 7); r; })
 #define vld4_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t const * __a_ = (__a); (void)__a_; float32x2x4_t __b = (b); \
+  float32x2x4_t __b = (b); \
   float32x2x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 4); r; })
 #define vld4_lane_p8(__a, b, __c) __extension__ ({ \
-  poly8_t const * __a_ = (__a); (void)__a_; poly8x8x4_t __b = (b); \
+  poly8x8x4_t __b = (b); \
   poly8x8x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 5); r; })
 #define vld4_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t const * __a_ = (__a); (void)__a_; poly16x4x4_t __b = (b); \
+  poly16x4x4_t __b = (b); \
   poly16x4x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 6); r; })
 
 __ai int8x8_t vmax_s8(int8x8_t __a, int8x8_t __b) { \
@@ -4376,506 +4226,506 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (poly16x8_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 22); })
 
 #define vst1q_u8(__a, b) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x16_t __b = (b); \
+  uint8x16_t __b = (b); \
   __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 24); })
 #define vst1q_u16(__a, b) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x8_t __b = (b); \
+  uint16x8_t __b = (b); \
   __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 25); })
 #define vst1q_u32(__a, b) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x4_t __b = (b); \
+  uint32x4_t __b = (b); \
   __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 26); })
 #define vst1q_u64(__a, b) __extension__ ({ \
-  uint64_t * __a_ = (__a); (void)__a_; uint64x2_t __b = (b); \
+  uint64x2_t __b = (b); \
   __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 27); })
 #define vst1q_s8(__a, b) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x16_t __b = (b); \
+  int8x16_t __b = (b); \
   __builtin_neon_vst1q_v(__a, __b, 16); })
 #define vst1q_s16(__a, b) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x8_t __b = (b); \
+  int16x8_t __b = (b); \
   __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 17); })
 #define vst1q_s32(__a, b) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x4_t __b = (b); \
+  int32x4_t __b = (b); \
   __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 18); })
 #define vst1q_s64(__a, b) __extension__ ({ \
-  int64_t * __a_ = (__a); (void)__a_; int64x2_t __b = (b); \
+  int64x2_t __b = (b); \
   __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 19); })
 #define vst1q_f16(__a, b) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x8_t __b = (b); \
+  float16x8_t __b = (b); \
   __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 23); })
 #define vst1q_f32(__a, b) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x4_t __b = (b); \
+  float32x4_t __b = (b); \
   __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 20); })
 #define vst1q_p8(__a, b) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x16_t __b = (b); \
+  poly8x16_t __b = (b); \
   __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 21); })
 #define vst1q_p16(__a, b) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x8_t __b = (b); \
+  poly16x8_t __b = (b); \
   __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 22); })
 #define vst1_u8(__a, b) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x8_t __b = (b); \
+  uint8x8_t __b = (b); \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 8); })
 #define vst1_u16(__a, b) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x4_t __b = (b); \
+  uint16x4_t __b = (b); \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 9); })
 #define vst1_u32(__a, b) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x2_t __b = (b); \
+  uint32x2_t __b = (b); \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 10); })
 #define vst1_u64(__a, b) __extension__ ({ \
-  uint64_t * __a_ = (__a); (void)__a_; uint64x1_t __b = (b); \
+  uint64x1_t __b = (b); \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 11); })
 #define vst1_s8(__a, b) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x8_t __b = (b); \
+  int8x8_t __b = (b); \
   __builtin_neon_vst1_v(__a, __b, 0); })
 #define vst1_s16(__a, b) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x4_t __b = (b); \
+  int16x4_t __b = (b); \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 1); })
 #define vst1_s32(__a, b) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x2_t __b = (b); \
+  int32x2_t __b = (b); \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 2); })
 #define vst1_s64(__a, b) __extension__ ({ \
-  int64_t * __a_ = (__a); (void)__a_; int64x1_t __b = (b); \
+  int64x1_t __b = (b); \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 3); })
 #define vst1_f16(__a, b) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x4_t __b = (b); \
+  float16x4_t __b = (b); \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 7); })
 #define vst1_f32(__a, b) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x2_t __b = (b); \
+  float32x2_t __b = (b); \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 4); })
 #define vst1_p8(__a, b) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x8_t __b = (b); \
+  poly8x8_t __b = (b); \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 5); })
 #define vst1_p16(__a, b) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x4_t __b = (b); \
+  poly16x4_t __b = (b); \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 6); })
 
 #define vst1q_lane_u8(__a, b, __c) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x16_t __b = (b); \
+  uint8x16_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 24); })
 #define vst1q_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x8_t __b = (b); \
+  uint16x8_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 25); })
 #define vst1q_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x4_t __b = (b); \
+  uint32x4_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 26); })
 #define vst1q_lane_u64(__a, b, __c) __extension__ ({ \
-  uint64_t * __a_ = (__a); (void)__a_; uint64x2_t __b = (b); \
+  uint64x2_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 27); })
 #define vst1q_lane_s8(__a, b, __c) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x16_t __b = (b); \
+  int8x16_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, __b, __c, 16); })
 #define vst1q_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x8_t __b = (b); \
+  int16x8_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 17); })
 #define vst1q_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x4_t __b = (b); \
+  int32x4_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 18); })
 #define vst1q_lane_s64(__a, b, __c) __extension__ ({ \
-  int64_t * __a_ = (__a); (void)__a_; int64x2_t __b = (b); \
+  int64x2_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 19); })
 #define vst1q_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x8_t __b = (b); \
+  float16x8_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 23); })
 #define vst1q_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x4_t __b = (b); \
+  float32x4_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 20); })
 #define vst1q_lane_p8(__a, b, __c) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x16_t __b = (b); \
+  poly8x16_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 21); })
 #define vst1q_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x8_t __b = (b); \
+  poly16x8_t __b = (b); \
   __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 22); })
 #define vst1_lane_u8(__a, b, __c) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x8_t __b = (b); \
+  uint8x8_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 8); })
 #define vst1_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x4_t __b = (b); \
+  uint16x4_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 9); })
 #define vst1_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x2_t __b = (b); \
+  uint32x2_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 10); })
 #define vst1_lane_u64(__a, b, __c) __extension__ ({ \
-  uint64_t * __a_ = (__a); (void)__a_; uint64x1_t __b = (b); \
+  uint64x1_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 11); })
 #define vst1_lane_s8(__a, b, __c) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x8_t __b = (b); \
+  int8x8_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, __b, __c, 0); })
 #define vst1_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x4_t __b = (b); \
+  int16x4_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 1); })
 #define vst1_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x2_t __b = (b); \
+  int32x2_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 2); })
 #define vst1_lane_s64(__a, b, __c) __extension__ ({ \
-  int64_t * __a_ = (__a); (void)__a_; int64x1_t __b = (b); \
+  int64x1_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 3); })
 #define vst1_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x4_t __b = (b); \
+  float16x4_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 7); })
 #define vst1_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x2_t __b = (b); \
+  float32x2_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 4); })
 #define vst1_lane_p8(__a, b, __c) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x8_t __b = (b); \
+  poly8x8_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 5); })
 #define vst1_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x4_t __b = (b); \
+  poly16x4_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 6); })
 
 #define vst2q_u8(__a, b) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x16x2_t __b = (b); \
+  uint8x16x2_t __b = (b); \
   __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 24); })
 #define vst2q_u16(__a, b) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x8x2_t __b = (b); \
+  uint16x8x2_t __b = (b); \
   __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 25); })
 #define vst2q_u32(__a, b) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x4x2_t __b = (b); \
+  uint32x4x2_t __b = (b); \
   __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 26); })
 #define vst2q_s8(__a, b) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x16x2_t __b = (b); \
+  int8x16x2_t __b = (b); \
   __builtin_neon_vst2q_v(__a, __b.val[0], __b.val[1], 16); })
 #define vst2q_s16(__a, b) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x8x2_t __b = (b); \
+  int16x8x2_t __b = (b); \
   __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 17); })
 #define vst2q_s32(__a, b) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x4x2_t __b = (b); \
+  int32x4x2_t __b = (b); \
   __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 18); })
 #define vst2q_f16(__a, b) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x8x2_t __b = (b); \
+  float16x8x2_t __b = (b); \
   __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 23); })
 #define vst2q_f32(__a, b) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x4x2_t __b = (b); \
+  float32x4x2_t __b = (b); \
   __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 20); })
 #define vst2q_p8(__a, b) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x16x2_t __b = (b); \
+  poly8x16x2_t __b = (b); \
   __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 21); })
 #define vst2q_p16(__a, b) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x8x2_t __b = (b); \
+  poly16x8x2_t __b = (b); \
   __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 22); })
 #define vst2_u8(__a, b) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x8x2_t __b = (b); \
+  uint8x8x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 8); })
 #define vst2_u16(__a, b) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x4x2_t __b = (b); \
+  uint16x4x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 9); })
 #define vst2_u32(__a, b) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x2x2_t __b = (b); \
+  uint32x2x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 10); })
 #define vst2_u64(__a, b) __extension__ ({ \
-  uint64_t * __a_ = (__a); (void)__a_; uint64x1x2_t __b = (b); \
+  uint64x1x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 11); })
 #define vst2_s8(__a, b) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x8x2_t __b = (b); \
+  int8x8x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, __b.val[0], __b.val[1], 0); })
 #define vst2_s16(__a, b) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x4x2_t __b = (b); \
+  int16x4x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 1); })
 #define vst2_s32(__a, b) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x2x2_t __b = (b); \
+  int32x2x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 2); })
 #define vst2_s64(__a, b) __extension__ ({ \
-  int64_t * __a_ = (__a); (void)__a_; int64x1x2_t __b = (b); \
+  int64x1x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 3); })
 #define vst2_f16(__a, b) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x4x2_t __b = (b); \
+  float16x4x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 7); })
 #define vst2_f32(__a, b) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x2x2_t __b = (b); \
+  float32x2x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 4); })
 #define vst2_p8(__a, b) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x8x2_t __b = (b); \
+  poly8x8x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 5); })
 #define vst2_p16(__a, b) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x4x2_t __b = (b); \
+  poly16x4x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 6); })
 
 #define vst2q_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x8x2_t __b = (b); \
+  uint16x8x2_t __b = (b); \
   __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 25); })
 #define vst2q_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x4x2_t __b = (b); \
+  uint32x4x2_t __b = (b); \
   __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 26); })
 #define vst2q_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x8x2_t __b = (b); \
+  int16x8x2_t __b = (b); \
   __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 17); })
 #define vst2q_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x4x2_t __b = (b); \
+  int32x4x2_t __b = (b); \
   __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 18); })
 #define vst2q_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x8x2_t __b = (b); \
+  float16x8x2_t __b = (b); \
   __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 23); })
 #define vst2q_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x4x2_t __b = (b); \
+  float32x4x2_t __b = (b); \
   __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 20); })
 #define vst2q_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x8x2_t __b = (b); \
+  poly16x8x2_t __b = (b); \
   __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 22); })
 #define vst2_lane_u8(__a, b, __c) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x8x2_t __b = (b); \
+  uint8x8x2_t __b = (b); \
   __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 8); })
 #define vst2_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x4x2_t __b = (b); \
+  uint16x4x2_t __b = (b); \
   __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 9); })
 #define vst2_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x2x2_t __b = (b); \
+  uint32x2x2_t __b = (b); \
   __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 10); })
 #define vst2_lane_s8(__a, b, __c) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x8x2_t __b = (b); \
+  int8x8x2_t __b = (b); \
   __builtin_neon_vst2_lane_v(__a, __b.val[0], __b.val[1], __c, 0); })
 #define vst2_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x4x2_t __b = (b); \
+  int16x4x2_t __b = (b); \
   __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 1); })
 #define vst2_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x2x2_t __b = (b); \
+  int32x2x2_t __b = (b); \
   __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 2); })
 #define vst2_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x4x2_t __b = (b); \
+  float16x4x2_t __b = (b); \
   __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 7); })
 #define vst2_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x2x2_t __b = (b); \
+  float32x2x2_t __b = (b); \
   __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 4); })
 #define vst2_lane_p8(__a, b, __c) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x8x2_t __b = (b); \
+  poly8x8x2_t __b = (b); \
   __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 5); })
 #define vst2_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x4x2_t __b = (b); \
+  poly16x4x2_t __b = (b); \
   __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 6); })
 
 #define vst3q_u8(__a, b) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x16x3_t __b = (b); \
+  uint8x16x3_t __b = (b); \
   __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 24); })
 #define vst3q_u16(__a, b) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x8x3_t __b = (b); \
+  uint16x8x3_t __b = (b); \
   __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 25); })
 #define vst3q_u32(__a, b) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x4x3_t __b = (b); \
+  uint32x4x3_t __b = (b); \
   __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 26); })
 #define vst3q_s8(__a, b) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x16x3_t __b = (b); \
+  int8x16x3_t __b = (b); \
   __builtin_neon_vst3q_v(__a, __b.val[0], __b.val[1], __b.val[2], 16); })
 #define vst3q_s16(__a, b) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x8x3_t __b = (b); \
+  int16x8x3_t __b = (b); \
   __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 17); })
 #define vst3q_s32(__a, b) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x4x3_t __b = (b); \
+  int32x4x3_t __b = (b); \
   __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 18); })
 #define vst3q_f16(__a, b) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x8x3_t __b = (b); \
+  float16x8x3_t __b = (b); \
   __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 23); })
 #define vst3q_f32(__a, b) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x4x3_t __b = (b); \
+  float32x4x3_t __b = (b); \
   __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 20); })
 #define vst3q_p8(__a, b) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x16x3_t __b = (b); \
+  poly8x16x3_t __b = (b); \
   __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 21); })
 #define vst3q_p16(__a, b) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x8x3_t __b = (b); \
+  poly16x8x3_t __b = (b); \
   __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 22); })
 #define vst3_u8(__a, b) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x8x3_t __b = (b); \
+  uint8x8x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 8); })
 #define vst3_u16(__a, b) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x4x3_t __b = (b); \
+  uint16x4x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 9); })
 #define vst3_u32(__a, b) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x2x3_t __b = (b); \
+  uint32x2x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 10); })
 #define vst3_u64(__a, b) __extension__ ({ \
-  uint64_t * __a_ = (__a); (void)__a_; uint64x1x3_t __b = (b); \
+  uint64x1x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 11); })
 #define vst3_s8(__a, b) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x8x3_t __b = (b); \
+  int8x8x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, __b.val[0], __b.val[1], __b.val[2], 0); })
 #define vst3_s16(__a, b) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x4x3_t __b = (b); \
+  int16x4x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 1); })
 #define vst3_s32(__a, b) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x2x3_t __b = (b); \
+  int32x2x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 2); })
 #define vst3_s64(__a, b) __extension__ ({ \
-  int64_t * __a_ = (__a); (void)__a_; int64x1x3_t __b = (b); \
+  int64x1x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 3); })
 #define vst3_f16(__a, b) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x4x3_t __b = (b); \
+  float16x4x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 7); })
 #define vst3_f32(__a, b) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x2x3_t __b = (b); \
+  float32x2x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 4); })
 #define vst3_p8(__a, b) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x8x3_t __b = (b); \
+  poly8x8x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 5); })
 #define vst3_p16(__a, b) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x4x3_t __b = (b); \
+  poly16x4x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 6); })
 
 #define vst3q_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x8x3_t __b = (b); \
+  uint16x8x3_t __b = (b); \
   __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 25); })
 #define vst3q_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x4x3_t __b = (b); \
+  uint32x4x3_t __b = (b); \
   __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 26); })
 #define vst3q_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x8x3_t __b = (b); \
+  int16x8x3_t __b = (b); \
   __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 17); })
 #define vst3q_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x4x3_t __b = (b); \
+  int32x4x3_t __b = (b); \
   __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 18); })
 #define vst3q_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x8x3_t __b = (b); \
+  float16x8x3_t __b = (b); \
   __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 23); })
 #define vst3q_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x4x3_t __b = (b); \
+  float32x4x3_t __b = (b); \
   __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 20); })
 #define vst3q_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x8x3_t __b = (b); \
+  poly16x8x3_t __b = (b); \
   __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 22); })
 #define vst3_lane_u8(__a, b, __c) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x8x3_t __b = (b); \
+  uint8x8x3_t __b = (b); \
   __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 8); })
 #define vst3_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x4x3_t __b = (b); \
+  uint16x4x3_t __b = (b); \
   __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 9); })
 #define vst3_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x2x3_t __b = (b); \
+  uint32x2x3_t __b = (b); \
   __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 10); })
 #define vst3_lane_s8(__a, b, __c) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x8x3_t __b = (b); \
+  int8x8x3_t __b = (b); \
   __builtin_neon_vst3_lane_v(__a, __b.val[0], __b.val[1], __b.val[2], __c, 0); })
 #define vst3_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x4x3_t __b = (b); \
+  int16x4x3_t __b = (b); \
   __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 1); })
 #define vst3_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x2x3_t __b = (b); \
+  int32x2x3_t __b = (b); \
   __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 2); })
 #define vst3_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x4x3_t __b = (b); \
+  float16x4x3_t __b = (b); \
   __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 7); })
 #define vst3_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x2x3_t __b = (b); \
+  float32x2x3_t __b = (b); \
   __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 4); })
 #define vst3_lane_p8(__a, b, __c) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x8x3_t __b = (b); \
+  poly8x8x3_t __b = (b); \
   __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 5); })
 #define vst3_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x4x3_t __b = (b); \
+  poly16x4x3_t __b = (b); \
   __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 6); })
 
 #define vst4q_u8(__a, b) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x16x4_t __b = (b); \
+  uint8x16x4_t __b = (b); \
   __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 24); })
 #define vst4q_u16(__a, b) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x8x4_t __b = (b); \
+  uint16x8x4_t __b = (b); \
   __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 25); })
 #define vst4q_u32(__a, b) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x4x4_t __b = (b); \
+  uint32x4x4_t __b = (b); \
   __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 26); })
 #define vst4q_s8(__a, b) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x16x4_t __b = (b); \
+  int8x16x4_t __b = (b); \
   __builtin_neon_vst4q_v(__a, __b.val[0], __b.val[1], __b.val[2], __b.val[3], 16); })
 #define vst4q_s16(__a, b) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x8x4_t __b = (b); \
+  int16x8x4_t __b = (b); \
   __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 17); })
 #define vst4q_s32(__a, b) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x4x4_t __b = (b); \
+  int32x4x4_t __b = (b); \
   __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 18); })
 #define vst4q_f16(__a, b) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x8x4_t __b = (b); \
+  float16x8x4_t __b = (b); \
   __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 23); })
 #define vst4q_f32(__a, b) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x4x4_t __b = (b); \
+  float32x4x4_t __b = (b); \
   __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 20); })
 #define vst4q_p8(__a, b) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x16x4_t __b = (b); \
+  poly8x16x4_t __b = (b); \
   __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 21); })
 #define vst4q_p16(__a, b) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x8x4_t __b = (b); \
+  poly16x8x4_t __b = (b); \
   __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 22); })
 #define vst4_u8(__a, b) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x8x4_t __b = (b); \
+  uint8x8x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 8); })
 #define vst4_u16(__a, b) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x4x4_t __b = (b); \
+  uint16x4x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 9); })
 #define vst4_u32(__a, b) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x2x4_t __b = (b); \
+  uint32x2x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 10); })
 #define vst4_u64(__a, b) __extension__ ({ \
-  uint64_t * __a_ = (__a); (void)__a_; uint64x1x4_t __b = (b); \
+  uint64x1x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 11); })
 #define vst4_s8(__a, b) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x8x4_t __b = (b); \
+  int8x8x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, __b.val[0], __b.val[1], __b.val[2], __b.val[3], 0); })
 #define vst4_s16(__a, b) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x4x4_t __b = (b); \
+  int16x4x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 1); })
 #define vst4_s32(__a, b) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x2x4_t __b = (b); \
+  int32x2x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 2); })
 #define vst4_s64(__a, b) __extension__ ({ \
-  int64_t * __a_ = (__a); (void)__a_; int64x1x4_t __b = (b); \
+  int64x1x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 3); })
 #define vst4_f16(__a, b) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x4x4_t __b = (b); \
+  float16x4x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 7); })
 #define vst4_f32(__a, b) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x2x4_t __b = (b); \
+  float32x2x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 4); })
 #define vst4_p8(__a, b) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x8x4_t __b = (b); \
+  poly8x8x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 5); })
 #define vst4_p16(__a, b) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x4x4_t __b = (b); \
+  poly16x4x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 6); })
 
 #define vst4q_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x8x4_t __b = (b); \
+  uint16x8x4_t __b = (b); \
   __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 25); })
 #define vst4q_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x4x4_t __b = (b); \
+  uint32x4x4_t __b = (b); \
   __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 26); })
 #define vst4q_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x8x4_t __b = (b); \
+  int16x8x4_t __b = (b); \
   __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 17); })
 #define vst4q_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x4x4_t __b = (b); \
+  int32x4x4_t __b = (b); \
   __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 18); })
 #define vst4q_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x8x4_t __b = (b); \
+  float16x8x4_t __b = (b); \
   __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 23); })
 #define vst4q_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x4x4_t __b = (b); \
+  float32x4x4_t __b = (b); \
   __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 20); })
 #define vst4q_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x8x4_t __b = (b); \
+  poly16x8x4_t __b = (b); \
   __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 22); })
 #define vst4_lane_u8(__a, b, __c) __extension__ ({ \
-  uint8_t * __a_ = (__a); (void)__a_; uint8x8x4_t __b = (b); \
+  uint8x8x4_t __b = (b); \
   __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 8); })
 #define vst4_lane_u16(__a, b, __c) __extension__ ({ \
-  uint16_t * __a_ = (__a); (void)__a_; uint16x4x4_t __b = (b); \
+  uint16x4x4_t __b = (b); \
   __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 9); })
 #define vst4_lane_u32(__a, b, __c) __extension__ ({ \
-  uint32_t * __a_ = (__a); (void)__a_; uint32x2x4_t __b = (b); \
+  uint32x2x4_t __b = (b); \
   __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 10); })
 #define vst4_lane_s8(__a, b, __c) __extension__ ({ \
-  int8_t * __a_ = (__a); (void)__a_; int8x8x4_t __b = (b); \
+  int8x8x4_t __b = (b); \
   __builtin_neon_vst4_lane_v(__a, __b.val[0], __b.val[1], __b.val[2], __b.val[3], __c, 0); })
 #define vst4_lane_s16(__a, b, __c) __extension__ ({ \
-  int16_t * __a_ = (__a); (void)__a_; int16x4x4_t __b = (b); \
+  int16x4x4_t __b = (b); \
   __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 1); })
 #define vst4_lane_s32(__a, b, __c) __extension__ ({ \
-  int32_t * __a_ = (__a); (void)__a_; int32x2x4_t __b = (b); \
+  int32x2x4_t __b = (b); \
   __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 2); })
 #define vst4_lane_f16(__a, b, __c) __extension__ ({ \
-  float16_t * __a_ = (__a); (void)__a_; float16x4x4_t __b = (b); \
+  float16x4x4_t __b = (b); \
   __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 7); })
 #define vst4_lane_f32(__a, b, __c) __extension__ ({ \
-  float32_t * __a_ = (__a); (void)__a_; float32x2x4_t __b = (b); \
+  float32x2x4_t __b = (b); \
   __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 4); })
 #define vst4_lane_p8(__a, b, __c) __extension__ ({ \
-  poly8_t * __a_ = (__a); (void)__a_; poly8x8x4_t __b = (b); \
+  poly8x8x4_t __b = (b); \
   __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 5); })
 #define vst4_lane_p16(__a, b, __c) __extension__ ({ \
-  poly16_t * __a_ = (__a); (void)__a_; poly16x4x4_t __b = (b); \
+  poly16x4x4_t __b = (b); \
   __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 6); })
 
 __ai int8x8_t vsub_s8(int8x8_t __a, int8x8_t __b) { \
