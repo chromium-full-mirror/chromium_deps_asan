@@ -34,6 +34,20 @@ def symbolize_addr2line(line):
   else:
     print line.rstrip()
 
+def fix_binary_for_chromium(binary):
+  BUILDTYPE = 'Release'
+  pieces = binary.split(BUILDTYPE)
+  if len(pieces) != 2:
+    return binary
+  prefix, suffix = pieces
+  to_fix = { 'Chromium Framework': 'framework',
+             'Chromium Helper': 'app' }
+  for filename in to_fix:
+    ext = to_fix[filename]
+    if suffix.endswith(filename):
+      binary = prefix + BUILDTYPE + '/' + filename + '.' + ext + '.dSYM/Contents/Resources/DWARF/' + filename
+  return binary
+
 def symbolize_atos(line):
   #0 0x7f6e35cf2e45  (/blah/foo.so+0x11fe45)
   match = re.match('^( *#[0-9]+ *)(0x[0-9a-f]+) *\((.*)\+(0x[0-9a-f]+)\)', line)
@@ -44,6 +58,7 @@ def symbolize_atos(line):
     binary = match.group(3)
     offset = match.group(4)
     load_addr = int(addr, 16) - int(offset, 16)
+    binary = fix_binary_for_chromium(binary)
     if not pipes.has_key(binary):
       #print "atos -o %s -l %s" % (binary, hex(load_addr))
       pipes[binary] = subprocess.Popen(["atos", "-o", binary],
