@@ -1,7 +1,7 @@
 Name: asan
 URL: http://code.google.com/p/address-sanitizer/
      http://sites.google.com/a/chromium.org/dev/developers/testing/addresssanitizer
-Version: r808
+Version: r858
 Darwin version: r738
 Date: 2011-09-23
 License: Apache
