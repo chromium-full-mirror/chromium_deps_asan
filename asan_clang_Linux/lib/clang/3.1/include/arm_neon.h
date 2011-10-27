@@ -347,7 +347,7 @@ typedef struct poly16x8x4_t {
   poly16x8_t val[4];
 } poly16x8x4_t;
 
-#define __ai static __attribute__((__always_inline__))
+#define __ai static __attribute__((__always_inline__, __nodebug__))
 
 __ai int16x8_t vmovl_s8(int8x8_t __a) { \
   return (int16x8_t)__builtin_neon_vmovl_v(__a, 17); }
