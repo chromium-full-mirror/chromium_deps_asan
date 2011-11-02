@@ -6,6 +6,7 @@ import string
 import subprocess
 
 pipes = {}
+vmaddrs = {}
 
 # TODO(glider): need some refactoring here
 def symbolize_addr2line(line):
@@ -36,6 +37,9 @@ def symbolize_addr2line(line):
 
 def fix_binary_for_chromium(binary):
   BUILDTYPE = 'Release'
+  # Chromium Helper EH is the same binary as Chromium Helper, but there's no
+  # .dSYM directory for it.
+  binary = binary.replace('Chromium Helper EH', 'Chromium Helper')
   pieces = binary.split(BUILDTYPE)
   if len(pieces) != 2:
     return binary
@@ -45,8 +49,60 @@ def fix_binary_for_chromium(binary):
   for filename in to_fix:
     ext = to_fix[filename]
     if suffix.endswith(filename):
-      binary = prefix + BUILDTYPE + '/' + filename + '.' + ext + '.dSYM/Contents/Resources/DWARF/' + filename
+      binary = (prefix + BUILDTYPE + '/' + filename + '.' +
+                ext + '.dSYM/Contents/Resources/DWARF/' + filename)
+      return binary
+  filename = suffix.split('/')[-1]
+  binary = (prefix + BUILDTYPE + '/' + filename +
+            '.dSYM/Contents/Resources/DWARF/' + filename)
   return binary
+
+
+# Get the skew value to be added to the address.
+# We're ooking for the following piece in otool -l output:
+#   Load command 0
+#   cmd LC_SEGMENT
+#   cmdsize 736
+#   segname __TEXT
+#   vmaddr 0x00000000
+def get_binary_vmaddr(binary):
+  if binary in vmaddrs:
+    return vmaddrs[binary]
+  cmdline = ["otool", "-l", binary]
+  pipe = subprocess.Popen(cmdline,
+                          stdin=subprocess.PIPE,
+                          stdout=subprocess.PIPE)
+  is_text = False
+  vmaddr = 0
+  for line in pipe.stdout.readlines():
+    line = line.strip()
+    if line.startswith('segname'):
+      is_text = (line == 'segname __TEXT')
+      continue
+    if line.startswith('vmaddr') and is_text:
+      sv = line.split(' ')
+      vmaddr = int(sv[-1], 16)
+      break
+  vmaddrs[binary] = vmaddr
+  return vmaddr
+
+
+def write_addr_to_pipe(pipe, addr, offset, binary):
+  skew = get_binary_vmaddr(binary)
+#  if ".app/" in binary and not ".framework" in binary:
+#    print >>pipe, "%s" % addr
+#  elif binary.endswith("tests"):
+#    print >>pipe, "0x%x" % (int(offset, 16) + 0x1000 - 1)
+#  else:
+#    print >>pipe, "%s" % offset
+  print >>pipe, "0x%x" % (int(offset, 16) + skew)
+
+def open_atos(binary):
+  #print "atos -o %s -l %s" % (binary, hex(load_addr))
+  cmdline = ["atos", "-o", binary]
+  return subprocess.Popen(cmdline,
+                          stdin=subprocess.PIPE,
+                          stdout=subprocess.PIPE)
 
 def symbolize_atos(line):
   #0 0x7f6e35cf2e45  (/blah/foo.so+0x11fe45)
@@ -58,20 +114,20 @@ def symbolize_atos(line):
     binary = match.group(3)
     offset = match.group(4)
     load_addr = int(addr, 16) - int(offset, 16)
+    original_binary = binary
     binary = fix_binary_for_chromium(binary)
     if not pipes.has_key(binary):
-      #print "atos -o %s -l %s" % (binary, hex(load_addr))
-      pipes[binary] = subprocess.Popen(["atos", "-o", binary],
-                         stdin=subprocess.PIPE, stdout=subprocess.PIPE,)
+      pipes[binary] = open_atos(binary)
     p = pipes[binary]
-    # TODO(glider): how to tell if the address is absolute?
-    # We should probably parse "gobjdump -h" output to check.
-    if ".app/" in binary and not ".framework" in binary:
-      print >>p.stdin, "%s" % addr
-    elif binary.endswith("tests"):
-      print >>p.stdin, "0x%x" % (int(offset, 16) + 0x1000)
-    else:
-      print >>p.stdin, "%s" % offset
+    try:
+      write_addr_to_pipe(p.stdin, addr, offset, binary)
+    except:
+      # Oops, atos failed. Trying to use the original binary.
+      binary = original_binary
+      pipes[binary] = open_atos(binary)
+      p = pipes[binary]
+      write_addr_to_pipe(p.stdin, addr, offset, binary)
+
     # TODO(glider): it's more efficient to make a batch atos run for each binary.
     p.stdin.close()
     atos_line = p.stdout.readline().rstrip()
