@@ -350,32 +350,32 @@ typedef struct poly16x8x4_t {
 #define __ai static __attribute__((__always_inline__, __nodebug__))
 
 __ai int16x8_t vmovl_s8(int8x8_t __a) { \
-  return (int16x8_t)__builtin_neon_vmovl_v(__a, 17); }
+  return (int16x8_t)__builtin_neon_vmovl_v(__a, 33); }
 __ai int32x4_t vmovl_s16(int16x4_t __a) { \
-  return (int32x4_t)__builtin_neon_vmovl_v((int8x8_t)__a, 18); }
+  return (int32x4_t)__builtin_neon_vmovl_v((int8x8_t)__a, 34); }
 __ai int64x2_t vmovl_s32(int32x2_t __a) { \
-  return (int64x2_t)__builtin_neon_vmovl_v((int8x8_t)__a, 19); }
+  return (int64x2_t)__builtin_neon_vmovl_v((int8x8_t)__a, 35); }
 __ai uint16x8_t vmovl_u8(uint8x8_t __a) { \
-  return (uint16x8_t)__builtin_neon_vmovl_v((int8x8_t)__a, 25); }
+  return (uint16x8_t)__builtin_neon_vmovl_v((int8x8_t)__a, 49); }
 __ai uint32x4_t vmovl_u16(uint16x4_t __a) { \
-  return (uint32x4_t)__builtin_neon_vmovl_v((int8x8_t)__a, 26); }
+  return (uint32x4_t)__builtin_neon_vmovl_v((int8x8_t)__a, 50); }
 __ai uint64x2_t vmovl_u32(uint32x2_t __a) { \
-  return (uint64x2_t)__builtin_neon_vmovl_v((int8x8_t)__a, 27); }
+  return (uint64x2_t)__builtin_neon_vmovl_v((int8x8_t)__a, 51); }
 
 __ai int16x8_t vmull_s8(int8x8_t __a, int8x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vmull_v(__a, __b, 17); }
+  return (int16x8_t)__builtin_neon_vmull_v(__a, __b, 33); }
 __ai int32x4_t vmull_s16(int16x4_t __a, int16x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 34); }
 __ai int64x2_t vmull_s32(int32x2_t __a, int32x2_t __b) { \
-  return (int64x2_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 19); }
+  return (int64x2_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 35); }
 __ai uint16x8_t vmull_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 49); }
 __ai uint32x4_t vmull_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 50); }
 __ai uint64x2_t vmull_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint64x2_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 27); }
+  return (uint64x2_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 51); }
 __ai poly16x8_t vmull_p8(poly8x8_t __a, poly8x8_t __b) { \
-  return (poly16x8_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 22); }
+  return (poly16x8_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)__b, 37); }
 
 __ai int8x8_t vabd_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vabd_v(__a, __b, 0); }
@@ -384,27 +384,27 @@ __ai int16x4_t vabd_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2_t vabd_s32(int32x2_t __a, int32x2_t __b) { \
   return (int32x2_t)__builtin_neon_vabd_v((int8x8_t)__a, (int8x8_t)__b, 2); }
 __ai uint8x8_t vabd_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vabd_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vabd_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vabd_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vabd_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vabd_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vabd_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vabd_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vabd_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai float32x2_t vabd_f32(float32x2_t __a, float32x2_t __b) { \
-  return (float32x2_t)__builtin_neon_vabd_v((int8x8_t)__a, (int8x8_t)__b, 4); }
+  return (float32x2_t)__builtin_neon_vabd_v((int8x8_t)__a, (int8x8_t)__b, 7); }
 __ai int8x16_t vabdq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vabdq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vabdq_v(__a, __b, 32); }
 __ai int16x8_t vabdq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vabdq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai uint8x16_t vabdq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 24); }
+  return (uint8x16_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 48); }
 __ai uint16x8_t vabdq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vabdq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai float32x4_t vabdq_f32(float32x4_t __a, float32x4_t __b) { \
-  return (float32x4_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 20); }
+  return (float32x4_t)__builtin_neon_vabdq_v((int8x16_t)__a, (int8x16_t)__b, 39); }
 
 __ai int8x8_t vaba_s8(int8x8_t __a, int8x8_t __b, int8x8_t __c) { \
   return __a + vabd_s8(__b, __c); }
@@ -464,15 +464,15 @@ __ai int16x4_t vabs_s16(int16x4_t __a) { \
 __ai int32x2_t vabs_s32(int32x2_t __a) { \
   return (int32x2_t)__builtin_neon_vabs_v((int8x8_t)__a, 2); }
 __ai float32x2_t vabs_f32(float32x2_t __a) { \
-  return (float32x2_t)__builtin_neon_vabs_v((int8x8_t)__a, 4); }
+  return (float32x2_t)__builtin_neon_vabs_v((int8x8_t)__a, 7); }
 __ai int8x16_t vabsq_s8(int8x16_t __a) { \
-  return (int8x16_t)__builtin_neon_vabsq_v(__a, 16); }
+  return (int8x16_t)__builtin_neon_vabsq_v(__a, 32); }
 __ai int16x8_t vabsq_s16(int16x8_t __a) { \
-  return (int16x8_t)__builtin_neon_vabsq_v((int8x16_t)__a, 17); }
+  return (int16x8_t)__builtin_neon_vabsq_v((int8x16_t)__a, 33); }
 __ai int32x4_t vabsq_s32(int32x4_t __a) { \
-  return (int32x4_t)__builtin_neon_vabsq_v((int8x16_t)__a, 18); }
+  return (int32x4_t)__builtin_neon_vabsq_v((int8x16_t)__a, 34); }
 __ai float32x4_t vabsq_f32(float32x4_t __a) { \
-  return (float32x4_t)__builtin_neon_vabsq_v((int8x16_t)__a, 20); }
+  return (float32x4_t)__builtin_neon_vabsq_v((int8x16_t)__a, 39); }
 
 __ai int8x8_t vadd_s8(int8x8_t __a, int8x8_t __b) { \
   return __a + __b; }
@@ -518,11 +518,11 @@ __ai int16x4_t vaddhn_s32(int32x4_t __a, int32x4_t __b) { \
 __ai int32x2_t vaddhn_s64(int64x2_t __a, int64x2_t __b) { \
   return (int32x2_t)__builtin_neon_vaddhn_v((int8x16_t)__a, (int8x16_t)__b, 2); }
 __ai uint8x8_t vaddhn_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vaddhn_v((int8x16_t)__a, (int8x16_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vaddhn_v((int8x16_t)__a, (int8x16_t)__b, 16); }
 __ai uint16x4_t vaddhn_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vaddhn_v((int8x16_t)__a, (int8x16_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vaddhn_v((int8x16_t)__a, (int8x16_t)__b, 17); }
 __ai uint32x2_t vaddhn_u64(uint64x2_t __a, uint64x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vaddhn_v((int8x16_t)__a, (int8x16_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vaddhn_v((int8x16_t)__a, (int8x16_t)__b, 18); }
 
 __ai int16x8_t vaddl_s8(int8x8_t __a, int8x8_t __b) { \
   return vmovl_s8(__a) + vmovl_s8(__b); }
@@ -662,24 +662,24 @@ __ai poly16x8_t vbslq_p16(uint16x8_t __a, poly16x8_t __b, poly16x8_t __c) { \
   return (poly16x8_t)((__a & (uint16x8_t)__b) | (~__a & (uint16x8_t)__c)); }
 
 __ai uint32x2_t vcage_f32(float32x2_t __a, float32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vcage_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vcage_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint32x4_t vcageq_f32(float32x4_t __a, float32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vcageq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vcageq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 
 __ai uint32x2_t vcagt_f32(float32x2_t __a, float32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vcagt_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vcagt_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint32x4_t vcagtq_f32(float32x4_t __a, float32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vcagtq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vcagtq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 
 __ai uint32x2_t vcale_f32(float32x2_t __a, float32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vcale_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vcale_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint32x4_t vcaleq_f32(float32x4_t __a, float32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vcaleq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vcaleq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 
 __ai uint32x2_t vcalt_f32(float32x2_t __a, float32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vcalt_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vcalt_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint32x4_t vcaltq_f32(float32x4_t __a, float32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vcaltq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vcaltq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 
 __ai uint8x8_t vceq_s8(int8x8_t __a, int8x8_t __b) { \
   return (uint8x8_t)(__a == __b); }
@@ -808,11 +808,11 @@ __ai int16x4_t vcls_s16(int16x4_t __a) { \
 __ai int32x2_t vcls_s32(int32x2_t __a) { \
   return (int32x2_t)__builtin_neon_vcls_v((int8x8_t)__a, 2); }
 __ai int8x16_t vclsq_s8(int8x16_t __a) { \
-  return (int8x16_t)__builtin_neon_vclsq_v(__a, 16); }
+  return (int8x16_t)__builtin_neon_vclsq_v(__a, 32); }
 __ai int16x8_t vclsq_s16(int16x8_t __a) { \
-  return (int16x8_t)__builtin_neon_vclsq_v((int8x16_t)__a, 17); }
+  return (int16x8_t)__builtin_neon_vclsq_v((int8x16_t)__a, 33); }
 __ai int32x4_t vclsq_s32(int32x4_t __a) { \
-  return (int32x4_t)__builtin_neon_vclsq_v((int8x16_t)__a, 18); }
+  return (int32x4_t)__builtin_neon_vclsq_v((int8x16_t)__a, 34); }
 
 __ai uint8x8_t vclt_s8(int8x8_t __a, int8x8_t __b) { \
   return (uint8x8_t)(__a < __b); }
@@ -850,36 +850,36 @@ __ai int16x4_t vclz_s16(int16x4_t __a) { \
 __ai int32x2_t vclz_s32(int32x2_t __a) { \
   return (int32x2_t)__builtin_neon_vclz_v((int8x8_t)__a, 2); }
 __ai uint8x8_t vclz_u8(uint8x8_t __a) { \
-  return (uint8x8_t)__builtin_neon_vclz_v((int8x8_t)__a, 8); }
+  return (uint8x8_t)__builtin_neon_vclz_v((int8x8_t)__a, 16); }
 __ai uint16x4_t vclz_u16(uint16x4_t __a) { \
-  return (uint16x4_t)__builtin_neon_vclz_v((int8x8_t)__a, 9); }
+  return (uint16x4_t)__builtin_neon_vclz_v((int8x8_t)__a, 17); }
 __ai uint32x2_t vclz_u32(uint32x2_t __a) { \
-  return (uint32x2_t)__builtin_neon_vclz_v((int8x8_t)__a, 10); }
+  return (uint32x2_t)__builtin_neon_vclz_v((int8x8_t)__a, 18); }
 __ai int8x16_t vclzq_s8(int8x16_t __a) { \
-  return (int8x16_t)__builtin_neon_vclzq_v(__a, 16); }
+  return (int8x16_t)__builtin_neon_vclzq_v(__a, 32); }
 __ai int16x8_t vclzq_s16(int16x8_t __a) { \
-  return (int16x8_t)__builtin_neon_vclzq_v((int8x16_t)__a, 17); }
+  return (int16x8_t)__builtin_neon_vclzq_v((int8x16_t)__a, 33); }
 __ai int32x4_t vclzq_s32(int32x4_t __a) { \
-  return (int32x4_t)__builtin_neon_vclzq_v((int8x16_t)__a, 18); }
+  return (int32x4_t)__builtin_neon_vclzq_v((int8x16_t)__a, 34); }
 __ai uint8x16_t vclzq_u8(uint8x16_t __a) { \
-  return (uint8x16_t)__builtin_neon_vclzq_v((int8x16_t)__a, 24); }
+  return (uint8x16_t)__builtin_neon_vclzq_v((int8x16_t)__a, 48); }
 __ai uint16x8_t vclzq_u16(uint16x8_t __a) { \
-  return (uint16x8_t)__builtin_neon_vclzq_v((int8x16_t)__a, 25); }
+  return (uint16x8_t)__builtin_neon_vclzq_v((int8x16_t)__a, 49); }
 __ai uint32x4_t vclzq_u32(uint32x4_t __a) { \
-  return (uint32x4_t)__builtin_neon_vclzq_v((int8x16_t)__a, 26); }
+  return (uint32x4_t)__builtin_neon_vclzq_v((int8x16_t)__a, 50); }
 
 __ai uint8x8_t vcnt_u8(uint8x8_t __a) { \
-  return (uint8x8_t)__builtin_neon_vcnt_v((int8x8_t)__a, 8); }
+  return (uint8x8_t)__builtin_neon_vcnt_v((int8x8_t)__a, 16); }
 __ai int8x8_t vcnt_s8(int8x8_t __a) { \
   return (int8x8_t)__builtin_neon_vcnt_v(__a, 0); }
 __ai poly8x8_t vcnt_p8(poly8x8_t __a) { \
-  return (poly8x8_t)__builtin_neon_vcnt_v((int8x8_t)__a, 5); }
+  return (poly8x8_t)__builtin_neon_vcnt_v((int8x8_t)__a, 4); }
 __ai uint8x16_t vcntq_u8(uint8x16_t __a) { \
-  return (uint8x16_t)__builtin_neon_vcntq_v((int8x16_t)__a, 24); }
+  return (uint8x16_t)__builtin_neon_vcntq_v((int8x16_t)__a, 48); }
 __ai int8x16_t vcntq_s8(int8x16_t __a) { \
-  return (int8x16_t)__builtin_neon_vcntq_v(__a, 16); }
+  return (int8x16_t)__builtin_neon_vcntq_v(__a, 32); }
 __ai poly8x16_t vcntq_p8(poly8x16_t __a) { \
-  return (poly8x16_t)__builtin_neon_vcntq_v((int8x16_t)__a, 21); }
+  return (poly8x16_t)__builtin_neon_vcntq_v((int8x16_t)__a, 36); }
 
 __ai int8x16_t vcombine_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x16_t)__builtin_shufflevector((int64x1_t)__a, (int64x1_t)__b, 0, 1); }
@@ -932,56 +932,56 @@ __ai int64x1_t vcreate_s64(uint64_t __a) { \
   return (int64x1_t)__a; }
 
 __ai float16x4_t vcvt_f16_f32(float32x4_t __a) { \
-  return (float16x4_t)__builtin_neon_vcvt_f16_v((int8x16_t)__a, 7); }
+  return (float16x4_t)__builtin_neon_vcvt_f16_v((int8x16_t)__a, 6); }
 
 __ai float32x2_t vcvt_f32_s32(int32x2_t __a) { \
   return (float32x2_t)__builtin_neon_vcvt_f32_v((int8x8_t)__a, 2); }
 __ai float32x2_t vcvt_f32_u32(uint32x2_t __a) { \
-  return (float32x2_t)__builtin_neon_vcvt_f32_v((int8x8_t)__a, 10); }
+  return (float32x2_t)__builtin_neon_vcvt_f32_v((int8x8_t)__a, 18); }
 __ai float32x4_t vcvtq_f32_s32(int32x4_t __a) { \
-  return (float32x4_t)__builtin_neon_vcvtq_f32_v((int8x16_t)__a, 18); }
+  return (float32x4_t)__builtin_neon_vcvtq_f32_v((int8x16_t)__a, 34); }
 __ai float32x4_t vcvtq_f32_u32(uint32x4_t __a) { \
-  return (float32x4_t)__builtin_neon_vcvtq_f32_v((int8x16_t)__a, 26); }
+  return (float32x4_t)__builtin_neon_vcvtq_f32_v((int8x16_t)__a, 50); }
 
 __ai float32x4_t vcvt_f32_f16(float16x4_t __a) { \
-  return (float32x4_t)__builtin_neon_vcvt_f32_f16((int8x8_t)__a, 7); }
+  return (float32x4_t)__builtin_neon_vcvt_f32_f16((int8x8_t)__a, 6); }
 
 #define vcvt_n_f32_s32(a, __b) __extension__ ({ \
   int32x2_t __a = (a); \
   (float32x2_t)__builtin_neon_vcvt_n_f32_v((int8x8_t)__a, __b, 2); })
 #define vcvt_n_f32_u32(a, __b) __extension__ ({ \
   uint32x2_t __a = (a); \
-  (float32x2_t)__builtin_neon_vcvt_n_f32_v((int8x8_t)__a, __b, 10); })
+  (float32x2_t)__builtin_neon_vcvt_n_f32_v((int8x8_t)__a, __b, 18); })
 #define vcvtq_n_f32_s32(a, __b) __extension__ ({ \
   int32x4_t __a = (a); \
-  (float32x4_t)__builtin_neon_vcvtq_n_f32_v((int8x16_t)__a, __b, 18); })
+  (float32x4_t)__builtin_neon_vcvtq_n_f32_v((int8x16_t)__a, __b, 34); })
 #define vcvtq_n_f32_u32(a, __b) __extension__ ({ \
   uint32x4_t __a = (a); \
-  (float32x4_t)__builtin_neon_vcvtq_n_f32_v((int8x16_t)__a, __b, 26); })
+  (float32x4_t)__builtin_neon_vcvtq_n_f32_v((int8x16_t)__a, __b, 50); })
 
 #define vcvt_n_s32_f32(a, __b) __extension__ ({ \
   float32x2_t __a = (a); \
   (int32x2_t)__builtin_neon_vcvt_n_s32_v((int8x8_t)__a, __b, 2); })
 #define vcvtq_n_s32_f32(a, __b) __extension__ ({ \
   float32x4_t __a = (a); \
-  (int32x4_t)__builtin_neon_vcvtq_n_s32_v((int8x16_t)__a, __b, 18); })
+  (int32x4_t)__builtin_neon_vcvtq_n_s32_v((int8x16_t)__a, __b, 34); })
 
 #define vcvt_n_u32_f32(a, __b) __extension__ ({ \
   float32x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vcvt_n_u32_v((int8x8_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vcvt_n_u32_v((int8x8_t)__a, __b, 18); })
 #define vcvtq_n_u32_f32(a, __b) __extension__ ({ \
   float32x4_t __a = (a); \
-  (uint32x4_t)__builtin_neon_vcvtq_n_u32_v((int8x16_t)__a, __b, 26); })
+  (uint32x4_t)__builtin_neon_vcvtq_n_u32_v((int8x16_t)__a, __b, 50); })
 
 __ai int32x2_t vcvt_s32_f32(float32x2_t __a) { \
   return (int32x2_t)__builtin_neon_vcvt_s32_v((int8x8_t)__a, 2); }
 __ai int32x4_t vcvtq_s32_f32(float32x4_t __a) { \
-  return (int32x4_t)__builtin_neon_vcvtq_s32_v((int8x16_t)__a, 18); }
+  return (int32x4_t)__builtin_neon_vcvtq_s32_v((int8x16_t)__a, 34); }
 
 __ai uint32x2_t vcvt_u32_f32(float32x2_t __a) { \
-  return (uint32x2_t)__builtin_neon_vcvt_u32_v((int8x8_t)__a, 10); }
+  return (uint32x2_t)__builtin_neon_vcvt_u32_v((int8x8_t)__a, 18); }
 __ai uint32x4_t vcvtq_u32_f32(float32x4_t __a) { \
-  return (uint32x4_t)__builtin_neon_vcvtq_u32_v((int8x16_t)__a, 26); }
+  return (uint32x4_t)__builtin_neon_vcvtq_u32_v((int8x16_t)__a, 50); }
 
 #define vdup_lane_u8(a, __b) __extension__ ({ \
   uint8x8_t __a = (a); \
@@ -1133,67 +1133,67 @@ __ai uint64x2_t veorq_u64(uint64x2_t __a, uint64x2_t __b) { \
   (int8x8_t)__builtin_neon_vext_v(__a, __b, __c, 0); })
 #define vext_u8(a, b, __c) __extension__ ({ \
   uint8x8_t __a = (a); uint8x8_t __b = (b); \
-  (uint8x8_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 8); })
+  (uint8x8_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 16); })
 #define vext_p8(a, b, __c) __extension__ ({ \
   poly8x8_t __a = (a); poly8x8_t __b = (b); \
-  (poly8x8_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 5); })
+  (poly8x8_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 4); })
 #define vext_s16(a, b, __c) __extension__ ({ \
   int16x4_t __a = (a); int16x4_t __b = (b); \
   (int16x4_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 1); })
 #define vext_u16(a, b, __c) __extension__ ({ \
   uint16x4_t __a = (a); uint16x4_t __b = (b); \
-  (uint16x4_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 9); })
+  (uint16x4_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 17); })
 #define vext_p16(a, b, __c) __extension__ ({ \
   poly16x4_t __a = (a); poly16x4_t __b = (b); \
-  (poly16x4_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 6); })
+  (poly16x4_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 5); })
 #define vext_s32(a, b, __c) __extension__ ({ \
   int32x2_t __a = (a); int32x2_t __b = (b); \
   (int32x2_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 2); })
 #define vext_u32(a, b, __c) __extension__ ({ \
   uint32x2_t __a = (a); uint32x2_t __b = (b); \
-  (uint32x2_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 10); })
+  (uint32x2_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 18); })
 #define vext_s64(a, b, __c) __extension__ ({ \
   int64x1_t __a = (a); int64x1_t __b = (b); \
   (int64x1_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 3); })
 #define vext_u64(a, b, __c) __extension__ ({ \
   uint64x1_t __a = (a); uint64x1_t __b = (b); \
-  (uint64x1_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 11); })
+  (uint64x1_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 19); })
 #define vext_f32(a, b, __c) __extension__ ({ \
   float32x2_t __a = (a); float32x2_t __b = (b); \
-  (float32x2_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 4); })
+  (float32x2_t)__builtin_neon_vext_v((int8x8_t)__a, (int8x8_t)__b, __c, 7); })
 #define vextq_s8(a, b, __c) __extension__ ({ \
   int8x16_t __a = (a); int8x16_t __b = (b); \
-  (int8x16_t)__builtin_neon_vextq_v(__a, __b, __c, 16); })
+  (int8x16_t)__builtin_neon_vextq_v(__a, __b, __c, 32); })
 #define vextq_u8(a, b, __c) __extension__ ({ \
   uint8x16_t __a = (a); uint8x16_t __b = (b); \
-  (uint8x16_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 24); })
+  (uint8x16_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 48); })
 #define vextq_p8(a, b, __c) __extension__ ({ \
   poly8x16_t __a = (a); poly8x16_t __b = (b); \
-  (poly8x16_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 21); })
+  (poly8x16_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 36); })
 #define vextq_s16(a, b, __c) __extension__ ({ \
   int16x8_t __a = (a); int16x8_t __b = (b); \
-  (int16x8_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 17); })
+  (int16x8_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 33); })
 #define vextq_u16(a, b, __c) __extension__ ({ \
   uint16x8_t __a = (a); uint16x8_t __b = (b); \
-  (uint16x8_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 25); })
+  (uint16x8_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 49); })
 #define vextq_p16(a, b, __c) __extension__ ({ \
   poly16x8_t __a = (a); poly16x8_t __b = (b); \
-  (poly16x8_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 22); })
+  (poly16x8_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 37); })
 #define vextq_s32(a, b, __c) __extension__ ({ \
   int32x4_t __a = (a); int32x4_t __b = (b); \
-  (int32x4_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 18); })
+  (int32x4_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 34); })
 #define vextq_u32(a, b, __c) __extension__ ({ \
   uint32x4_t __a = (a); uint32x4_t __b = (b); \
-  (uint32x4_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 26); })
+  (uint32x4_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 50); })
 #define vextq_s64(a, b, __c) __extension__ ({ \
   int64x2_t __a = (a); int64x2_t __b = (b); \
-  (int64x2_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 19); })
+  (int64x2_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 35); })
 #define vextq_u64(a, b, __c) __extension__ ({ \
   uint64x2_t __a = (a); uint64x2_t __b = (b); \
-  (uint64x2_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 27); })
+  (uint64x2_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 51); })
 #define vextq_f32(a, b, __c) __extension__ ({ \
   float32x4_t __a = (a); float32x4_t __b = (b); \
-  (float32x4_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 20); })
+  (float32x4_t)__builtin_neon_vextq_v((int8x16_t)__a, (int8x16_t)__b, __c, 39); })
 
 __ai int8x8_t vget_high_s8(int8x16_t __a) { \
   return (int8x8_t)__builtin_shufflevector((int64x2_t)__a, (int64x2_t)__a, 1); }
@@ -1319,23 +1319,23 @@ __ai int16x4_t vhadd_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2_t vhadd_s32(int32x2_t __a, int32x2_t __b) { \
   return (int32x2_t)__builtin_neon_vhadd_v((int8x8_t)__a, (int8x8_t)__b, 2); }
 __ai uint8x8_t vhadd_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vhadd_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vhadd_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vhadd_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vhadd_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vhadd_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vhadd_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vhadd_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vhadd_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai int8x16_t vhaddq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vhaddq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vhaddq_v(__a, __b, 32); }
 __ai int16x8_t vhaddq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vhaddq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vhaddq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vhaddq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vhaddq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vhaddq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai uint8x16_t vhaddq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vhaddq_v((int8x16_t)__a, (int8x16_t)__b, 24); }
+  return (uint8x16_t)__builtin_neon_vhaddq_v((int8x16_t)__a, (int8x16_t)__b, 48); }
 __ai uint16x8_t vhaddq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vhaddq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vhaddq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vhaddq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vhaddq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vhaddq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 
 __ai int8x8_t vhsub_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vhsub_v(__a, __b, 0); }
@@ -1344,56 +1344,56 @@ __ai int16x4_t vhsub_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2_t vhsub_s32(int32x2_t __a, int32x2_t __b) { \
   return (int32x2_t)__builtin_neon_vhsub_v((int8x8_t)__a, (int8x8_t)__b, 2); }
 __ai uint8x8_t vhsub_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vhsub_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vhsub_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vhsub_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vhsub_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vhsub_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vhsub_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vhsub_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vhsub_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai int8x16_t vhsubq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vhsubq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vhsubq_v(__a, __b, 32); }
 __ai int16x8_t vhsubq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vhsubq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vhsubq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vhsubq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vhsubq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vhsubq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai uint8x16_t vhsubq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vhsubq_v((int8x16_t)__a, (int8x16_t)__b, 24); }
+  return (uint8x16_t)__builtin_neon_vhsubq_v((int8x16_t)__a, (int8x16_t)__b, 48); }
 __ai uint16x8_t vhsubq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vhsubq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vhsubq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vhsubq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vhsubq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 
 #define vld1q_u8(__a) __extension__ ({ \
-  (uint8x16_t)__builtin_neon_vld1q_v(__a, 24); })
+  (uint8x16_t)__builtin_neon_vld1q_v(__a, 48); })
 #define vld1q_u16(__a) __extension__ ({ \
-  (uint16x8_t)__builtin_neon_vld1q_v(__a, 25); })
+  (uint16x8_t)__builtin_neon_vld1q_v(__a, 49); })
 #define vld1q_u32(__a) __extension__ ({ \
-  (uint32x4_t)__builtin_neon_vld1q_v(__a, 26); })
+  (uint32x4_t)__builtin_neon_vld1q_v(__a, 50); })
 #define vld1q_u64(__a) __extension__ ({ \
-  (uint64x2_t)__builtin_neon_vld1q_v(__a, 27); })
+  (uint64x2_t)__builtin_neon_vld1q_v(__a, 51); })
 #define vld1q_s8(__a) __extension__ ({ \
-  (int8x16_t)__builtin_neon_vld1q_v(__a, 16); })
+  (int8x16_t)__builtin_neon_vld1q_v(__a, 32); })
 #define vld1q_s16(__a) __extension__ ({ \
-  (int16x8_t)__builtin_neon_vld1q_v(__a, 17); })
+  (int16x8_t)__builtin_neon_vld1q_v(__a, 33); })
 #define vld1q_s32(__a) __extension__ ({ \
-  (int32x4_t)__builtin_neon_vld1q_v(__a, 18); })
+  (int32x4_t)__builtin_neon_vld1q_v(__a, 34); })
 #define vld1q_s64(__a) __extension__ ({ \
-  (int64x2_t)__builtin_neon_vld1q_v(__a, 19); })
+  (int64x2_t)__builtin_neon_vld1q_v(__a, 35); })
 #define vld1q_f16(__a) __extension__ ({ \
-  (float16x8_t)__builtin_neon_vld1q_v(__a, 23); })
+  (float16x8_t)__builtin_neon_vld1q_v(__a, 38); })
 #define vld1q_f32(__a) __extension__ ({ \
-  (float32x4_t)__builtin_neon_vld1q_v(__a, 20); })
+  (float32x4_t)__builtin_neon_vld1q_v(__a, 39); })
 #define vld1q_p8(__a) __extension__ ({ \
-  (poly8x16_t)__builtin_neon_vld1q_v(__a, 21); })
+  (poly8x16_t)__builtin_neon_vld1q_v(__a, 36); })
 #define vld1q_p16(__a) __extension__ ({ \
-  (poly16x8_t)__builtin_neon_vld1q_v(__a, 22); })
+  (poly16x8_t)__builtin_neon_vld1q_v(__a, 37); })
 #define vld1_u8(__a) __extension__ ({ \
-  (uint8x8_t)__builtin_neon_vld1_v(__a, 8); })
+  (uint8x8_t)__builtin_neon_vld1_v(__a, 16); })
 #define vld1_u16(__a) __extension__ ({ \
-  (uint16x4_t)__builtin_neon_vld1_v(__a, 9); })
+  (uint16x4_t)__builtin_neon_vld1_v(__a, 17); })
 #define vld1_u32(__a) __extension__ ({ \
-  (uint32x2_t)__builtin_neon_vld1_v(__a, 10); })
+  (uint32x2_t)__builtin_neon_vld1_v(__a, 18); })
 #define vld1_u64(__a) __extension__ ({ \
-  (uint64x1_t)__builtin_neon_vld1_v(__a, 11); })
+  (uint64x1_t)__builtin_neon_vld1_v(__a, 19); })
 #define vld1_s8(__a) __extension__ ({ \
   (int8x8_t)__builtin_neon_vld1_v(__a, 0); })
 #define vld1_s16(__a) __extension__ ({ \
@@ -1403,46 +1403,46 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
 #define vld1_s64(__a) __extension__ ({ \
   (int64x1_t)__builtin_neon_vld1_v(__a, 3); })
 #define vld1_f16(__a) __extension__ ({ \
-  (float16x4_t)__builtin_neon_vld1_v(__a, 7); })
+  (float16x4_t)__builtin_neon_vld1_v(__a, 6); })
 #define vld1_f32(__a) __extension__ ({ \
-  (float32x2_t)__builtin_neon_vld1_v(__a, 4); })
+  (float32x2_t)__builtin_neon_vld1_v(__a, 7); })
 #define vld1_p8(__a) __extension__ ({ \
-  (poly8x8_t)__builtin_neon_vld1_v(__a, 5); })
+  (poly8x8_t)__builtin_neon_vld1_v(__a, 4); })
 #define vld1_p16(__a) __extension__ ({ \
-  (poly16x4_t)__builtin_neon_vld1_v(__a, 6); })
+  (poly16x4_t)__builtin_neon_vld1_v(__a, 5); })
 
 #define vld1q_dup_u8(__a) __extension__ ({ \
-  (uint8x16_t)__builtin_neon_vld1q_dup_v(__a, 24); })
+  (uint8x16_t)__builtin_neon_vld1q_dup_v(__a, 48); })
 #define vld1q_dup_u16(__a) __extension__ ({ \
-  (uint16x8_t)__builtin_neon_vld1q_dup_v(__a, 25); })
+  (uint16x8_t)__builtin_neon_vld1q_dup_v(__a, 49); })
 #define vld1q_dup_u32(__a) __extension__ ({ \
-  (uint32x4_t)__builtin_neon_vld1q_dup_v(__a, 26); })
+  (uint32x4_t)__builtin_neon_vld1q_dup_v(__a, 50); })
 #define vld1q_dup_u64(__a) __extension__ ({ \
-  (uint64x2_t)__builtin_neon_vld1q_dup_v(__a, 27); })
+  (uint64x2_t)__builtin_neon_vld1q_dup_v(__a, 51); })
 #define vld1q_dup_s8(__a) __extension__ ({ \
-  (int8x16_t)__builtin_neon_vld1q_dup_v(__a, 16); })
+  (int8x16_t)__builtin_neon_vld1q_dup_v(__a, 32); })
 #define vld1q_dup_s16(__a) __extension__ ({ \
-  (int16x8_t)__builtin_neon_vld1q_dup_v(__a, 17); })
+  (int16x8_t)__builtin_neon_vld1q_dup_v(__a, 33); })
 #define vld1q_dup_s32(__a) __extension__ ({ \
-  (int32x4_t)__builtin_neon_vld1q_dup_v(__a, 18); })
+  (int32x4_t)__builtin_neon_vld1q_dup_v(__a, 34); })
 #define vld1q_dup_s64(__a) __extension__ ({ \
-  (int64x2_t)__builtin_neon_vld1q_dup_v(__a, 19); })
+  (int64x2_t)__builtin_neon_vld1q_dup_v(__a, 35); })
 #define vld1q_dup_f16(__a) __extension__ ({ \
-  (float16x8_t)__builtin_neon_vld1q_dup_v(__a, 23); })
+  (float16x8_t)__builtin_neon_vld1q_dup_v(__a, 38); })
 #define vld1q_dup_f32(__a) __extension__ ({ \
-  (float32x4_t)__builtin_neon_vld1q_dup_v(__a, 20); })
+  (float32x4_t)__builtin_neon_vld1q_dup_v(__a, 39); })
 #define vld1q_dup_p8(__a) __extension__ ({ \
-  (poly8x16_t)__builtin_neon_vld1q_dup_v(__a, 21); })
+  (poly8x16_t)__builtin_neon_vld1q_dup_v(__a, 36); })
 #define vld1q_dup_p16(__a) __extension__ ({ \
-  (poly16x8_t)__builtin_neon_vld1q_dup_v(__a, 22); })
+  (poly16x8_t)__builtin_neon_vld1q_dup_v(__a, 37); })
 #define vld1_dup_u8(__a) __extension__ ({ \
-  (uint8x8_t)__builtin_neon_vld1_dup_v(__a, 8); })
+  (uint8x8_t)__builtin_neon_vld1_dup_v(__a, 16); })
 #define vld1_dup_u16(__a) __extension__ ({ \
-  (uint16x4_t)__builtin_neon_vld1_dup_v(__a, 9); })
+  (uint16x4_t)__builtin_neon_vld1_dup_v(__a, 17); })
 #define vld1_dup_u32(__a) __extension__ ({ \
-  (uint32x2_t)__builtin_neon_vld1_dup_v(__a, 10); })
+  (uint32x2_t)__builtin_neon_vld1_dup_v(__a, 18); })
 #define vld1_dup_u64(__a) __extension__ ({ \
-  (uint64x1_t)__builtin_neon_vld1_dup_v(__a, 11); })
+  (uint64x1_t)__builtin_neon_vld1_dup_v(__a, 19); })
 #define vld1_dup_s8(__a) __extension__ ({ \
   (int8x8_t)__builtin_neon_vld1_dup_v(__a, 0); })
 #define vld1_dup_s16(__a) __extension__ ({ \
@@ -1452,62 +1452,62 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
 #define vld1_dup_s64(__a) __extension__ ({ \
   (int64x1_t)__builtin_neon_vld1_dup_v(__a, 3); })
 #define vld1_dup_f16(__a) __extension__ ({ \
-  (float16x4_t)__builtin_neon_vld1_dup_v(__a, 7); })
+  (float16x4_t)__builtin_neon_vld1_dup_v(__a, 6); })
 #define vld1_dup_f32(__a) __extension__ ({ \
-  (float32x2_t)__builtin_neon_vld1_dup_v(__a, 4); })
+  (float32x2_t)__builtin_neon_vld1_dup_v(__a, 7); })
 #define vld1_dup_p8(__a) __extension__ ({ \
-  (poly8x8_t)__builtin_neon_vld1_dup_v(__a, 5); })
+  (poly8x8_t)__builtin_neon_vld1_dup_v(__a, 4); })
 #define vld1_dup_p16(__a) __extension__ ({ \
-  (poly16x4_t)__builtin_neon_vld1_dup_v(__a, 6); })
+  (poly16x4_t)__builtin_neon_vld1_dup_v(__a, 5); })
 
 #define vld1q_lane_u8(__a, b, __c) __extension__ ({ \
   uint8x16_t __b = (b); \
-  (uint8x16_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 24); })
+  (uint8x16_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 48); })
 #define vld1q_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x8_t __b = (b); \
-  (uint16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 25); })
+  (uint16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 49); })
 #define vld1q_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x4_t __b = (b); \
-  (uint32x4_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 26); })
+  (uint32x4_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 50); })
 #define vld1q_lane_u64(__a, b, __c) __extension__ ({ \
   uint64x2_t __b = (b); \
-  (uint64x2_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 27); })
+  (uint64x2_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 51); })
 #define vld1q_lane_s8(__a, b, __c) __extension__ ({ \
   int8x16_t __b = (b); \
-  (int8x16_t)__builtin_neon_vld1q_lane_v(__a, __b, __c, 16); })
+  (int8x16_t)__builtin_neon_vld1q_lane_v(__a, __b, __c, 32); })
 #define vld1q_lane_s16(__a, b, __c) __extension__ ({ \
   int16x8_t __b = (b); \
-  (int16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 17); })
+  (int16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 33); })
 #define vld1q_lane_s32(__a, b, __c) __extension__ ({ \
   int32x4_t __b = (b); \
-  (int32x4_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 18); })
+  (int32x4_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 34); })
 #define vld1q_lane_s64(__a, b, __c) __extension__ ({ \
   int64x2_t __b = (b); \
-  (int64x2_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 19); })
+  (int64x2_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 35); })
 #define vld1q_lane_f16(__a, b, __c) __extension__ ({ \
   float16x8_t __b = (b); \
-  (float16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 23); })
+  (float16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 38); })
 #define vld1q_lane_f32(__a, b, __c) __extension__ ({ \
   float32x4_t __b = (b); \
-  (float32x4_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 20); })
+  (float32x4_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 39); })
 #define vld1q_lane_p8(__a, b, __c) __extension__ ({ \
   poly8x16_t __b = (b); \
-  (poly8x16_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 21); })
+  (poly8x16_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 36); })
 #define vld1q_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x8_t __b = (b); \
-  (poly16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 22); })
+  (poly16x8_t)__builtin_neon_vld1q_lane_v(__a, (int8x16_t)__b, __c, 37); })
 #define vld1_lane_u8(__a, b, __c) __extension__ ({ \
   uint8x8_t __b = (b); \
-  (uint8x8_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 8); })
+  (uint8x8_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 16); })
 #define vld1_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x4_t __b = (b); \
-  (uint16x4_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 9); })
+  (uint16x4_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 17); })
 #define vld1_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x2_t __b = (b); \
-  (uint32x2_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 10); })
+  (uint32x2_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 18); })
 #define vld1_lane_u64(__a, b, __c) __extension__ ({ \
   uint64x1_t __b = (b); \
-  (uint64x1_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 11); })
+  (uint64x1_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 19); })
 #define vld1_lane_s8(__a, b, __c) __extension__ ({ \
   int8x8_t __b = (b); \
   (int8x8_t)__builtin_neon_vld1_lane_v(__a, __b, __c, 0); })
@@ -1522,45 +1522,45 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
   (int64x1_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 3); })
 #define vld1_lane_f16(__a, b, __c) __extension__ ({ \
   float16x4_t __b = (b); \
-  (float16x4_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 7); })
+  (float16x4_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 6); })
 #define vld1_lane_f32(__a, b, __c) __extension__ ({ \
   float32x2_t __b = (b); \
-  (float32x2_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 4); })
+  (float32x2_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 7); })
 #define vld1_lane_p8(__a, b, __c) __extension__ ({ \
   poly8x8_t __b = (b); \
-  (poly8x8_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 5); })
+  (poly8x8_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 4); })
 #define vld1_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x4_t __b = (b); \
-  (poly16x4_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 6); })
+  (poly16x4_t)__builtin_neon_vld1_lane_v(__a, (int8x8_t)__b, __c, 5); })
 
 #define vld2q_u8(__a) __extension__ ({ \
-  uint8x16x2_t r; __builtin_neon_vld2q_v(&r, __a, 24); r; })
+  uint8x16x2_t r; __builtin_neon_vld2q_v(&r, __a, 48); r; })
 #define vld2q_u16(__a) __extension__ ({ \
-  uint16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 25); r; })
+  uint16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 49); r; })
 #define vld2q_u32(__a) __extension__ ({ \
-  uint32x4x2_t r; __builtin_neon_vld2q_v(&r, __a, 26); r; })
+  uint32x4x2_t r; __builtin_neon_vld2q_v(&r, __a, 50); r; })
 #define vld2q_s8(__a) __extension__ ({ \
-  int8x16x2_t r; __builtin_neon_vld2q_v(&r, __a, 16); r; })
+  int8x16x2_t r; __builtin_neon_vld2q_v(&r, __a, 32); r; })
 #define vld2q_s16(__a) __extension__ ({ \
-  int16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 17); r; })
+  int16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 33); r; })
 #define vld2q_s32(__a) __extension__ ({ \
-  int32x4x2_t r; __builtin_neon_vld2q_v(&r, __a, 18); r; })
+  int32x4x2_t r; __builtin_neon_vld2q_v(&r, __a, 34); r; })
 #define vld2q_f16(__a) __extension__ ({ \
-  float16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 23); r; })
+  float16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 38); r; })
 #define vld2q_f32(__a) __extension__ ({ \
-  float32x4x2_t r; __builtin_neon_vld2q_v(&r, __a, 20); r; })
+  float32x4x2_t r; __builtin_neon_vld2q_v(&r, __a, 39); r; })
 #define vld2q_p8(__a) __extension__ ({ \
-  poly8x16x2_t r; __builtin_neon_vld2q_v(&r, __a, 21); r; })
+  poly8x16x2_t r; __builtin_neon_vld2q_v(&r, __a, 36); r; })
 #define vld2q_p16(__a) __extension__ ({ \
-  poly16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 22); r; })
+  poly16x8x2_t r; __builtin_neon_vld2q_v(&r, __a, 37); r; })
 #define vld2_u8(__a) __extension__ ({ \
-  uint8x8x2_t r; __builtin_neon_vld2_v(&r, __a, 8); r; })
+  uint8x8x2_t r; __builtin_neon_vld2_v(&r, __a, 16); r; })
 #define vld2_u16(__a) __extension__ ({ \
-  uint16x4x2_t r; __builtin_neon_vld2_v(&r, __a, 9); r; })
+  uint16x4x2_t r; __builtin_neon_vld2_v(&r, __a, 17); r; })
 #define vld2_u32(__a) __extension__ ({ \
-  uint32x2x2_t r; __builtin_neon_vld2_v(&r, __a, 10); r; })
+  uint32x2x2_t r; __builtin_neon_vld2_v(&r, __a, 18); r; })
 #define vld2_u64(__a) __extension__ ({ \
-  uint64x1x2_t r; __builtin_neon_vld2_v(&r, __a, 11); r; })
+  uint64x1x2_t r; __builtin_neon_vld2_v(&r, __a, 19); r; })
 #define vld2_s8(__a) __extension__ ({ \
   int8x8x2_t r; __builtin_neon_vld2_v(&r, __a, 0); r; })
 #define vld2_s16(__a) __extension__ ({ \
@@ -1570,22 +1570,22 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
 #define vld2_s64(__a) __extension__ ({ \
   int64x1x2_t r; __builtin_neon_vld2_v(&r, __a, 3); r; })
 #define vld2_f16(__a) __extension__ ({ \
-  float16x4x2_t r; __builtin_neon_vld2_v(&r, __a, 7); r; })
+  float16x4x2_t r; __builtin_neon_vld2_v(&r, __a, 6); r; })
 #define vld2_f32(__a) __extension__ ({ \
-  float32x2x2_t r; __builtin_neon_vld2_v(&r, __a, 4); r; })
+  float32x2x2_t r; __builtin_neon_vld2_v(&r, __a, 7); r; })
 #define vld2_p8(__a) __extension__ ({ \
-  poly8x8x2_t r; __builtin_neon_vld2_v(&r, __a, 5); r; })
+  poly8x8x2_t r; __builtin_neon_vld2_v(&r, __a, 4); r; })
 #define vld2_p16(__a) __extension__ ({ \
-  poly16x4x2_t r; __builtin_neon_vld2_v(&r, __a, 6); r; })
+  poly16x4x2_t r; __builtin_neon_vld2_v(&r, __a, 5); r; })
 
 #define vld2_dup_u8(__a) __extension__ ({ \
-  uint8x8x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 8); r; })
+  uint8x8x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 16); r; })
 #define vld2_dup_u16(__a) __extension__ ({ \
-  uint16x4x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 9); r; })
+  uint16x4x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 17); r; })
 #define vld2_dup_u32(__a) __extension__ ({ \
-  uint32x2x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 10); r; })
+  uint32x2x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 18); r; })
 #define vld2_dup_u64(__a) __extension__ ({ \
-  uint64x1x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 11); r; })
+  uint64x1x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 19); r; })
 #define vld2_dup_s8(__a) __extension__ ({ \
   int8x8x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 0); r; })
 #define vld2_dup_s16(__a) __extension__ ({ \
@@ -1595,44 +1595,44 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
 #define vld2_dup_s64(__a) __extension__ ({ \
   int64x1x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 3); r; })
 #define vld2_dup_f16(__a) __extension__ ({ \
-  float16x4x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 7); r; })
+  float16x4x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 6); r; })
 #define vld2_dup_f32(__a) __extension__ ({ \
-  float32x2x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 4); r; })
+  float32x2x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 7); r; })
 #define vld2_dup_p8(__a) __extension__ ({ \
-  poly8x8x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 5); r; })
+  poly8x8x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 4); r; })
 #define vld2_dup_p16(__a) __extension__ ({ \
-  poly16x4x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 6); r; })
+  poly16x4x2_t r; __builtin_neon_vld2_dup_v(&r, __a, 5); r; })
 
 #define vld2q_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x8x2_t __b = (b); \
-  uint16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 25); r; })
+  uint16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 49); r; })
 #define vld2q_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x4x2_t __b = (b); \
-  uint32x4x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 26); r; })
+  uint32x4x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 50); r; })
 #define vld2q_lane_s16(__a, b, __c) __extension__ ({ \
   int16x8x2_t __b = (b); \
-  int16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 17); r; })
+  int16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 33); r; })
 #define vld2q_lane_s32(__a, b, __c) __extension__ ({ \
   int32x4x2_t __b = (b); \
-  int32x4x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 18); r; })
+  int32x4x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 34); r; })
 #define vld2q_lane_f16(__a, b, __c) __extension__ ({ \
   float16x8x2_t __b = (b); \
-  float16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 23); r; })
+  float16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 38); r; })
 #define vld2q_lane_f32(__a, b, __c) __extension__ ({ \
   float32x4x2_t __b = (b); \
-  float32x4x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 20); r; })
+  float32x4x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 39); r; })
 #define vld2q_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x8x2_t __b = (b); \
-  poly16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 22); r; })
+  poly16x8x2_t r; __builtin_neon_vld2q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 37); r; })
 #define vld2_lane_u8(__a, b, __c) __extension__ ({ \
   uint8x8x2_t __b = (b); \
-  uint8x8x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 8); r; })
+  uint8x8x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 16); r; })
 #define vld2_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x4x2_t __b = (b); \
-  uint16x4x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 9); r; })
+  uint16x4x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 17); r; })
 #define vld2_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x2x2_t __b = (b); \
-  uint32x2x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 10); r; })
+  uint32x2x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 18); r; })
 #define vld2_lane_s8(__a, b, __c) __extension__ ({ \
   int8x8x2_t __b = (b); \
   int8x8x2_t r; __builtin_neon_vld2_lane_v(&r, __a, __b.val[0], __b.val[1], __c, 0); r; })
@@ -1644,45 +1644,45 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
   int32x2x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 2); r; })
 #define vld2_lane_f16(__a, b, __c) __extension__ ({ \
   float16x4x2_t __b = (b); \
-  float16x4x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 7); r; })
+  float16x4x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 6); r; })
 #define vld2_lane_f32(__a, b, __c) __extension__ ({ \
   float32x2x2_t __b = (b); \
-  float32x2x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 4); r; })
+  float32x2x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 7); r; })
 #define vld2_lane_p8(__a, b, __c) __extension__ ({ \
   poly8x8x2_t __b = (b); \
-  poly8x8x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 5); r; })
+  poly8x8x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 4); r; })
 #define vld2_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x4x2_t __b = (b); \
-  poly16x4x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 6); r; })
+  poly16x4x2_t r; __builtin_neon_vld2_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 5); r; })
 
 #define vld3q_u8(__a) __extension__ ({ \
-  uint8x16x3_t r; __builtin_neon_vld3q_v(&r, __a, 24); r; })
+  uint8x16x3_t r; __builtin_neon_vld3q_v(&r, __a, 48); r; })
 #define vld3q_u16(__a) __extension__ ({ \
-  uint16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 25); r; })
+  uint16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 49); r; })
 #define vld3q_u32(__a) __extension__ ({ \
-  uint32x4x3_t r; __builtin_neon_vld3q_v(&r, __a, 26); r; })
+  uint32x4x3_t r; __builtin_neon_vld3q_v(&r, __a, 50); r; })
 #define vld3q_s8(__a) __extension__ ({ \
-  int8x16x3_t r; __builtin_neon_vld3q_v(&r, __a, 16); r; })
+  int8x16x3_t r; __builtin_neon_vld3q_v(&r, __a, 32); r; })
 #define vld3q_s16(__a) __extension__ ({ \
-  int16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 17); r; })
+  int16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 33); r; })
 #define vld3q_s32(__a) __extension__ ({ \
-  int32x4x3_t r; __builtin_neon_vld3q_v(&r, __a, 18); r; })
+  int32x4x3_t r; __builtin_neon_vld3q_v(&r, __a, 34); r; })
 #define vld3q_f16(__a) __extension__ ({ \
-  float16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 23); r; })
+  float16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 38); r; })
 #define vld3q_f32(__a) __extension__ ({ \
-  float32x4x3_t r; __builtin_neon_vld3q_v(&r, __a, 20); r; })
+  float32x4x3_t r; __builtin_neon_vld3q_v(&r, __a, 39); r; })
 #define vld3q_p8(__a) __extension__ ({ \
-  poly8x16x3_t r; __builtin_neon_vld3q_v(&r, __a, 21); r; })
+  poly8x16x3_t r; __builtin_neon_vld3q_v(&r, __a, 36); r; })
 #define vld3q_p16(__a) __extension__ ({ \
-  poly16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 22); r; })
+  poly16x8x3_t r; __builtin_neon_vld3q_v(&r, __a, 37); r; })
 #define vld3_u8(__a) __extension__ ({ \
-  uint8x8x3_t r; __builtin_neon_vld3_v(&r, __a, 8); r; })
+  uint8x8x3_t r; __builtin_neon_vld3_v(&r, __a, 16); r; })
 #define vld3_u16(__a) __extension__ ({ \
-  uint16x4x3_t r; __builtin_neon_vld3_v(&r, __a, 9); r; })
+  uint16x4x3_t r; __builtin_neon_vld3_v(&r, __a, 17); r; })
 #define vld3_u32(__a) __extension__ ({ \
-  uint32x2x3_t r; __builtin_neon_vld3_v(&r, __a, 10); r; })
+  uint32x2x3_t r; __builtin_neon_vld3_v(&r, __a, 18); r; })
 #define vld3_u64(__a) __extension__ ({ \
-  uint64x1x3_t r; __builtin_neon_vld3_v(&r, __a, 11); r; })
+  uint64x1x3_t r; __builtin_neon_vld3_v(&r, __a, 19); r; })
 #define vld3_s8(__a) __extension__ ({ \
   int8x8x3_t r; __builtin_neon_vld3_v(&r, __a, 0); r; })
 #define vld3_s16(__a) __extension__ ({ \
@@ -1692,22 +1692,22 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
 #define vld3_s64(__a) __extension__ ({ \
   int64x1x3_t r; __builtin_neon_vld3_v(&r, __a, 3); r; })
 #define vld3_f16(__a) __extension__ ({ \
-  float16x4x3_t r; __builtin_neon_vld3_v(&r, __a, 7); r; })
+  float16x4x3_t r; __builtin_neon_vld3_v(&r, __a, 6); r; })
 #define vld3_f32(__a) __extension__ ({ \
-  float32x2x3_t r; __builtin_neon_vld3_v(&r, __a, 4); r; })
+  float32x2x3_t r; __builtin_neon_vld3_v(&r, __a, 7); r; })
 #define vld3_p8(__a) __extension__ ({ \
-  poly8x8x3_t r; __builtin_neon_vld3_v(&r, __a, 5); r; })
+  poly8x8x3_t r; __builtin_neon_vld3_v(&r, __a, 4); r; })
 #define vld3_p16(__a) __extension__ ({ \
-  poly16x4x3_t r; __builtin_neon_vld3_v(&r, __a, 6); r; })
+  poly16x4x3_t r; __builtin_neon_vld3_v(&r, __a, 5); r; })
 
 #define vld3_dup_u8(__a) __extension__ ({ \
-  uint8x8x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 8); r; })
+  uint8x8x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 16); r; })
 #define vld3_dup_u16(__a) __extension__ ({ \
-  uint16x4x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 9); r; })
+  uint16x4x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 17); r; })
 #define vld3_dup_u32(__a) __extension__ ({ \
-  uint32x2x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 10); r; })
+  uint32x2x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 18); r; })
 #define vld3_dup_u64(__a) __extension__ ({ \
-  uint64x1x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 11); r; })
+  uint64x1x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 19); r; })
 #define vld3_dup_s8(__a) __extension__ ({ \
   int8x8x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 0); r; })
 #define vld3_dup_s16(__a) __extension__ ({ \
@@ -1717,44 +1717,44 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
 #define vld3_dup_s64(__a) __extension__ ({ \
   int64x1x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 3); r; })
 #define vld3_dup_f16(__a) __extension__ ({ \
-  float16x4x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 7); r; })
+  float16x4x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 6); r; })
 #define vld3_dup_f32(__a) __extension__ ({ \
-  float32x2x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 4); r; })
+  float32x2x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 7); r; })
 #define vld3_dup_p8(__a) __extension__ ({ \
-  poly8x8x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 5); r; })
+  poly8x8x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 4); r; })
 #define vld3_dup_p16(__a) __extension__ ({ \
-  poly16x4x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 6); r; })
+  poly16x4x3_t r; __builtin_neon_vld3_dup_v(&r, __a, 5); r; })
 
 #define vld3q_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x8x3_t __b = (b); \
-  uint16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 25); r; })
+  uint16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 49); r; })
 #define vld3q_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x4x3_t __b = (b); \
-  uint32x4x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 26); r; })
+  uint32x4x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 50); r; })
 #define vld3q_lane_s16(__a, b, __c) __extension__ ({ \
   int16x8x3_t __b = (b); \
-  int16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 17); r; })
+  int16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 33); r; })
 #define vld3q_lane_s32(__a, b, __c) __extension__ ({ \
   int32x4x3_t __b = (b); \
-  int32x4x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 18); r; })
+  int32x4x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 34); r; })
 #define vld3q_lane_f16(__a, b, __c) __extension__ ({ \
   float16x8x3_t __b = (b); \
-  float16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 23); r; })
+  float16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 38); r; })
 #define vld3q_lane_f32(__a, b, __c) __extension__ ({ \
   float32x4x3_t __b = (b); \
-  float32x4x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 20); r; })
+  float32x4x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 39); r; })
 #define vld3q_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x8x3_t __b = (b); \
-  poly16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 22); r; })
+  poly16x8x3_t r; __builtin_neon_vld3q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 37); r; })
 #define vld3_lane_u8(__a, b, __c) __extension__ ({ \
   uint8x8x3_t __b = (b); \
-  uint8x8x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 8); r; })
+  uint8x8x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 16); r; })
 #define vld3_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x4x3_t __b = (b); \
-  uint16x4x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 9); r; })
+  uint16x4x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 17); r; })
 #define vld3_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x2x3_t __b = (b); \
-  uint32x2x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 10); r; })
+  uint32x2x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 18); r; })
 #define vld3_lane_s8(__a, b, __c) __extension__ ({ \
   int8x8x3_t __b = (b); \
   int8x8x3_t r; __builtin_neon_vld3_lane_v(&r, __a, __b.val[0], __b.val[1], __b.val[2], __c, 0); r; })
@@ -1766,45 +1766,45 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
   int32x2x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 2); r; })
 #define vld3_lane_f16(__a, b, __c) __extension__ ({ \
   float16x4x3_t __b = (b); \
-  float16x4x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 7); r; })
+  float16x4x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 6); r; })
 #define vld3_lane_f32(__a, b, __c) __extension__ ({ \
   float32x2x3_t __b = (b); \
-  float32x2x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 4); r; })
+  float32x2x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 7); r; })
 #define vld3_lane_p8(__a, b, __c) __extension__ ({ \
   poly8x8x3_t __b = (b); \
-  poly8x8x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 5); r; })
+  poly8x8x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 4); r; })
 #define vld3_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x4x3_t __b = (b); \
-  poly16x4x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 6); r; })
+  poly16x4x3_t r; __builtin_neon_vld3_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 5); r; })
 
 #define vld4q_u8(__a) __extension__ ({ \
-  uint8x16x4_t r; __builtin_neon_vld4q_v(&r, __a, 24); r; })
+  uint8x16x4_t r; __builtin_neon_vld4q_v(&r, __a, 48); r; })
 #define vld4q_u16(__a) __extension__ ({ \
-  uint16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 25); r; })
+  uint16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 49); r; })
 #define vld4q_u32(__a) __extension__ ({ \
-  uint32x4x4_t r; __builtin_neon_vld4q_v(&r, __a, 26); r; })
+  uint32x4x4_t r; __builtin_neon_vld4q_v(&r, __a, 50); r; })
 #define vld4q_s8(__a) __extension__ ({ \
-  int8x16x4_t r; __builtin_neon_vld4q_v(&r, __a, 16); r; })
+  int8x16x4_t r; __builtin_neon_vld4q_v(&r, __a, 32); r; })
 #define vld4q_s16(__a) __extension__ ({ \
-  int16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 17); r; })
+  int16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 33); r; })
 #define vld4q_s32(__a) __extension__ ({ \
-  int32x4x4_t r; __builtin_neon_vld4q_v(&r, __a, 18); r; })
+  int32x4x4_t r; __builtin_neon_vld4q_v(&r, __a, 34); r; })
 #define vld4q_f16(__a) __extension__ ({ \
-  float16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 23); r; })
+  float16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 38); r; })
 #define vld4q_f32(__a) __extension__ ({ \
-  float32x4x4_t r; __builtin_neon_vld4q_v(&r, __a, 20); r; })
+  float32x4x4_t r; __builtin_neon_vld4q_v(&r, __a, 39); r; })
 #define vld4q_p8(__a) __extension__ ({ \
-  poly8x16x4_t r; __builtin_neon_vld4q_v(&r, __a, 21); r; })
+  poly8x16x4_t r; __builtin_neon_vld4q_v(&r, __a, 36); r; })
 #define vld4q_p16(__a) __extension__ ({ \
-  poly16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 22); r; })
+  poly16x8x4_t r; __builtin_neon_vld4q_v(&r, __a, 37); r; })
 #define vld4_u8(__a) __extension__ ({ \
-  uint8x8x4_t r; __builtin_neon_vld4_v(&r, __a, 8); r; })
+  uint8x8x4_t r; __builtin_neon_vld4_v(&r, __a, 16); r; })
 #define vld4_u16(__a) __extension__ ({ \
-  uint16x4x4_t r; __builtin_neon_vld4_v(&r, __a, 9); r; })
+  uint16x4x4_t r; __builtin_neon_vld4_v(&r, __a, 17); r; })
 #define vld4_u32(__a) __extension__ ({ \
-  uint32x2x4_t r; __builtin_neon_vld4_v(&r, __a, 10); r; })
+  uint32x2x4_t r; __builtin_neon_vld4_v(&r, __a, 18); r; })
 #define vld4_u64(__a) __extension__ ({ \
-  uint64x1x4_t r; __builtin_neon_vld4_v(&r, __a, 11); r; })
+  uint64x1x4_t r; __builtin_neon_vld4_v(&r, __a, 19); r; })
 #define vld4_s8(__a) __extension__ ({ \
   int8x8x4_t r; __builtin_neon_vld4_v(&r, __a, 0); r; })
 #define vld4_s16(__a) __extension__ ({ \
@@ -1814,22 +1814,22 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
 #define vld4_s64(__a) __extension__ ({ \
   int64x1x4_t r; __builtin_neon_vld4_v(&r, __a, 3); r; })
 #define vld4_f16(__a) __extension__ ({ \
-  float16x4x4_t r; __builtin_neon_vld4_v(&r, __a, 7); r; })
+  float16x4x4_t r; __builtin_neon_vld4_v(&r, __a, 6); r; })
 #define vld4_f32(__a) __extension__ ({ \
-  float32x2x4_t r; __builtin_neon_vld4_v(&r, __a, 4); r; })
+  float32x2x4_t r; __builtin_neon_vld4_v(&r, __a, 7); r; })
 #define vld4_p8(__a) __extension__ ({ \
-  poly8x8x4_t r; __builtin_neon_vld4_v(&r, __a, 5); r; })
+  poly8x8x4_t r; __builtin_neon_vld4_v(&r, __a, 4); r; })
 #define vld4_p16(__a) __extension__ ({ \
-  poly16x4x4_t r; __builtin_neon_vld4_v(&r, __a, 6); r; })
+  poly16x4x4_t r; __builtin_neon_vld4_v(&r, __a, 5); r; })
 
 #define vld4_dup_u8(__a) __extension__ ({ \
-  uint8x8x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 8); r; })
+  uint8x8x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 16); r; })
 #define vld4_dup_u16(__a) __extension__ ({ \
-  uint16x4x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 9); r; })
+  uint16x4x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 17); r; })
 #define vld4_dup_u32(__a) __extension__ ({ \
-  uint32x2x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 10); r; })
+  uint32x2x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 18); r; })
 #define vld4_dup_u64(__a) __extension__ ({ \
-  uint64x1x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 11); r; })
+  uint64x1x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 19); r; })
 #define vld4_dup_s8(__a) __extension__ ({ \
   int8x8x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 0); r; })
 #define vld4_dup_s16(__a) __extension__ ({ \
@@ -1839,44 +1839,44 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
 #define vld4_dup_s64(__a) __extension__ ({ \
   int64x1x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 3); r; })
 #define vld4_dup_f16(__a) __extension__ ({ \
-  float16x4x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 7); r; })
+  float16x4x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 6); r; })
 #define vld4_dup_f32(__a) __extension__ ({ \
-  float32x2x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 4); r; })
+  float32x2x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 7); r; })
 #define vld4_dup_p8(__a) __extension__ ({ \
-  poly8x8x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 5); r; })
+  poly8x8x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 4); r; })
 #define vld4_dup_p16(__a) __extension__ ({ \
-  poly16x4x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 6); r; })
+  poly16x4x4_t r; __builtin_neon_vld4_dup_v(&r, __a, 5); r; })
 
 #define vld4q_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x8x4_t __b = (b); \
-  uint16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 25); r; })
+  uint16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 49); r; })
 #define vld4q_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x4x4_t __b = (b); \
-  uint32x4x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 26); r; })
+  uint32x4x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 50); r; })
 #define vld4q_lane_s16(__a, b, __c) __extension__ ({ \
   int16x8x4_t __b = (b); \
-  int16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 17); r; })
+  int16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 33); r; })
 #define vld4q_lane_s32(__a, b, __c) __extension__ ({ \
   int32x4x4_t __b = (b); \
-  int32x4x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 18); r; })
+  int32x4x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 34); r; })
 #define vld4q_lane_f16(__a, b, __c) __extension__ ({ \
   float16x8x4_t __b = (b); \
-  float16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 23); r; })
+  float16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 38); r; })
 #define vld4q_lane_f32(__a, b, __c) __extension__ ({ \
   float32x4x4_t __b = (b); \
-  float32x4x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 20); r; })
+  float32x4x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 39); r; })
 #define vld4q_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x8x4_t __b = (b); \
-  poly16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 22); r; })
+  poly16x8x4_t r; __builtin_neon_vld4q_lane_v(&r, __a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 37); r; })
 #define vld4_lane_u8(__a, b, __c) __extension__ ({ \
   uint8x8x4_t __b = (b); \
-  uint8x8x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 8); r; })
+  uint8x8x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 16); r; })
 #define vld4_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x4x4_t __b = (b); \
-  uint16x4x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 9); r; })
+  uint16x4x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 17); r; })
 #define vld4_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x2x4_t __b = (b); \
-  uint32x2x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 10); r; })
+  uint32x2x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 18); r; })
 #define vld4_lane_s8(__a, b, __c) __extension__ ({ \
   int8x8x4_t __b = (b); \
   int8x8x4_t r; __builtin_neon_vld4_lane_v(&r, __a, __b.val[0], __b.val[1], __b.val[2], __b.val[3], __c, 0); r; })
@@ -1888,16 +1888,16 @@ __ai uint32x4_t vhsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
   int32x2x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 2); r; })
 #define vld4_lane_f16(__a, b, __c) __extension__ ({ \
   float16x4x4_t __b = (b); \
-  float16x4x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 7); r; })
+  float16x4x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 6); r; })
 #define vld4_lane_f32(__a, b, __c) __extension__ ({ \
   float32x2x4_t __b = (b); \
-  float32x2x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 4); r; })
+  float32x2x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 7); r; })
 #define vld4_lane_p8(__a, b, __c) __extension__ ({ \
   poly8x8x4_t __b = (b); \
-  poly8x8x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 5); r; })
+  poly8x8x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 4); r; })
 #define vld4_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x4x4_t __b = (b); \
-  poly16x4x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 6); r; })
+  poly16x4x4_t r; __builtin_neon_vld4_lane_v(&r, __a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 5); r; })
 
 __ai int8x8_t vmax_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vmax_v(__a, __b, 0); }
@@ -1906,27 +1906,27 @@ __ai int16x4_t vmax_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2_t vmax_s32(int32x2_t __a, int32x2_t __b) { \
   return (int32x2_t)__builtin_neon_vmax_v((int8x8_t)__a, (int8x8_t)__b, 2); }
 __ai uint8x8_t vmax_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vmax_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vmax_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vmax_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vmax_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vmax_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vmax_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vmax_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vmax_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai float32x2_t vmax_f32(float32x2_t __a, float32x2_t __b) { \
-  return (float32x2_t)__builtin_neon_vmax_v((int8x8_t)__a, (int8x8_t)__b, 4); }
+  return (float32x2_t)__builtin_neon_vmax_v((int8x8_t)__a, (int8x8_t)__b, 7); }
 __ai int8x16_t vmaxq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vmaxq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vmaxq_v(__a, __b, 32); }
 __ai int16x8_t vmaxq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vmaxq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai uint8x16_t vmaxq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 24); }
+  return (uint8x16_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 48); }
 __ai uint16x8_t vmaxq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vmaxq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai float32x4_t vmaxq_f32(float32x4_t __a, float32x4_t __b) { \
-  return (float32x4_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 20); }
+  return (float32x4_t)__builtin_neon_vmaxq_v((int8x16_t)__a, (int8x16_t)__b, 39); }
 
 __ai int8x8_t vmin_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vmin_v(__a, __b, 0); }
@@ -1935,27 +1935,27 @@ __ai int16x4_t vmin_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2_t vmin_s32(int32x2_t __a, int32x2_t __b) { \
   return (int32x2_t)__builtin_neon_vmin_v((int8x8_t)__a, (int8x8_t)__b, 2); }
 __ai uint8x8_t vmin_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vmin_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vmin_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vmin_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vmin_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vmin_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vmin_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vmin_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vmin_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai float32x2_t vmin_f32(float32x2_t __a, float32x2_t __b) { \
-  return (float32x2_t)__builtin_neon_vmin_v((int8x8_t)__a, (int8x8_t)__b, 4); }
+  return (float32x2_t)__builtin_neon_vmin_v((int8x8_t)__a, (int8x8_t)__b, 7); }
 __ai int8x16_t vminq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vminq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vminq_v(__a, __b, 32); }
 __ai int16x8_t vminq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vminq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai uint8x16_t vminq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 24); }
+  return (uint8x16_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 48); }
 __ai uint16x8_t vminq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vminq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai float32x4_t vminq_f32(float32x4_t __a, float32x4_t __b) { \
-  return (float32x4_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 20); }
+  return (float32x4_t)__builtin_neon_vminq_v((int8x16_t)__a, (int8x16_t)__b, 39); }
 
 __ai int8x8_t vmla_s8(int8x8_t __a, int8x8_t __b, int8x8_t __c) { \
   return __a + (__b * __c); }
@@ -2196,11 +2196,11 @@ __ai int16x4_t vmovn_s32(int32x4_t __a) { \
 __ai int32x2_t vmovn_s64(int64x2_t __a) { \
   return (int32x2_t)__builtin_neon_vmovn_v((int8x16_t)__a, 2); }
 __ai uint8x8_t vmovn_u16(uint16x8_t __a) { \
-  return (uint8x8_t)__builtin_neon_vmovn_v((int8x16_t)__a, 8); }
+  return (uint8x8_t)__builtin_neon_vmovn_v((int8x16_t)__a, 16); }
 __ai uint16x4_t vmovn_u32(uint32x4_t __a) { \
-  return (uint16x4_t)__builtin_neon_vmovn_v((int8x16_t)__a, 9); }
+  return (uint16x4_t)__builtin_neon_vmovn_v((int8x16_t)__a, 17); }
 __ai uint32x2_t vmovn_u64(uint64x2_t __a) { \
-  return (uint32x2_t)__builtin_neon_vmovn_v((int8x16_t)__a, 10); }
+  return (uint32x2_t)__builtin_neon_vmovn_v((int8x16_t)__a, 18); }
 
 __ai uint8x8_t vmov_n_u8(uint8_t __a) { \
   return (uint8x8_t){ __a, __a, __a, __a, __a, __a, __a, __a }; }
@@ -2290,18 +2290,18 @@ __ai uint32x4_t vmulq_u32(uint32x4_t __a, uint32x4_t __b) { \
   vmull_u32(__a, __builtin_shufflevector(__b, __b, __c, __c)); })
 
 __ai int32x4_t vmull_n_s16(int16x4_t __a, int16_t __b) { \
-  return (int32x4_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)(int16x4_t){ __b, __b, __b, __b }, 18); }
+  return (int32x4_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)(int16x4_t){ __b, __b, __b, __b }, 34); }
 __ai int64x2_t vmull_n_s32(int32x2_t __a, int32_t __b) { \
-  return (int64x2_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)(int32x2_t){ __b, __b }, 19); }
+  return (int64x2_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)(int32x2_t){ __b, __b }, 35); }
 __ai uint32x4_t vmull_n_u16(uint16x4_t __a, uint16_t __b) { \
-  return (uint32x4_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)(uint16x4_t){ __b, __b, __b, __b }, 26); }
+  return (uint32x4_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)(uint16x4_t){ __b, __b, __b, __b }, 50); }
 __ai uint64x2_t vmull_n_u32(uint32x2_t __a, uint32_t __b) { \
-  return (uint64x2_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)(uint32x2_t){ __b, __b }, 27); }
+  return (uint64x2_t)__builtin_neon_vmull_v((int8x8_t)__a, (int8x8_t)(uint32x2_t){ __b, __b }, 51); }
 
 __ai poly8x8_t vmul_p8(poly8x8_t __a, poly8x8_t __b) { \
-  return (poly8x8_t)__builtin_neon_vmul_v((int8x8_t)__a, (int8x8_t)__b, 5); }
+  return (poly8x8_t)__builtin_neon_vmul_v((int8x8_t)__a, (int8x8_t)__b, 4); }
 __ai poly8x16_t vmulq_p8(poly8x16_t __a, poly8x16_t __b) { \
-  return (poly8x16_t)__builtin_neon_vmulq_v((int8x16_t)__a, (int8x16_t)__b, 21); }
+  return (poly8x16_t)__builtin_neon_vmulq_v((int8x16_t)__a, (int8x16_t)__b, 36); }
 
 #define vmul_lane_s16(a, b, __c) __extension__ ({ \
   int16x4_t __a = (a); int16x4_t __b = (b); \
@@ -2474,23 +2474,23 @@ __ai int32x2_t vpadal_s16(int32x2_t __a, int16x4_t __b) { \
 __ai int64x1_t vpadal_s32(int64x1_t __a, int32x2_t __b) { \
   return (int64x1_t)__builtin_neon_vpadal_v((int8x8_t)__a, (int8x8_t)__b, 3); }
 __ai uint16x4_t vpadal_u8(uint16x4_t __a, uint8x8_t __b) { \
-  return (uint16x4_t)__builtin_neon_vpadal_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vpadal_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vpadal_u16(uint32x2_t __a, uint16x4_t __b) { \
-  return (uint32x2_t)__builtin_neon_vpadal_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vpadal_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint64x1_t vpadal_u32(uint64x1_t __a, uint32x2_t __b) { \
-  return (uint64x1_t)__builtin_neon_vpadal_v((int8x8_t)__a, (int8x8_t)__b, 11); }
+  return (uint64x1_t)__builtin_neon_vpadal_v((int8x8_t)__a, (int8x8_t)__b, 19); }
 __ai int16x8_t vpadalq_s8(int16x8_t __a, int8x16_t __b) { \
-  return (int16x8_t)__builtin_neon_vpadalq_v((int8x16_t)__a, __b, 17); }
+  return (int16x8_t)__builtin_neon_vpadalq_v((int8x16_t)__a, __b, 33); }
 __ai int32x4_t vpadalq_s16(int32x4_t __a, int16x8_t __b) { \
-  return (int32x4_t)__builtin_neon_vpadalq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vpadalq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai int64x2_t vpadalq_s32(int64x2_t __a, int32x4_t __b) { \
-  return (int64x2_t)__builtin_neon_vpadalq_v((int8x16_t)__a, (int8x16_t)__b, 19); }
+  return (int64x2_t)__builtin_neon_vpadalq_v((int8x16_t)__a, (int8x16_t)__b, 35); }
 __ai uint16x8_t vpadalq_u8(uint16x8_t __a, uint8x16_t __b) { \
-  return (uint16x8_t)__builtin_neon_vpadalq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vpadalq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vpadalq_u16(uint32x4_t __a, uint16x8_t __b) { \
-  return (uint32x4_t)__builtin_neon_vpadalq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vpadalq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai uint64x2_t vpadalq_u32(uint64x2_t __a, uint32x4_t __b) { \
-  return (uint64x2_t)__builtin_neon_vpadalq_v((int8x16_t)__a, (int8x16_t)__b, 27); }
+  return (uint64x2_t)__builtin_neon_vpadalq_v((int8x16_t)__a, (int8x16_t)__b, 51); }
 
 __ai int8x8_t vpadd_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vpadd_v(__a, __b, 0); }
@@ -2499,13 +2499,13 @@ __ai int16x4_t vpadd_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2_t vpadd_s32(int32x2_t __a, int32x2_t __b) { \
   return (int32x2_t)__builtin_neon_vpadd_v((int8x8_t)__a, (int8x8_t)__b, 2); }
 __ai uint8x8_t vpadd_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vpadd_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vpadd_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vpadd_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vpadd_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vpadd_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vpadd_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vpadd_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vpadd_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai float32x2_t vpadd_f32(float32x2_t __a, float32x2_t __b) { \
-  return (float32x2_t)__builtin_neon_vpadd_v((int8x8_t)__a, (int8x8_t)__b, 4); }
+  return (float32x2_t)__builtin_neon_vpadd_v((int8x8_t)__a, (int8x8_t)__b, 7); }
 
 __ai int16x4_t vpaddl_s8(int8x8_t __a) { \
   return (int16x4_t)__builtin_neon_vpaddl_v(__a, 1); }
@@ -2514,23 +2514,23 @@ __ai int32x2_t vpaddl_s16(int16x4_t __a) { \
 __ai int64x1_t vpaddl_s32(int32x2_t __a) { \
   return (int64x1_t)__builtin_neon_vpaddl_v((int8x8_t)__a, 3); }
 __ai uint16x4_t vpaddl_u8(uint8x8_t __a) { \
-  return (uint16x4_t)__builtin_neon_vpaddl_v((int8x8_t)__a, 9); }
+  return (uint16x4_t)__builtin_neon_vpaddl_v((int8x8_t)__a, 17); }
 __ai uint32x2_t vpaddl_u16(uint16x4_t __a) { \
-  return (uint32x2_t)__builtin_neon_vpaddl_v((int8x8_t)__a, 10); }
+  return (uint32x2_t)__builtin_neon_vpaddl_v((int8x8_t)__a, 18); }
 __ai uint64x1_t vpaddl_u32(uint32x2_t __a) { \
-  return (uint64x1_t)__builtin_neon_vpaddl_v((int8x8_t)__a, 11); }
+  return (uint64x1_t)__builtin_neon_vpaddl_v((int8x8_t)__a, 19); }
 __ai int16x8_t vpaddlq_s8(int8x16_t __a) { \
-  return (int16x8_t)__builtin_neon_vpaddlq_v(__a, 17); }
+  return (int16x8_t)__builtin_neon_vpaddlq_v(__a, 33); }
 __ai int32x4_t vpaddlq_s16(int16x8_t __a) { \
-  return (int32x4_t)__builtin_neon_vpaddlq_v((int8x16_t)__a, 18); }
+  return (int32x4_t)__builtin_neon_vpaddlq_v((int8x16_t)__a, 34); }
 __ai int64x2_t vpaddlq_s32(int32x4_t __a) { \
-  return (int64x2_t)__builtin_neon_vpaddlq_v((int8x16_t)__a, 19); }
+  return (int64x2_t)__builtin_neon_vpaddlq_v((int8x16_t)__a, 35); }
 __ai uint16x8_t vpaddlq_u8(uint8x16_t __a) { \
-  return (uint16x8_t)__builtin_neon_vpaddlq_v((int8x16_t)__a, 25); }
+  return (uint16x8_t)__builtin_neon_vpaddlq_v((int8x16_t)__a, 49); }
 __ai uint32x4_t vpaddlq_u16(uint16x8_t __a) { \
-  return (uint32x4_t)__builtin_neon_vpaddlq_v((int8x16_t)__a, 26); }
+  return (uint32x4_t)__builtin_neon_vpaddlq_v((int8x16_t)__a, 50); }
 __ai uint64x2_t vpaddlq_u32(uint32x4_t __a) { \
-  return (uint64x2_t)__builtin_neon_vpaddlq_v((int8x16_t)__a, 27); }
+  return (uint64x2_t)__builtin_neon_vpaddlq_v((int8x16_t)__a, 51); }
 
 __ai int8x8_t vpmax_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vpmax_v(__a, __b, 0); }
@@ -2539,13 +2539,13 @@ __ai int16x4_t vpmax_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2_t vpmax_s32(int32x2_t __a, int32x2_t __b) { \
   return (int32x2_t)__builtin_neon_vpmax_v((int8x8_t)__a, (int8x8_t)__b, 2); }
 __ai uint8x8_t vpmax_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vpmax_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vpmax_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vpmax_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vpmax_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vpmax_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vpmax_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vpmax_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vpmax_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai float32x2_t vpmax_f32(float32x2_t __a, float32x2_t __b) { \
-  return (float32x2_t)__builtin_neon_vpmax_v((int8x8_t)__a, (int8x8_t)__b, 4); }
+  return (float32x2_t)__builtin_neon_vpmax_v((int8x8_t)__a, (int8x8_t)__b, 7); }
 
 __ai int8x8_t vpmin_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vpmin_v(__a, __b, 0); }
@@ -2554,13 +2554,13 @@ __ai int16x4_t vpmin_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2_t vpmin_s32(int32x2_t __a, int32x2_t __b) { \
   return (int32x2_t)__builtin_neon_vpmin_v((int8x8_t)__a, (int8x8_t)__b, 2); }
 __ai uint8x8_t vpmin_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vpmin_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vpmin_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vpmin_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vpmin_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vpmin_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vpmin_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vpmin_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vpmin_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai float32x2_t vpmin_f32(float32x2_t __a, float32x2_t __b) { \
-  return (float32x2_t)__builtin_neon_vpmin_v((int8x8_t)__a, (int8x8_t)__b, 4); }
+  return (float32x2_t)__builtin_neon_vpmin_v((int8x8_t)__a, (int8x8_t)__b, 7); }
 
 __ai int8x8_t vqabs_s8(int8x8_t __a) { \
   return (int8x8_t)__builtin_neon_vqabs_v(__a, 0); }
@@ -2569,11 +2569,11 @@ __ai int16x4_t vqabs_s16(int16x4_t __a) { \
 __ai int32x2_t vqabs_s32(int32x2_t __a) { \
   return (int32x2_t)__builtin_neon_vqabs_v((int8x8_t)__a, 2); }
 __ai int8x16_t vqabsq_s8(int8x16_t __a) { \
-  return (int8x16_t)__builtin_neon_vqabsq_v(__a, 16); }
+  return (int8x16_t)__builtin_neon_vqabsq_v(__a, 32); }
 __ai int16x8_t vqabsq_s16(int16x8_t __a) { \
-  return (int16x8_t)__builtin_neon_vqabsq_v((int8x16_t)__a, 17); }
+  return (int16x8_t)__builtin_neon_vqabsq_v((int8x16_t)__a, 33); }
 __ai int32x4_t vqabsq_s32(int32x4_t __a) { \
-  return (int32x4_t)__builtin_neon_vqabsq_v((int8x16_t)__a, 18); }
+  return (int32x4_t)__builtin_neon_vqabsq_v((int8x16_t)__a, 34); }
 
 __ai int8x8_t vqadd_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vqadd_v(__a, __b, 0); }
@@ -2584,34 +2584,34 @@ __ai int32x2_t vqadd_s32(int32x2_t __a, int32x2_t __b) { \
 __ai int64x1_t vqadd_s64(int64x1_t __a, int64x1_t __b) { \
   return (int64x1_t)__builtin_neon_vqadd_v((int8x8_t)__a, (int8x8_t)__b, 3); }
 __ai uint8x8_t vqadd_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vqadd_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vqadd_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vqadd_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vqadd_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vqadd_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vqadd_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vqadd_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vqadd_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint64x1_t vqadd_u64(uint64x1_t __a, uint64x1_t __b) { \
-  return (uint64x1_t)__builtin_neon_vqadd_v((int8x8_t)__a, (int8x8_t)__b, 11); }
+  return (uint64x1_t)__builtin_neon_vqadd_v((int8x8_t)__a, (int8x8_t)__b, 19); }
 __ai int8x16_t vqaddq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vqaddq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vqaddq_v(__a, __b, 32); }
 __ai int16x8_t vqaddq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vqaddq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai int64x2_t vqaddq_s64(int64x2_t __a, int64x2_t __b) { \
-  return (int64x2_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 19); }
+  return (int64x2_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 35); }
 __ai uint8x16_t vqaddq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 24); }
+  return (uint8x16_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 48); }
 __ai uint16x8_t vqaddq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vqaddq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai uint64x2_t vqaddq_u64(uint64x2_t __a, uint64x2_t __b) { \
-  return (uint64x2_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 27); }
+  return (uint64x2_t)__builtin_neon_vqaddq_v((int8x16_t)__a, (int8x16_t)__b, 51); }
 
 __ai int32x4_t vqdmlal_s16(int32x4_t __a, int16x4_t __b, int16x4_t __c) { \
-  return (int32x4_t)__builtin_neon_vqdmlal_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)__c, 18); }
+  return (int32x4_t)__builtin_neon_vqdmlal_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)__c, 34); }
 __ai int64x2_t vqdmlal_s32(int64x2_t __a, int32x2_t __b, int32x2_t __c) { \
-  return (int64x2_t)__builtin_neon_vqdmlal_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)__c, 19); }
+  return (int64x2_t)__builtin_neon_vqdmlal_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)__c, 35); }
 
 #define vqdmlal_lane_s16(a, b, c, __d) __extension__ ({ \
   int32x4_t __a = (a); int16x4_t __b = (b); int16x4_t __c = (c); \
@@ -2621,14 +2621,14 @@ __ai int64x2_t vqdmlal_s32(int64x2_t __a, int32x2_t __b, int32x2_t __c) { \
   vqdmlal_s32(__a, __b, __builtin_shufflevector(__c, __c, __d, __d)); })
 
 __ai int32x4_t vqdmlal_n_s16(int32x4_t __a, int16x4_t __b, int16_t __c) { \
-  return (int32x4_t)__builtin_neon_vqdmlal_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)(int16x4_t){ __c, __c, __c, __c }, 18); }
+  return (int32x4_t)__builtin_neon_vqdmlal_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)(int16x4_t){ __c, __c, __c, __c }, 34); }
 __ai int64x2_t vqdmlal_n_s32(int64x2_t __a, int32x2_t __b, int32_t __c) { \
-  return (int64x2_t)__builtin_neon_vqdmlal_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)(int32x2_t){ __c, __c }, 19); }
+  return (int64x2_t)__builtin_neon_vqdmlal_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)(int32x2_t){ __c, __c }, 35); }
 
 __ai int32x4_t vqdmlsl_s16(int32x4_t __a, int16x4_t __b, int16x4_t __c) { \
-  return (int32x4_t)__builtin_neon_vqdmlsl_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)__c, 18); }
+  return (int32x4_t)__builtin_neon_vqdmlsl_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)__c, 34); }
 __ai int64x2_t vqdmlsl_s32(int64x2_t __a, int32x2_t __b, int32x2_t __c) { \
-  return (int64x2_t)__builtin_neon_vqdmlsl_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)__c, 19); }
+  return (int64x2_t)__builtin_neon_vqdmlsl_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)__c, 35); }
 
 #define vqdmlsl_lane_s16(a, b, c, __d) __extension__ ({ \
   int32x4_t __a = (a); int16x4_t __b = (b); int16x4_t __c = (c); \
@@ -2638,18 +2638,18 @@ __ai int64x2_t vqdmlsl_s32(int64x2_t __a, int32x2_t __b, int32x2_t __c) { \
   vqdmlsl_s32(__a, __b, __builtin_shufflevector(__c, __c, __d, __d)); })
 
 __ai int32x4_t vqdmlsl_n_s16(int32x4_t __a, int16x4_t __b, int16_t __c) { \
-  return (int32x4_t)__builtin_neon_vqdmlsl_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)(int16x4_t){ __c, __c, __c, __c }, 18); }
+  return (int32x4_t)__builtin_neon_vqdmlsl_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)(int16x4_t){ __c, __c, __c, __c }, 34); }
 __ai int64x2_t vqdmlsl_n_s32(int64x2_t __a, int32x2_t __b, int32_t __c) { \
-  return (int64x2_t)__builtin_neon_vqdmlsl_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)(int32x2_t){ __c, __c }, 19); }
+  return (int64x2_t)__builtin_neon_vqdmlsl_v((int8x16_t)__a, (int8x8_t)__b, (int8x8_t)(int32x2_t){ __c, __c }, 35); }
 
 __ai int16x4_t vqdmulh_s16(int16x4_t __a, int16x4_t __b) { \
   return (int16x4_t)__builtin_neon_vqdmulh_v((int8x8_t)__a, (int8x8_t)__b, 1); }
 __ai int32x2_t vqdmulh_s32(int32x2_t __a, int32x2_t __b) { \
   return (int32x2_t)__builtin_neon_vqdmulh_v((int8x8_t)__a, (int8x8_t)__b, 2); }
 __ai int16x8_t vqdmulhq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vqdmulhq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vqdmulhq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vqdmulhq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vqdmulhq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vqdmulhq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 
 #define vqdmulh_lane_s16(a, b, __c) __extension__ ({ \
   int16x4_t __a = (a); int16x4_t __b = (b); \
@@ -2669,14 +2669,14 @@ __ai int16x4_t vqdmulh_n_s16(int16x4_t __a, int16_t __b) { \
 __ai int32x2_t vqdmulh_n_s32(int32x2_t __a, int32_t __b) { \
   return (int32x2_t)__builtin_neon_vqdmulh_v((int8x8_t)__a, (int8x8_t)(int32x2_t){ __b, __b }, 2); }
 __ai int16x8_t vqdmulhq_n_s16(int16x8_t __a, int16_t __b) { \
-  return (int16x8_t)__builtin_neon_vqdmulhq_v((int8x16_t)__a, (int8x16_t)(int16x8_t){ __b, __b, __b, __b, __b, __b, __b, __b }, 17); }
+  return (int16x8_t)__builtin_neon_vqdmulhq_v((int8x16_t)__a, (int8x16_t)(int16x8_t){ __b, __b, __b, __b, __b, __b, __b, __b }, 33); }
 __ai int32x4_t vqdmulhq_n_s32(int32x4_t __a, int32_t __b) { \
-  return (int32x4_t)__builtin_neon_vqdmulhq_v((int8x16_t)__a, (int8x16_t)(int32x4_t){ __b, __b, __b, __b }, 18); }
+  return (int32x4_t)__builtin_neon_vqdmulhq_v((int8x16_t)__a, (int8x16_t)(int32x4_t){ __b, __b, __b, __b }, 34); }
 
 __ai int32x4_t vqdmull_s16(int16x4_t __a, int16x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vqdmull_v((int8x8_t)__a, (int8x8_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vqdmull_v((int8x8_t)__a, (int8x8_t)__b, 34); }
 __ai int64x2_t vqdmull_s32(int32x2_t __a, int32x2_t __b) { \
-  return (int64x2_t)__builtin_neon_vqdmull_v((int8x8_t)__a, (int8x8_t)__b, 19); }
+  return (int64x2_t)__builtin_neon_vqdmull_v((int8x8_t)__a, (int8x8_t)__b, 35); }
 
 #define vqdmull_lane_s16(a, b, __c) __extension__ ({ \
   int16x4_t __a = (a); int16x4_t __b = (b); \
@@ -2686,9 +2686,9 @@ __ai int64x2_t vqdmull_s32(int32x2_t __a, int32x2_t __b) { \
   vqdmull_s32(__a, __builtin_shufflevector(__b, __b, __c, __c)); })
 
 __ai int32x4_t vqdmull_n_s16(int16x4_t __a, int16_t __b) { \
-  return (int32x4_t)__builtin_neon_vqdmull_v((int8x8_t)__a, (int8x8_t)(int16x4_t){ __b, __b, __b, __b }, 18); }
+  return (int32x4_t)__builtin_neon_vqdmull_v((int8x8_t)__a, (int8x8_t)(int16x4_t){ __b, __b, __b, __b }, 34); }
 __ai int64x2_t vqdmull_n_s32(int32x2_t __a, int32_t __b) { \
-  return (int64x2_t)__builtin_neon_vqdmull_v((int8x8_t)__a, (int8x8_t)(int32x2_t){ __b, __b }, 19); }
+  return (int64x2_t)__builtin_neon_vqdmull_v((int8x8_t)__a, (int8x8_t)(int32x2_t){ __b, __b }, 35); }
 
 __ai int8x8_t vqmovn_s16(int16x8_t __a) { \
   return (int8x8_t)__builtin_neon_vqmovn_v((int8x16_t)__a, 0); }
@@ -2697,18 +2697,18 @@ __ai int16x4_t vqmovn_s32(int32x4_t __a) { \
 __ai int32x2_t vqmovn_s64(int64x2_t __a) { \
   return (int32x2_t)__builtin_neon_vqmovn_v((int8x16_t)__a, 2); }
 __ai uint8x8_t vqmovn_u16(uint16x8_t __a) { \
-  return (uint8x8_t)__builtin_neon_vqmovn_v((int8x16_t)__a, 8); }
+  return (uint8x8_t)__builtin_neon_vqmovn_v((int8x16_t)__a, 16); }
 __ai uint16x4_t vqmovn_u32(uint32x4_t __a) { \
-  return (uint16x4_t)__builtin_neon_vqmovn_v((int8x16_t)__a, 9); }
+  return (uint16x4_t)__builtin_neon_vqmovn_v((int8x16_t)__a, 17); }
 __ai uint32x2_t vqmovn_u64(uint64x2_t __a) { \
-  return (uint32x2_t)__builtin_neon_vqmovn_v((int8x16_t)__a, 10); }
+  return (uint32x2_t)__builtin_neon_vqmovn_v((int8x16_t)__a, 18); }
 
 __ai uint8x8_t vqmovun_s16(int16x8_t __a) { \
-  return (uint8x8_t)__builtin_neon_vqmovun_v((int8x16_t)__a, 8); }
+  return (uint8x8_t)__builtin_neon_vqmovun_v((int8x16_t)__a, 16); }
 __ai uint16x4_t vqmovun_s32(int32x4_t __a) { \
-  return (uint16x4_t)__builtin_neon_vqmovun_v((int8x16_t)__a, 9); }
+  return (uint16x4_t)__builtin_neon_vqmovun_v((int8x16_t)__a, 17); }
 __ai uint32x2_t vqmovun_s64(int64x2_t __a) { \
-  return (uint32x2_t)__builtin_neon_vqmovun_v((int8x16_t)__a, 10); }
+  return (uint32x2_t)__builtin_neon_vqmovun_v((int8x16_t)__a, 18); }
 
 __ai int8x8_t vqneg_s8(int8x8_t __a) { \
   return (int8x8_t)__builtin_neon_vqneg_v(__a, 0); }
@@ -2717,20 +2717,20 @@ __ai int16x4_t vqneg_s16(int16x4_t __a) { \
 __ai int32x2_t vqneg_s32(int32x2_t __a) { \
   return (int32x2_t)__builtin_neon_vqneg_v((int8x8_t)__a, 2); }
 __ai int8x16_t vqnegq_s8(int8x16_t __a) { \
-  return (int8x16_t)__builtin_neon_vqnegq_v(__a, 16); }
+  return (int8x16_t)__builtin_neon_vqnegq_v(__a, 32); }
 __ai int16x8_t vqnegq_s16(int16x8_t __a) { \
-  return (int16x8_t)__builtin_neon_vqnegq_v((int8x16_t)__a, 17); }
+  return (int16x8_t)__builtin_neon_vqnegq_v((int8x16_t)__a, 33); }
 __ai int32x4_t vqnegq_s32(int32x4_t __a) { \
-  return (int32x4_t)__builtin_neon_vqnegq_v((int8x16_t)__a, 18); }
+  return (int32x4_t)__builtin_neon_vqnegq_v((int8x16_t)__a, 34); }
 
 __ai int16x4_t vqrdmulh_s16(int16x4_t __a, int16x4_t __b) { \
   return (int16x4_t)__builtin_neon_vqrdmulh_v((int8x8_t)__a, (int8x8_t)__b, 1); }
 __ai int32x2_t vqrdmulh_s32(int32x2_t __a, int32x2_t __b) { \
   return (int32x2_t)__builtin_neon_vqrdmulh_v((int8x8_t)__a, (int8x8_t)__b, 2); }
 __ai int16x8_t vqrdmulhq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vqrdmulhq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vqrdmulhq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vqrdmulhq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vqrdmulhq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vqrdmulhq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 
 #define vqrdmulh_lane_s16(a, b, __c) __extension__ ({ \
   int16x4_t __a = (a); int16x4_t __b = (b); \
@@ -2750,9 +2750,9 @@ __ai int16x4_t vqrdmulh_n_s16(int16x4_t __a, int16_t __b) { \
 __ai int32x2_t vqrdmulh_n_s32(int32x2_t __a, int32_t __b) { \
   return (int32x2_t)__builtin_neon_vqrdmulh_v((int8x8_t)__a, (int8x8_t)(int32x2_t){ __b, __b }, 2); }
 __ai int16x8_t vqrdmulhq_n_s16(int16x8_t __a, int16_t __b) { \
-  return (int16x8_t)__builtin_neon_vqrdmulhq_v((int8x16_t)__a, (int8x16_t)(int16x8_t){ __b, __b, __b, __b, __b, __b, __b, __b }, 17); }
+  return (int16x8_t)__builtin_neon_vqrdmulhq_v((int8x16_t)__a, (int8x16_t)(int16x8_t){ __b, __b, __b, __b, __b, __b, __b, __b }, 33); }
 __ai int32x4_t vqrdmulhq_n_s32(int32x4_t __a, int32_t __b) { \
-  return (int32x4_t)__builtin_neon_vqrdmulhq_v((int8x16_t)__a, (int8x16_t)(int32x4_t){ __b, __b, __b, __b }, 18); }
+  return (int32x4_t)__builtin_neon_vqrdmulhq_v((int8x16_t)__a, (int8x16_t)(int32x4_t){ __b, __b, __b, __b }, 34); }
 
 __ai int8x8_t vqrshl_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vqrshl_v(__a, __b, 0); }
@@ -2763,29 +2763,29 @@ __ai int32x2_t vqrshl_s32(int32x2_t __a, int32x2_t __b) { \
 __ai int64x1_t vqrshl_s64(int64x1_t __a, int64x1_t __b) { \
   return (int64x1_t)__builtin_neon_vqrshl_v((int8x8_t)__a, (int8x8_t)__b, 3); }
 __ai uint8x8_t vqrshl_u8(uint8x8_t __a, int8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vqrshl_v((int8x8_t)__a, __b, 8); }
+  return (uint8x8_t)__builtin_neon_vqrshl_v((int8x8_t)__a, __b, 16); }
 __ai uint16x4_t vqrshl_u16(uint16x4_t __a, int16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vqrshl_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vqrshl_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vqrshl_u32(uint32x2_t __a, int32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vqrshl_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vqrshl_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint64x1_t vqrshl_u64(uint64x1_t __a, int64x1_t __b) { \
-  return (uint64x1_t)__builtin_neon_vqrshl_v((int8x8_t)__a, (int8x8_t)__b, 11); }
+  return (uint64x1_t)__builtin_neon_vqrshl_v((int8x8_t)__a, (int8x8_t)__b, 19); }
 __ai int8x16_t vqrshlq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vqrshlq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vqrshlq_v(__a, __b, 32); }
 __ai int16x8_t vqrshlq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vqrshlq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai int64x2_t vqrshlq_s64(int64x2_t __a, int64x2_t __b) { \
-  return (int64x2_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 19); }
+  return (int64x2_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 35); }
 __ai uint8x16_t vqrshlq_u8(uint8x16_t __a, int8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, __b, 24); }
+  return (uint8x16_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, __b, 48); }
 __ai uint16x8_t vqrshlq_u16(uint16x8_t __a, int16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vqrshlq_u32(uint32x4_t __a, int32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai uint64x2_t vqrshlq_u64(uint64x2_t __a, int64x2_t __b) { \
-  return (uint64x2_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 27); }
+  return (uint64x2_t)__builtin_neon_vqrshlq_v((int8x16_t)__a, (int8x16_t)__b, 51); }
 
 #define vqrshrn_n_s16(a, __b) __extension__ ({ \
   int16x8_t __a = (a); \
@@ -2798,23 +2798,23 @@ __ai uint64x2_t vqrshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (int32x2_t)__builtin_neon_vqrshrn_n_v((int8x16_t)__a, __b, 2); })
 #define vqrshrn_n_u16(a, __b) __extension__ ({ \
   uint16x8_t __a = (a); \
-  (uint8x8_t)__builtin_neon_vqrshrn_n_v((int8x16_t)__a, __b, 8); })
+  (uint8x8_t)__builtin_neon_vqrshrn_n_v((int8x16_t)__a, __b, 16); })
 #define vqrshrn_n_u32(a, __b) __extension__ ({ \
   uint32x4_t __a = (a); \
-  (uint16x4_t)__builtin_neon_vqrshrn_n_v((int8x16_t)__a, __b, 9); })
+  (uint16x4_t)__builtin_neon_vqrshrn_n_v((int8x16_t)__a, __b, 17); })
 #define vqrshrn_n_u64(a, __b) __extension__ ({ \
   uint64x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vqrshrn_n_v((int8x16_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vqrshrn_n_v((int8x16_t)__a, __b, 18); })
 
 #define vqrshrun_n_s16(a, __b) __extension__ ({ \
   int16x8_t __a = (a); \
-  (uint8x8_t)__builtin_neon_vqrshrun_n_v((int8x16_t)__a, __b, 8); })
+  (uint8x8_t)__builtin_neon_vqrshrun_n_v((int8x16_t)__a, __b, 16); })
 #define vqrshrun_n_s32(a, __b) __extension__ ({ \
   int32x4_t __a = (a); \
-  (uint16x4_t)__builtin_neon_vqrshrun_n_v((int8x16_t)__a, __b, 9); })
+  (uint16x4_t)__builtin_neon_vqrshrun_n_v((int8x16_t)__a, __b, 17); })
 #define vqrshrun_n_s64(a, __b) __extension__ ({ \
   int64x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vqrshrun_n_v((int8x16_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vqrshrun_n_v((int8x16_t)__a, __b, 18); })
 
 __ai int8x8_t vqshl_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vqshl_v(__a, __b, 0); }
@@ -2825,54 +2825,54 @@ __ai int32x2_t vqshl_s32(int32x2_t __a, int32x2_t __b) { \
 __ai int64x1_t vqshl_s64(int64x1_t __a, int64x1_t __b) { \
   return (int64x1_t)__builtin_neon_vqshl_v((int8x8_t)__a, (int8x8_t)__b, 3); }
 __ai uint8x8_t vqshl_u8(uint8x8_t __a, int8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vqshl_v((int8x8_t)__a, __b, 8); }
+  return (uint8x8_t)__builtin_neon_vqshl_v((int8x8_t)__a, __b, 16); }
 __ai uint16x4_t vqshl_u16(uint16x4_t __a, int16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vqshl_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vqshl_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vqshl_u32(uint32x2_t __a, int32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vqshl_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vqshl_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint64x1_t vqshl_u64(uint64x1_t __a, int64x1_t __b) { \
-  return (uint64x1_t)__builtin_neon_vqshl_v((int8x8_t)__a, (int8x8_t)__b, 11); }
+  return (uint64x1_t)__builtin_neon_vqshl_v((int8x8_t)__a, (int8x8_t)__b, 19); }
 __ai int8x16_t vqshlq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vqshlq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vqshlq_v(__a, __b, 32); }
 __ai int16x8_t vqshlq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vqshlq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai int64x2_t vqshlq_s64(int64x2_t __a, int64x2_t __b) { \
-  return (int64x2_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 19); }
+  return (int64x2_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 35); }
 __ai uint8x16_t vqshlq_u8(uint8x16_t __a, int8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vqshlq_v((int8x16_t)__a, __b, 24); }
+  return (uint8x16_t)__builtin_neon_vqshlq_v((int8x16_t)__a, __b, 48); }
 __ai uint16x8_t vqshlq_u16(uint16x8_t __a, int16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vqshlq_u32(uint32x4_t __a, int32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai uint64x2_t vqshlq_u64(uint64x2_t __a, int64x2_t __b) { \
-  return (uint64x2_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 27); }
+  return (uint64x2_t)__builtin_neon_vqshlq_v((int8x16_t)__a, (int8x16_t)__b, 51); }
 
 #define vqshlu_n_s8(a, __b) __extension__ ({ \
   int8x8_t __a = (a); \
-  (uint8x8_t)__builtin_neon_vqshlu_n_v(__a, __b, 8); })
+  (uint8x8_t)__builtin_neon_vqshlu_n_v(__a, __b, 16); })
 #define vqshlu_n_s16(a, __b) __extension__ ({ \
   int16x4_t __a = (a); \
-  (uint16x4_t)__builtin_neon_vqshlu_n_v((int8x8_t)__a, __b, 9); })
+  (uint16x4_t)__builtin_neon_vqshlu_n_v((int8x8_t)__a, __b, 17); })
 #define vqshlu_n_s32(a, __b) __extension__ ({ \
   int32x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vqshlu_n_v((int8x8_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vqshlu_n_v((int8x8_t)__a, __b, 18); })
 #define vqshlu_n_s64(a, __b) __extension__ ({ \
   int64x1_t __a = (a); \
-  (uint64x1_t)__builtin_neon_vqshlu_n_v((int8x8_t)__a, __b, 11); })
+  (uint64x1_t)__builtin_neon_vqshlu_n_v((int8x8_t)__a, __b, 19); })
 #define vqshluq_n_s8(a, __b) __extension__ ({ \
   int8x16_t __a = (a); \
-  (uint8x16_t)__builtin_neon_vqshluq_n_v(__a, __b, 24); })
+  (uint8x16_t)__builtin_neon_vqshluq_n_v(__a, __b, 48); })
 #define vqshluq_n_s16(a, __b) __extension__ ({ \
   int16x8_t __a = (a); \
-  (uint16x8_t)__builtin_neon_vqshluq_n_v((int8x16_t)__a, __b, 25); })
+  (uint16x8_t)__builtin_neon_vqshluq_n_v((int8x16_t)__a, __b, 49); })
 #define vqshluq_n_s32(a, __b) __extension__ ({ \
   int32x4_t __a = (a); \
-  (uint32x4_t)__builtin_neon_vqshluq_n_v((int8x16_t)__a, __b, 26); })
+  (uint32x4_t)__builtin_neon_vqshluq_n_v((int8x16_t)__a, __b, 50); })
 #define vqshluq_n_s64(a, __b) __extension__ ({ \
   int64x2_t __a = (a); \
-  (uint64x2_t)__builtin_neon_vqshluq_n_v((int8x16_t)__a, __b, 27); })
+  (uint64x2_t)__builtin_neon_vqshluq_n_v((int8x16_t)__a, __b, 51); })
 
 #define vqshl_n_s8(a, __b) __extension__ ({ \
   int8x8_t __a = (a); \
@@ -2888,40 +2888,40 @@ __ai uint64x2_t vqshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (int64x1_t)__builtin_neon_vqshl_n_v((int8x8_t)__a, __b, 3); })
 #define vqshl_n_u8(a, __b) __extension__ ({ \
   uint8x8_t __a = (a); \
-  (uint8x8_t)__builtin_neon_vqshl_n_v((int8x8_t)__a, __b, 8); })
+  (uint8x8_t)__builtin_neon_vqshl_n_v((int8x8_t)__a, __b, 16); })
 #define vqshl_n_u16(a, __b) __extension__ ({ \
   uint16x4_t __a = (a); \
-  (uint16x4_t)__builtin_neon_vqshl_n_v((int8x8_t)__a, __b, 9); })
+  (uint16x4_t)__builtin_neon_vqshl_n_v((int8x8_t)__a, __b, 17); })
 #define vqshl_n_u32(a, __b) __extension__ ({ \
   uint32x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vqshl_n_v((int8x8_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vqshl_n_v((int8x8_t)__a, __b, 18); })
 #define vqshl_n_u64(a, __b) __extension__ ({ \
   uint64x1_t __a = (a); \
-  (uint64x1_t)__builtin_neon_vqshl_n_v((int8x8_t)__a, __b, 11); })
+  (uint64x1_t)__builtin_neon_vqshl_n_v((int8x8_t)__a, __b, 19); })
 #define vqshlq_n_s8(a, __b) __extension__ ({ \
   int8x16_t __a = (a); \
-  (int8x16_t)__builtin_neon_vqshlq_n_v(__a, __b, 16); })
+  (int8x16_t)__builtin_neon_vqshlq_n_v(__a, __b, 32); })
 #define vqshlq_n_s16(a, __b) __extension__ ({ \
   int16x8_t __a = (a); \
-  (int16x8_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 17); })
+  (int16x8_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 33); })
 #define vqshlq_n_s32(a, __b) __extension__ ({ \
   int32x4_t __a = (a); \
-  (int32x4_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 18); })
+  (int32x4_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 34); })
 #define vqshlq_n_s64(a, __b) __extension__ ({ \
   int64x2_t __a = (a); \
-  (int64x2_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 19); })
+  (int64x2_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 35); })
 #define vqshlq_n_u8(a, __b) __extension__ ({ \
   uint8x16_t __a = (a); \
-  (uint8x16_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 24); })
+  (uint8x16_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 48); })
 #define vqshlq_n_u16(a, __b) __extension__ ({ \
   uint16x8_t __a = (a); \
-  (uint16x8_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 25); })
+  (uint16x8_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 49); })
 #define vqshlq_n_u32(a, __b) __extension__ ({ \
   uint32x4_t __a = (a); \
-  (uint32x4_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 26); })
+  (uint32x4_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 50); })
 #define vqshlq_n_u64(a, __b) __extension__ ({ \
   uint64x2_t __a = (a); \
-  (uint64x2_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 27); })
+  (uint64x2_t)__builtin_neon_vqshlq_n_v((int8x16_t)__a, __b, 51); })
 
 #define vqshrn_n_s16(a, __b) __extension__ ({ \
   int16x8_t __a = (a); \
@@ -2934,23 +2934,23 @@ __ai uint64x2_t vqshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (int32x2_t)__builtin_neon_vqshrn_n_v((int8x16_t)__a, __b, 2); })
 #define vqshrn_n_u16(a, __b) __extension__ ({ \
   uint16x8_t __a = (a); \
-  (uint8x8_t)__builtin_neon_vqshrn_n_v((int8x16_t)__a, __b, 8); })
+  (uint8x8_t)__builtin_neon_vqshrn_n_v((int8x16_t)__a, __b, 16); })
 #define vqshrn_n_u32(a, __b) __extension__ ({ \
   uint32x4_t __a = (a); \
-  (uint16x4_t)__builtin_neon_vqshrn_n_v((int8x16_t)__a, __b, 9); })
+  (uint16x4_t)__builtin_neon_vqshrn_n_v((int8x16_t)__a, __b, 17); })
 #define vqshrn_n_u64(a, __b) __extension__ ({ \
   uint64x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vqshrn_n_v((int8x16_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vqshrn_n_v((int8x16_t)__a, __b, 18); })
 
 #define vqshrun_n_s16(a, __b) __extension__ ({ \
   int16x8_t __a = (a); \
-  (uint8x8_t)__builtin_neon_vqshrun_n_v((int8x16_t)__a, __b, 8); })
+  (uint8x8_t)__builtin_neon_vqshrun_n_v((int8x16_t)__a, __b, 16); })
 #define vqshrun_n_s32(a, __b) __extension__ ({ \
   int32x4_t __a = (a); \
-  (uint16x4_t)__builtin_neon_vqshrun_n_v((int8x16_t)__a, __b, 9); })
+  (uint16x4_t)__builtin_neon_vqshrun_n_v((int8x16_t)__a, __b, 17); })
 #define vqshrun_n_s64(a, __b) __extension__ ({ \
   int64x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vqshrun_n_v((int8x16_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vqshrun_n_v((int8x16_t)__a, __b, 18); })
 
 __ai int8x8_t vqsub_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vqsub_v(__a, __b, 0); }
@@ -2961,29 +2961,29 @@ __ai int32x2_t vqsub_s32(int32x2_t __a, int32x2_t __b) { \
 __ai int64x1_t vqsub_s64(int64x1_t __a, int64x1_t __b) { \
   return (int64x1_t)__builtin_neon_vqsub_v((int8x8_t)__a, (int8x8_t)__b, 3); }
 __ai uint8x8_t vqsub_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vqsub_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vqsub_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vqsub_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vqsub_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vqsub_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vqsub_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vqsub_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vqsub_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint64x1_t vqsub_u64(uint64x1_t __a, uint64x1_t __b) { \
-  return (uint64x1_t)__builtin_neon_vqsub_v((int8x8_t)__a, (int8x8_t)__b, 11); }
+  return (uint64x1_t)__builtin_neon_vqsub_v((int8x8_t)__a, (int8x8_t)__b, 19); }
 __ai int8x16_t vqsubq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vqsubq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vqsubq_v(__a, __b, 32); }
 __ai int16x8_t vqsubq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vqsubq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai int64x2_t vqsubq_s64(int64x2_t __a, int64x2_t __b) { \
-  return (int64x2_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 19); }
+  return (int64x2_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 35); }
 __ai uint8x16_t vqsubq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 24); }
+  return (uint8x16_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 48); }
 __ai uint16x8_t vqsubq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vqsubq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai uint64x2_t vqsubq_u64(uint64x2_t __a, uint64x2_t __b) { \
-  return (uint64x2_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 27); }
+  return (uint64x2_t)__builtin_neon_vqsubq_v((int8x16_t)__a, (int8x16_t)__b, 51); }
 
 __ai int8x8_t vraddhn_s16(int16x8_t __a, int16x8_t __b) { \
   return (int8x8_t)__builtin_neon_vraddhn_v((int8x16_t)__a, (int8x16_t)__b, 0); }
@@ -2992,25 +2992,25 @@ __ai int16x4_t vraddhn_s32(int32x4_t __a, int32x4_t __b) { \
 __ai int32x2_t vraddhn_s64(int64x2_t __a, int64x2_t __b) { \
   return (int32x2_t)__builtin_neon_vraddhn_v((int8x16_t)__a, (int8x16_t)__b, 2); }
 __ai uint8x8_t vraddhn_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vraddhn_v((int8x16_t)__a, (int8x16_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vraddhn_v((int8x16_t)__a, (int8x16_t)__b, 16); }
 __ai uint16x4_t vraddhn_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vraddhn_v((int8x16_t)__a, (int8x16_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vraddhn_v((int8x16_t)__a, (int8x16_t)__b, 17); }
 __ai uint32x2_t vraddhn_u64(uint64x2_t __a, uint64x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vraddhn_v((int8x16_t)__a, (int8x16_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vraddhn_v((int8x16_t)__a, (int8x16_t)__b, 18); }
 
 __ai float32x2_t vrecpe_f32(float32x2_t __a) { \
-  return (float32x2_t)__builtin_neon_vrecpe_v((int8x8_t)__a, 4); }
+  return (float32x2_t)__builtin_neon_vrecpe_v((int8x8_t)__a, 7); }
 __ai uint32x2_t vrecpe_u32(uint32x2_t __a) { \
-  return (uint32x2_t)__builtin_neon_vrecpe_v((int8x8_t)__a, 10); }
+  return (uint32x2_t)__builtin_neon_vrecpe_v((int8x8_t)__a, 18); }
 __ai float32x4_t vrecpeq_f32(float32x4_t __a) { \
-  return (float32x4_t)__builtin_neon_vrecpeq_v((int8x16_t)__a, 20); }
+  return (float32x4_t)__builtin_neon_vrecpeq_v((int8x16_t)__a, 39); }
 __ai uint32x4_t vrecpeq_u32(uint32x4_t __a) { \
-  return (uint32x4_t)__builtin_neon_vrecpeq_v((int8x16_t)__a, 26); }
+  return (uint32x4_t)__builtin_neon_vrecpeq_v((int8x16_t)__a, 50); }
 
 __ai float32x2_t vrecps_f32(float32x2_t __a, float32x2_t __b) { \
-  return (float32x2_t)__builtin_neon_vrecps_v((int8x8_t)__a, (int8x8_t)__b, 4); }
+  return (float32x2_t)__builtin_neon_vrecps_v((int8x8_t)__a, (int8x8_t)__b, 7); }
 __ai float32x4_t vrecpsq_f32(float32x4_t __a, float32x4_t __b) { \
-  return (float32x4_t)__builtin_neon_vrecpsq_v((int8x16_t)__a, (int8x16_t)__b, 20); }
+  return (float32x4_t)__builtin_neon_vrecpsq_v((int8x16_t)__a, (int8x16_t)__b, 39); }
 
 __ai int8x8_t vreinterpret_s8_s16(int16x4_t __a) { \
   return (int8x8_t)__a; }
@@ -3623,23 +3623,23 @@ __ai int16x4_t vrhadd_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2_t vrhadd_s32(int32x2_t __a, int32x2_t __b) { \
   return (int32x2_t)__builtin_neon_vrhadd_v((int8x8_t)__a, (int8x8_t)__b, 2); }
 __ai uint8x8_t vrhadd_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vrhadd_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vrhadd_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vrhadd_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vrhadd_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vrhadd_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vrhadd_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vrhadd_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vrhadd_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai int8x16_t vrhaddq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vrhaddq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vrhaddq_v(__a, __b, 32); }
 __ai int16x8_t vrhaddq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vrhaddq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vrhaddq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vrhaddq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vrhaddq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vrhaddq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai uint8x16_t vrhaddq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vrhaddq_v((int8x16_t)__a, (int8x16_t)__b, 24); }
+  return (uint8x16_t)__builtin_neon_vrhaddq_v((int8x16_t)__a, (int8x16_t)__b, 48); }
 __ai uint16x8_t vrhaddq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vrhaddq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vrhaddq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vrhaddq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vrhaddq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vrhaddq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 
 __ai int8x8_t vrshl_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vrshl_v(__a, __b, 0); }
@@ -3650,29 +3650,29 @@ __ai int32x2_t vrshl_s32(int32x2_t __a, int32x2_t __b) { \
 __ai int64x1_t vrshl_s64(int64x1_t __a, int64x1_t __b) { \
   return (int64x1_t)__builtin_neon_vrshl_v((int8x8_t)__a, (int8x8_t)__b, 3); }
 __ai uint8x8_t vrshl_u8(uint8x8_t __a, int8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vrshl_v((int8x8_t)__a, __b, 8); }
+  return (uint8x8_t)__builtin_neon_vrshl_v((int8x8_t)__a, __b, 16); }
 __ai uint16x4_t vrshl_u16(uint16x4_t __a, int16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vrshl_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vrshl_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vrshl_u32(uint32x2_t __a, int32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vrshl_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vrshl_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint64x1_t vrshl_u64(uint64x1_t __a, int64x1_t __b) { \
-  return (uint64x1_t)__builtin_neon_vrshl_v((int8x8_t)__a, (int8x8_t)__b, 11); }
+  return (uint64x1_t)__builtin_neon_vrshl_v((int8x8_t)__a, (int8x8_t)__b, 19); }
 __ai int8x16_t vrshlq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vrshlq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vrshlq_v(__a, __b, 32); }
 __ai int16x8_t vrshlq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vrshlq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai int64x2_t vrshlq_s64(int64x2_t __a, int64x2_t __b) { \
-  return (int64x2_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 19); }
+  return (int64x2_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 35); }
 __ai uint8x16_t vrshlq_u8(uint8x16_t __a, int8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vrshlq_v((int8x16_t)__a, __b, 24); }
+  return (uint8x16_t)__builtin_neon_vrshlq_v((int8x16_t)__a, __b, 48); }
 __ai uint16x8_t vrshlq_u16(uint16x8_t __a, int16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vrshlq_u32(uint32x4_t __a, int32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai uint64x2_t vrshlq_u64(uint64x2_t __a, int64x2_t __b) { \
-  return (uint64x2_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 27); }
+  return (uint64x2_t)__builtin_neon_vrshlq_v((int8x16_t)__a, (int8x16_t)__b, 51); }
 
 #define vrshrn_n_s16(a, __b) __extension__ ({ \
   int16x8_t __a = (a); \
@@ -3685,13 +3685,13 @@ __ai uint64x2_t vrshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (int32x2_t)__builtin_neon_vrshrn_n_v((int8x16_t)__a, __b, 2); })
 #define vrshrn_n_u16(a, __b) __extension__ ({ \
   uint16x8_t __a = (a); \
-  (uint8x8_t)__builtin_neon_vrshrn_n_v((int8x16_t)__a, __b, 8); })
+  (uint8x8_t)__builtin_neon_vrshrn_n_v((int8x16_t)__a, __b, 16); })
 #define vrshrn_n_u32(a, __b) __extension__ ({ \
   uint32x4_t __a = (a); \
-  (uint16x4_t)__builtin_neon_vrshrn_n_v((int8x16_t)__a, __b, 9); })
+  (uint16x4_t)__builtin_neon_vrshrn_n_v((int8x16_t)__a, __b, 17); })
 #define vrshrn_n_u64(a, __b) __extension__ ({ \
   uint64x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vrshrn_n_v((int8x16_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vrshrn_n_v((int8x16_t)__a, __b, 18); })
 
 #define vrshr_n_s8(a, __b) __extension__ ({ \
   int8x8_t __a = (a); \
@@ -3707,54 +3707,54 @@ __ai uint64x2_t vrshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (int64x1_t)__builtin_neon_vrshr_n_v((int8x8_t)__a, __b, 3); })
 #define vrshr_n_u8(a, __b) __extension__ ({ \
   uint8x8_t __a = (a); \
-  (uint8x8_t)__builtin_neon_vrshr_n_v((int8x8_t)__a, __b, 8); })
+  (uint8x8_t)__builtin_neon_vrshr_n_v((int8x8_t)__a, __b, 16); })
 #define vrshr_n_u16(a, __b) __extension__ ({ \
   uint16x4_t __a = (a); \
-  (uint16x4_t)__builtin_neon_vrshr_n_v((int8x8_t)__a, __b, 9); })
+  (uint16x4_t)__builtin_neon_vrshr_n_v((int8x8_t)__a, __b, 17); })
 #define vrshr_n_u32(a, __b) __extension__ ({ \
   uint32x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vrshr_n_v((int8x8_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vrshr_n_v((int8x8_t)__a, __b, 18); })
 #define vrshr_n_u64(a, __b) __extension__ ({ \
   uint64x1_t __a = (a); \
-  (uint64x1_t)__builtin_neon_vrshr_n_v((int8x8_t)__a, __b, 11); })
+  (uint64x1_t)__builtin_neon_vrshr_n_v((int8x8_t)__a, __b, 19); })
 #define vrshrq_n_s8(a, __b) __extension__ ({ \
   int8x16_t __a = (a); \
-  (int8x16_t)__builtin_neon_vrshrq_n_v(__a, __b, 16); })
+  (int8x16_t)__builtin_neon_vrshrq_n_v(__a, __b, 32); })
 #define vrshrq_n_s16(a, __b) __extension__ ({ \
   int16x8_t __a = (a); \
-  (int16x8_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 17); })
+  (int16x8_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 33); })
 #define vrshrq_n_s32(a, __b) __extension__ ({ \
   int32x4_t __a = (a); \
-  (int32x4_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 18); })
+  (int32x4_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 34); })
 #define vrshrq_n_s64(a, __b) __extension__ ({ \
   int64x2_t __a = (a); \
-  (int64x2_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 19); })
+  (int64x2_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 35); })
 #define vrshrq_n_u8(a, __b) __extension__ ({ \
   uint8x16_t __a = (a); \
-  (uint8x16_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 24); })
+  (uint8x16_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 48); })
 #define vrshrq_n_u16(a, __b) __extension__ ({ \
   uint16x8_t __a = (a); \
-  (uint16x8_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 25); })
+  (uint16x8_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 49); })
 #define vrshrq_n_u32(a, __b) __extension__ ({ \
   uint32x4_t __a = (a); \
-  (uint32x4_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 26); })
+  (uint32x4_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 50); })
 #define vrshrq_n_u64(a, __b) __extension__ ({ \
   uint64x2_t __a = (a); \
-  (uint64x2_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 27); })
+  (uint64x2_t)__builtin_neon_vrshrq_n_v((int8x16_t)__a, __b, 51); })
 
 __ai float32x2_t vrsqrte_f32(float32x2_t __a) { \
-  return (float32x2_t)__builtin_neon_vrsqrte_v((int8x8_t)__a, 4); }
+  return (float32x2_t)__builtin_neon_vrsqrte_v((int8x8_t)__a, 7); }
 __ai uint32x2_t vrsqrte_u32(uint32x2_t __a) { \
-  return (uint32x2_t)__builtin_neon_vrsqrte_v((int8x8_t)__a, 10); }
+  return (uint32x2_t)__builtin_neon_vrsqrte_v((int8x8_t)__a, 18); }
 __ai float32x4_t vrsqrteq_f32(float32x4_t __a) { \
-  return (float32x4_t)__builtin_neon_vrsqrteq_v((int8x16_t)__a, 20); }
+  return (float32x4_t)__builtin_neon_vrsqrteq_v((int8x16_t)__a, 39); }
 __ai uint32x4_t vrsqrteq_u32(uint32x4_t __a) { \
-  return (uint32x4_t)__builtin_neon_vrsqrteq_v((int8x16_t)__a, 26); }
+  return (uint32x4_t)__builtin_neon_vrsqrteq_v((int8x16_t)__a, 50); }
 
 __ai float32x2_t vrsqrts_f32(float32x2_t __a, float32x2_t __b) { \
-  return (float32x2_t)__builtin_neon_vrsqrts_v((int8x8_t)__a, (int8x8_t)__b, 4); }
+  return (float32x2_t)__builtin_neon_vrsqrts_v((int8x8_t)__a, (int8x8_t)__b, 7); }
 __ai float32x4_t vrsqrtsq_f32(float32x4_t __a, float32x4_t __b) { \
-  return (float32x4_t)__builtin_neon_vrsqrtsq_v((int8x16_t)__a, (int8x16_t)__b, 20); }
+  return (float32x4_t)__builtin_neon_vrsqrtsq_v((int8x16_t)__a, (int8x16_t)__b, 39); }
 
 #define vrsra_n_s8(a, b, __c) __extension__ ({ \
   int8x8_t __a = (a); int8x8_t __b = (b); \
@@ -3770,40 +3770,40 @@ __ai float32x4_t vrsqrtsq_f32(float32x4_t __a, float32x4_t __b) { \
   (int64x1_t)__builtin_neon_vrsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 3); })
 #define vrsra_n_u8(a, b, __c) __extension__ ({ \
   uint8x8_t __a = (a); uint8x8_t __b = (b); \
-  (uint8x8_t)__builtin_neon_vrsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 8); })
+  (uint8x8_t)__builtin_neon_vrsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 16); })
 #define vrsra_n_u16(a, b, __c) __extension__ ({ \
   uint16x4_t __a = (a); uint16x4_t __b = (b); \
-  (uint16x4_t)__builtin_neon_vrsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 9); })
+  (uint16x4_t)__builtin_neon_vrsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 17); })
 #define vrsra_n_u32(a, b, __c) __extension__ ({ \
   uint32x2_t __a = (a); uint32x2_t __b = (b); \
-  (uint32x2_t)__builtin_neon_vrsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 10); })
+  (uint32x2_t)__builtin_neon_vrsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 18); })
 #define vrsra_n_u64(a, b, __c) __extension__ ({ \
   uint64x1_t __a = (a); uint64x1_t __b = (b); \
-  (uint64x1_t)__builtin_neon_vrsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 11); })
+  (uint64x1_t)__builtin_neon_vrsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 19); })
 #define vrsraq_n_s8(a, b, __c) __extension__ ({ \
   int8x16_t __a = (a); int8x16_t __b = (b); \
-  (int8x16_t)__builtin_neon_vrsraq_n_v(__a, __b, __c, 16); })
+  (int8x16_t)__builtin_neon_vrsraq_n_v(__a, __b, __c, 32); })
 #define vrsraq_n_s16(a, b, __c) __extension__ ({ \
   int16x8_t __a = (a); int16x8_t __b = (b); \
-  (int16x8_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 17); })
+  (int16x8_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 33); })
 #define vrsraq_n_s32(a, b, __c) __extension__ ({ \
   int32x4_t __a = (a); int32x4_t __b = (b); \
-  (int32x4_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 18); })
+  (int32x4_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 34); })
 #define vrsraq_n_s64(a, b, __c) __extension__ ({ \
   int64x2_t __a = (a); int64x2_t __b = (b); \
-  (int64x2_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 19); })
+  (int64x2_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 35); })
 #define vrsraq_n_u8(a, b, __c) __extension__ ({ \
   uint8x16_t __a = (a); uint8x16_t __b = (b); \
-  (uint8x16_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 24); })
+  (uint8x16_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 48); })
 #define vrsraq_n_u16(a, b, __c) __extension__ ({ \
   uint16x8_t __a = (a); uint16x8_t __b = (b); \
-  (uint16x8_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 25); })
+  (uint16x8_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 49); })
 #define vrsraq_n_u32(a, b, __c) __extension__ ({ \
   uint32x4_t __a = (a); uint32x4_t __b = (b); \
-  (uint32x4_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 26); })
+  (uint32x4_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 50); })
 #define vrsraq_n_u64(a, b, __c) __extension__ ({ \
   uint64x2_t __a = (a); uint64x2_t __b = (b); \
-  (uint64x2_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 27); })
+  (uint64x2_t)__builtin_neon_vrsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 51); })
 
 __ai int8x8_t vrsubhn_s16(int16x8_t __a, int16x8_t __b) { \
   return (int8x8_t)__builtin_neon_vrsubhn_v((int8x16_t)__a, (int8x16_t)__b, 0); }
@@ -3812,11 +3812,11 @@ __ai int16x4_t vrsubhn_s32(int32x4_t __a, int32x4_t __b) { \
 __ai int32x2_t vrsubhn_s64(int64x2_t __a, int64x2_t __b) { \
   return (int32x2_t)__builtin_neon_vrsubhn_v((int8x16_t)__a, (int8x16_t)__b, 2); }
 __ai uint8x8_t vrsubhn_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vrsubhn_v((int8x16_t)__a, (int8x16_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vrsubhn_v((int8x16_t)__a, (int8x16_t)__b, 16); }
 __ai uint16x4_t vrsubhn_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vrsubhn_v((int8x16_t)__a, (int8x16_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vrsubhn_v((int8x16_t)__a, (int8x16_t)__b, 17); }
 __ai uint32x2_t vrsubhn_u64(uint64x2_t __a, uint64x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vrsubhn_v((int8x16_t)__a, (int8x16_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vrsubhn_v((int8x16_t)__a, (int8x16_t)__b, 18); }
 
 #define vset_lane_u8(a, b, __c) __extension__ ({ \
   uint8_t __a = (a); uint8x8_t __b = (b); \
@@ -3894,48 +3894,48 @@ __ai int32x2_t vshl_s32(int32x2_t __a, int32x2_t __b) { \
 __ai int64x1_t vshl_s64(int64x1_t __a, int64x1_t __b) { \
   return (int64x1_t)__builtin_neon_vshl_v((int8x8_t)__a, (int8x8_t)__b, 3); }
 __ai uint8x8_t vshl_u8(uint8x8_t __a, int8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vshl_v((int8x8_t)__a, __b, 8); }
+  return (uint8x8_t)__builtin_neon_vshl_v((int8x8_t)__a, __b, 16); }
 __ai uint16x4_t vshl_u16(uint16x4_t __a, int16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vshl_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vshl_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vshl_u32(uint32x2_t __a, int32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vshl_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vshl_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint64x1_t vshl_u64(uint64x1_t __a, int64x1_t __b) { \
-  return (uint64x1_t)__builtin_neon_vshl_v((int8x8_t)__a, (int8x8_t)__b, 11); }
+  return (uint64x1_t)__builtin_neon_vshl_v((int8x8_t)__a, (int8x8_t)__b, 19); }
 __ai int8x16_t vshlq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (int8x16_t)__builtin_neon_vshlq_v(__a, __b, 16); }
+  return (int8x16_t)__builtin_neon_vshlq_v(__a, __b, 32); }
 __ai int16x8_t vshlq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (int16x8_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 17); }
+  return (int16x8_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 33); }
 __ai int32x4_t vshlq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (int32x4_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 18); }
+  return (int32x4_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 34); }
 __ai int64x2_t vshlq_s64(int64x2_t __a, int64x2_t __b) { \
-  return (int64x2_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 19); }
+  return (int64x2_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 35); }
 __ai uint8x16_t vshlq_u8(uint8x16_t __a, int8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vshlq_v((int8x16_t)__a, __b, 24); }
+  return (uint8x16_t)__builtin_neon_vshlq_v((int8x16_t)__a, __b, 48); }
 __ai uint16x8_t vshlq_u16(uint16x8_t __a, int16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vshlq_u32(uint32x4_t __a, int32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
-  return (uint64x2_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 27); }
+  return (uint64x2_t)__builtin_neon_vshlq_v((int8x16_t)__a, (int8x16_t)__b, 51); }
 
 #define vshll_n_s8(a, __b) __extension__ ({ \
   int8x8_t __a = (a); \
-  (int16x8_t)__builtin_neon_vshll_n_v(__a, __b, 17); })
+  (int16x8_t)__builtin_neon_vshll_n_v(__a, __b, 33); })
 #define vshll_n_s16(a, __b) __extension__ ({ \
   int16x4_t __a = (a); \
-  (int32x4_t)__builtin_neon_vshll_n_v((int8x8_t)__a, __b, 18); })
+  (int32x4_t)__builtin_neon_vshll_n_v((int8x8_t)__a, __b, 34); })
 #define vshll_n_s32(a, __b) __extension__ ({ \
   int32x2_t __a = (a); \
-  (int64x2_t)__builtin_neon_vshll_n_v((int8x8_t)__a, __b, 19); })
+  (int64x2_t)__builtin_neon_vshll_n_v((int8x8_t)__a, __b, 35); })
 #define vshll_n_u8(a, __b) __extension__ ({ \
   uint8x8_t __a = (a); \
-  (uint16x8_t)__builtin_neon_vshll_n_v((int8x8_t)__a, __b, 25); })
+  (uint16x8_t)__builtin_neon_vshll_n_v((int8x8_t)__a, __b, 49); })
 #define vshll_n_u16(a, __b) __extension__ ({ \
   uint16x4_t __a = (a); \
-  (uint32x4_t)__builtin_neon_vshll_n_v((int8x8_t)__a, __b, 26); })
+  (uint32x4_t)__builtin_neon_vshll_n_v((int8x8_t)__a, __b, 50); })
 #define vshll_n_u32(a, __b) __extension__ ({ \
   uint32x2_t __a = (a); \
-  (uint64x2_t)__builtin_neon_vshll_n_v((int8x8_t)__a, __b, 27); })
+  (uint64x2_t)__builtin_neon_vshll_n_v((int8x8_t)__a, __b, 51); })
 
 #define vshl_n_s8(a, __b) __extension__ ({ \
   int8x8_t __a = (a); \
@@ -3951,40 +3951,40 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (int64x1_t)__builtin_neon_vshl_n_v((int8x8_t)__a, __b, 3); })
 #define vshl_n_u8(a, __b) __extension__ ({ \
   uint8x8_t __a = (a); \
-  (uint8x8_t)__builtin_neon_vshl_n_v((int8x8_t)__a, __b, 8); })
+  (uint8x8_t)__builtin_neon_vshl_n_v((int8x8_t)__a, __b, 16); })
 #define vshl_n_u16(a, __b) __extension__ ({ \
   uint16x4_t __a = (a); \
-  (uint16x4_t)__builtin_neon_vshl_n_v((int8x8_t)__a, __b, 9); })
+  (uint16x4_t)__builtin_neon_vshl_n_v((int8x8_t)__a, __b, 17); })
 #define vshl_n_u32(a, __b) __extension__ ({ \
   uint32x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vshl_n_v((int8x8_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vshl_n_v((int8x8_t)__a, __b, 18); })
 #define vshl_n_u64(a, __b) __extension__ ({ \
   uint64x1_t __a = (a); \
-  (uint64x1_t)__builtin_neon_vshl_n_v((int8x8_t)__a, __b, 11); })
+  (uint64x1_t)__builtin_neon_vshl_n_v((int8x8_t)__a, __b, 19); })
 #define vshlq_n_s8(a, __b) __extension__ ({ \
   int8x16_t __a = (a); \
-  (int8x16_t)__builtin_neon_vshlq_n_v(__a, __b, 16); })
+  (int8x16_t)__builtin_neon_vshlq_n_v(__a, __b, 32); })
 #define vshlq_n_s16(a, __b) __extension__ ({ \
   int16x8_t __a = (a); \
-  (int16x8_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 17); })
+  (int16x8_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 33); })
 #define vshlq_n_s32(a, __b) __extension__ ({ \
   int32x4_t __a = (a); \
-  (int32x4_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 18); })
+  (int32x4_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 34); })
 #define vshlq_n_s64(a, __b) __extension__ ({ \
   int64x2_t __a = (a); \
-  (int64x2_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 19); })
+  (int64x2_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 35); })
 #define vshlq_n_u8(a, __b) __extension__ ({ \
   uint8x16_t __a = (a); \
-  (uint8x16_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 24); })
+  (uint8x16_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 48); })
 #define vshlq_n_u16(a, __b) __extension__ ({ \
   uint16x8_t __a = (a); \
-  (uint16x8_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 25); })
+  (uint16x8_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 49); })
 #define vshlq_n_u32(a, __b) __extension__ ({ \
   uint32x4_t __a = (a); \
-  (uint32x4_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 26); })
+  (uint32x4_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 50); })
 #define vshlq_n_u64(a, __b) __extension__ ({ \
   uint64x2_t __a = (a); \
-  (uint64x2_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 27); })
+  (uint64x2_t)__builtin_neon_vshlq_n_v((int8x16_t)__a, __b, 51); })
 
 #define vshrn_n_s16(a, __b) __extension__ ({ \
   int16x8_t __a = (a); \
@@ -3997,13 +3997,13 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (int32x2_t)__builtin_neon_vshrn_n_v((int8x16_t)__a, __b, 2); })
 #define vshrn_n_u16(a, __b) __extension__ ({ \
   uint16x8_t __a = (a); \
-  (uint8x8_t)__builtin_neon_vshrn_n_v((int8x16_t)__a, __b, 8); })
+  (uint8x8_t)__builtin_neon_vshrn_n_v((int8x16_t)__a, __b, 16); })
 #define vshrn_n_u32(a, __b) __extension__ ({ \
   uint32x4_t __a = (a); \
-  (uint16x4_t)__builtin_neon_vshrn_n_v((int8x16_t)__a, __b, 9); })
+  (uint16x4_t)__builtin_neon_vshrn_n_v((int8x16_t)__a, __b, 17); })
 #define vshrn_n_u64(a, __b) __extension__ ({ \
   uint64x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vshrn_n_v((int8x16_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vshrn_n_v((int8x16_t)__a, __b, 18); })
 
 #define vshr_n_s8(a, __b) __extension__ ({ \
   int8x8_t __a = (a); \
@@ -4019,40 +4019,40 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (int64x1_t)__builtin_neon_vshr_n_v((int8x8_t)__a, __b, 3); })
 #define vshr_n_u8(a, __b) __extension__ ({ \
   uint8x8_t __a = (a); \
-  (uint8x8_t)__builtin_neon_vshr_n_v((int8x8_t)__a, __b, 8); })
+  (uint8x8_t)__builtin_neon_vshr_n_v((int8x8_t)__a, __b, 16); })
 #define vshr_n_u16(a, __b) __extension__ ({ \
   uint16x4_t __a = (a); \
-  (uint16x4_t)__builtin_neon_vshr_n_v((int8x8_t)__a, __b, 9); })
+  (uint16x4_t)__builtin_neon_vshr_n_v((int8x8_t)__a, __b, 17); })
 #define vshr_n_u32(a, __b) __extension__ ({ \
   uint32x2_t __a = (a); \
-  (uint32x2_t)__builtin_neon_vshr_n_v((int8x8_t)__a, __b, 10); })
+  (uint32x2_t)__builtin_neon_vshr_n_v((int8x8_t)__a, __b, 18); })
 #define vshr_n_u64(a, __b) __extension__ ({ \
   uint64x1_t __a = (a); \
-  (uint64x1_t)__builtin_neon_vshr_n_v((int8x8_t)__a, __b, 11); })
+  (uint64x1_t)__builtin_neon_vshr_n_v((int8x8_t)__a, __b, 19); })
 #define vshrq_n_s8(a, __b) __extension__ ({ \
   int8x16_t __a = (a); \
-  (int8x16_t)__builtin_neon_vshrq_n_v(__a, __b, 16); })
+  (int8x16_t)__builtin_neon_vshrq_n_v(__a, __b, 32); })
 #define vshrq_n_s16(a, __b) __extension__ ({ \
   int16x8_t __a = (a); \
-  (int16x8_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 17); })
+  (int16x8_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 33); })
 #define vshrq_n_s32(a, __b) __extension__ ({ \
   int32x4_t __a = (a); \
-  (int32x4_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 18); })
+  (int32x4_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 34); })
 #define vshrq_n_s64(a, __b) __extension__ ({ \
   int64x2_t __a = (a); \
-  (int64x2_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 19); })
+  (int64x2_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 35); })
 #define vshrq_n_u8(a, __b) __extension__ ({ \
   uint8x16_t __a = (a); \
-  (uint8x16_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 24); })
+  (uint8x16_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 48); })
 #define vshrq_n_u16(a, __b) __extension__ ({ \
   uint16x8_t __a = (a); \
-  (uint16x8_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 25); })
+  (uint16x8_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 49); })
 #define vshrq_n_u32(a, __b) __extension__ ({ \
   uint32x4_t __a = (a); \
-  (uint32x4_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 26); })
+  (uint32x4_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 50); })
 #define vshrq_n_u64(a, __b) __extension__ ({ \
   uint64x2_t __a = (a); \
-  (uint64x2_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 27); })
+  (uint64x2_t)__builtin_neon_vshrq_n_v((int8x16_t)__a, __b, 51); })
 
 #define vsli_n_s8(a, b, __c) __extension__ ({ \
   int8x8_t __a = (a); int8x8_t __b = (b); \
@@ -4068,52 +4068,52 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (int64x1_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 3); })
 #define vsli_n_u8(a, b, __c) __extension__ ({ \
   uint8x8_t __a = (a); uint8x8_t __b = (b); \
-  (uint8x8_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 8); })
+  (uint8x8_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 16); })
 #define vsli_n_u16(a, b, __c) __extension__ ({ \
   uint16x4_t __a = (a); uint16x4_t __b = (b); \
-  (uint16x4_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 9); })
+  (uint16x4_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 17); })
 #define vsli_n_u32(a, b, __c) __extension__ ({ \
   uint32x2_t __a = (a); uint32x2_t __b = (b); \
-  (uint32x2_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 10); })
+  (uint32x2_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 18); })
 #define vsli_n_u64(a, b, __c) __extension__ ({ \
   uint64x1_t __a = (a); uint64x1_t __b = (b); \
-  (uint64x1_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 11); })
+  (uint64x1_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 19); })
 #define vsli_n_p8(a, b, __c) __extension__ ({ \
   poly8x8_t __a = (a); poly8x8_t __b = (b); \
-  (poly8x8_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 5); })
+  (poly8x8_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 4); })
 #define vsli_n_p16(a, b, __c) __extension__ ({ \
   poly16x4_t __a = (a); poly16x4_t __b = (b); \
-  (poly16x4_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 6); })
+  (poly16x4_t)__builtin_neon_vsli_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 5); })
 #define vsliq_n_s8(a, b, __c) __extension__ ({ \
   int8x16_t __a = (a); int8x16_t __b = (b); \
-  (int8x16_t)__builtin_neon_vsliq_n_v(__a, __b, __c, 16); })
+  (int8x16_t)__builtin_neon_vsliq_n_v(__a, __b, __c, 32); })
 #define vsliq_n_s16(a, b, __c) __extension__ ({ \
   int16x8_t __a = (a); int16x8_t __b = (b); \
-  (int16x8_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 17); })
+  (int16x8_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 33); })
 #define vsliq_n_s32(a, b, __c) __extension__ ({ \
   int32x4_t __a = (a); int32x4_t __b = (b); \
-  (int32x4_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 18); })
+  (int32x4_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 34); })
 #define vsliq_n_s64(a, b, __c) __extension__ ({ \
   int64x2_t __a = (a); int64x2_t __b = (b); \
-  (int64x2_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 19); })
+  (int64x2_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 35); })
 #define vsliq_n_u8(a, b, __c) __extension__ ({ \
   uint8x16_t __a = (a); uint8x16_t __b = (b); \
-  (uint8x16_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 24); })
+  (uint8x16_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 48); })
 #define vsliq_n_u16(a, b, __c) __extension__ ({ \
   uint16x8_t __a = (a); uint16x8_t __b = (b); \
-  (uint16x8_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 25); })
+  (uint16x8_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 49); })
 #define vsliq_n_u32(a, b, __c) __extension__ ({ \
   uint32x4_t __a = (a); uint32x4_t __b = (b); \
-  (uint32x4_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 26); })
+  (uint32x4_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 50); })
 #define vsliq_n_u64(a, b, __c) __extension__ ({ \
   uint64x2_t __a = (a); uint64x2_t __b = (b); \
-  (uint64x2_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 27); })
+  (uint64x2_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 51); })
 #define vsliq_n_p8(a, b, __c) __extension__ ({ \
   poly8x16_t __a = (a); poly8x16_t __b = (b); \
-  (poly8x16_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 21); })
+  (poly8x16_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 36); })
 #define vsliq_n_p16(a, b, __c) __extension__ ({ \
   poly16x8_t __a = (a); poly16x8_t __b = (b); \
-  (poly16x8_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 22); })
+  (poly16x8_t)__builtin_neon_vsliq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 37); })
 
 #define vsra_n_s8(a, b, __c) __extension__ ({ \
   int8x8_t __a = (a); int8x8_t __b = (b); \
@@ -4129,40 +4129,40 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (int64x1_t)__builtin_neon_vsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 3); })
 #define vsra_n_u8(a, b, __c) __extension__ ({ \
   uint8x8_t __a = (a); uint8x8_t __b = (b); \
-  (uint8x8_t)__builtin_neon_vsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 8); })
+  (uint8x8_t)__builtin_neon_vsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 16); })
 #define vsra_n_u16(a, b, __c) __extension__ ({ \
   uint16x4_t __a = (a); uint16x4_t __b = (b); \
-  (uint16x4_t)__builtin_neon_vsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 9); })
+  (uint16x4_t)__builtin_neon_vsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 17); })
 #define vsra_n_u32(a, b, __c) __extension__ ({ \
   uint32x2_t __a = (a); uint32x2_t __b = (b); \
-  (uint32x2_t)__builtin_neon_vsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 10); })
+  (uint32x2_t)__builtin_neon_vsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 18); })
 #define vsra_n_u64(a, b, __c) __extension__ ({ \
   uint64x1_t __a = (a); uint64x1_t __b = (b); \
-  (uint64x1_t)__builtin_neon_vsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 11); })
+  (uint64x1_t)__builtin_neon_vsra_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 19); })
 #define vsraq_n_s8(a, b, __c) __extension__ ({ \
   int8x16_t __a = (a); int8x16_t __b = (b); \
-  (int8x16_t)__builtin_neon_vsraq_n_v(__a, __b, __c, 16); })
+  (int8x16_t)__builtin_neon_vsraq_n_v(__a, __b, __c, 32); })
 #define vsraq_n_s16(a, b, __c) __extension__ ({ \
   int16x8_t __a = (a); int16x8_t __b = (b); \
-  (int16x8_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 17); })
+  (int16x8_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 33); })
 #define vsraq_n_s32(a, b, __c) __extension__ ({ \
   int32x4_t __a = (a); int32x4_t __b = (b); \
-  (int32x4_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 18); })
+  (int32x4_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 34); })
 #define vsraq_n_s64(a, b, __c) __extension__ ({ \
   int64x2_t __a = (a); int64x2_t __b = (b); \
-  (int64x2_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 19); })
+  (int64x2_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 35); })
 #define vsraq_n_u8(a, b, __c) __extension__ ({ \
   uint8x16_t __a = (a); uint8x16_t __b = (b); \
-  (uint8x16_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 24); })
+  (uint8x16_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 48); })
 #define vsraq_n_u16(a, b, __c) __extension__ ({ \
   uint16x8_t __a = (a); uint16x8_t __b = (b); \
-  (uint16x8_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 25); })
+  (uint16x8_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 49); })
 #define vsraq_n_u32(a, b, __c) __extension__ ({ \
   uint32x4_t __a = (a); uint32x4_t __b = (b); \
-  (uint32x4_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 26); })
+  (uint32x4_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 50); })
 #define vsraq_n_u64(a, b, __c) __extension__ ({ \
   uint64x2_t __a = (a); uint64x2_t __b = (b); \
-  (uint64x2_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 27); })
+  (uint64x2_t)__builtin_neon_vsraq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 51); })
 
 #define vsri_n_s8(a, b, __c) __extension__ ({ \
   int8x8_t __a = (a); int8x8_t __b = (b); \
@@ -4178,101 +4178,101 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   (int64x1_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 3); })
 #define vsri_n_u8(a, b, __c) __extension__ ({ \
   uint8x8_t __a = (a); uint8x8_t __b = (b); \
-  (uint8x8_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 8); })
+  (uint8x8_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 16); })
 #define vsri_n_u16(a, b, __c) __extension__ ({ \
   uint16x4_t __a = (a); uint16x4_t __b = (b); \
-  (uint16x4_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 9); })
+  (uint16x4_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 17); })
 #define vsri_n_u32(a, b, __c) __extension__ ({ \
   uint32x2_t __a = (a); uint32x2_t __b = (b); \
-  (uint32x2_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 10); })
+  (uint32x2_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 18); })
 #define vsri_n_u64(a, b, __c) __extension__ ({ \
   uint64x1_t __a = (a); uint64x1_t __b = (b); \
-  (uint64x1_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 11); })
+  (uint64x1_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 19); })
 #define vsri_n_p8(a, b, __c) __extension__ ({ \
   poly8x8_t __a = (a); poly8x8_t __b = (b); \
-  (poly8x8_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 5); })
+  (poly8x8_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 4); })
 #define vsri_n_p16(a, b, __c) __extension__ ({ \
   poly16x4_t __a = (a); poly16x4_t __b = (b); \
-  (poly16x4_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 6); })
+  (poly16x4_t)__builtin_neon_vsri_n_v((int8x8_t)__a, (int8x8_t)__b, __c, 5); })
 #define vsriq_n_s8(a, b, __c) __extension__ ({ \
   int8x16_t __a = (a); int8x16_t __b = (b); \
-  (int8x16_t)__builtin_neon_vsriq_n_v(__a, __b, __c, 16); })
+  (int8x16_t)__builtin_neon_vsriq_n_v(__a, __b, __c, 32); })
 #define vsriq_n_s16(a, b, __c) __extension__ ({ \
   int16x8_t __a = (a); int16x8_t __b = (b); \
-  (int16x8_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 17); })
+  (int16x8_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 33); })
 #define vsriq_n_s32(a, b, __c) __extension__ ({ \
   int32x4_t __a = (a); int32x4_t __b = (b); \
-  (int32x4_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 18); })
+  (int32x4_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 34); })
 #define vsriq_n_s64(a, b, __c) __extension__ ({ \
   int64x2_t __a = (a); int64x2_t __b = (b); \
-  (int64x2_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 19); })
+  (int64x2_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 35); })
 #define vsriq_n_u8(a, b, __c) __extension__ ({ \
   uint8x16_t __a = (a); uint8x16_t __b = (b); \
-  (uint8x16_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 24); })
+  (uint8x16_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 48); })
 #define vsriq_n_u16(a, b, __c) __extension__ ({ \
   uint16x8_t __a = (a); uint16x8_t __b = (b); \
-  (uint16x8_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 25); })
+  (uint16x8_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 49); })
 #define vsriq_n_u32(a, b, __c) __extension__ ({ \
   uint32x4_t __a = (a); uint32x4_t __b = (b); \
-  (uint32x4_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 26); })
+  (uint32x4_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 50); })
 #define vsriq_n_u64(a, b, __c) __extension__ ({ \
   uint64x2_t __a = (a); uint64x2_t __b = (b); \
-  (uint64x2_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 27); })
+  (uint64x2_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 51); })
 #define vsriq_n_p8(a, b, __c) __extension__ ({ \
   poly8x16_t __a = (a); poly8x16_t __b = (b); \
-  (poly8x16_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 21); })
+  (poly8x16_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 36); })
 #define vsriq_n_p16(a, b, __c) __extension__ ({ \
   poly16x8_t __a = (a); poly16x8_t __b = (b); \
-  (poly16x8_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 22); })
+  (poly16x8_t)__builtin_neon_vsriq_n_v((int8x16_t)__a, (int8x16_t)__b, __c, 37); })
 
 #define vst1q_u8(__a, b) __extension__ ({ \
   uint8x16_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 24); })
+  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 48); })
 #define vst1q_u16(__a, b) __extension__ ({ \
   uint16x8_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 25); })
+  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 49); })
 #define vst1q_u32(__a, b) __extension__ ({ \
   uint32x4_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 26); })
+  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 50); })
 #define vst1q_u64(__a, b) __extension__ ({ \
   uint64x2_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 27); })
+  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 51); })
 #define vst1q_s8(__a, b) __extension__ ({ \
   int8x16_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, __b, 16); })
+  __builtin_neon_vst1q_v(__a, __b, 32); })
 #define vst1q_s16(__a, b) __extension__ ({ \
   int16x8_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 17); })
+  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 33); })
 #define vst1q_s32(__a, b) __extension__ ({ \
   int32x4_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 18); })
+  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 34); })
 #define vst1q_s64(__a, b) __extension__ ({ \
   int64x2_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 19); })
+  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 35); })
 #define vst1q_f16(__a, b) __extension__ ({ \
   float16x8_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 23); })
+  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 38); })
 #define vst1q_f32(__a, b) __extension__ ({ \
   float32x4_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 20); })
+  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 39); })
 #define vst1q_p8(__a, b) __extension__ ({ \
   poly8x16_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 21); })
+  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 36); })
 #define vst1q_p16(__a, b) __extension__ ({ \
   poly16x8_t __b = (b); \
-  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 22); })
+  __builtin_neon_vst1q_v(__a, (int8x16_t)__b, 37); })
 #define vst1_u8(__a, b) __extension__ ({ \
   uint8x8_t __b = (b); \
-  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 8); })
+  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 16); })
 #define vst1_u16(__a, b) __extension__ ({ \
   uint16x4_t __b = (b); \
-  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 9); })
+  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 17); })
 #define vst1_u32(__a, b) __extension__ ({ \
   uint32x2_t __b = (b); \
-  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 10); })
+  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 18); })
 #define vst1_u64(__a, b) __extension__ ({ \
   uint64x1_t __b = (b); \
-  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 11); })
+  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 19); })
 #define vst1_s8(__a, b) __extension__ ({ \
   int8x8_t __b = (b); \
   __builtin_neon_vst1_v(__a, __b, 0); })
@@ -4287,65 +4287,65 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   __builtin_neon_vst1_v(__a, (int8x8_t)__b, 3); })
 #define vst1_f16(__a, b) __extension__ ({ \
   float16x4_t __b = (b); \
-  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 7); })
+  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 6); })
 #define vst1_f32(__a, b) __extension__ ({ \
   float32x2_t __b = (b); \
-  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 4); })
+  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 7); })
 #define vst1_p8(__a, b) __extension__ ({ \
   poly8x8_t __b = (b); \
-  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 5); })
+  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 4); })
 #define vst1_p16(__a, b) __extension__ ({ \
   poly16x4_t __b = (b); \
-  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 6); })
+  __builtin_neon_vst1_v(__a, (int8x8_t)__b, 5); })
 
 #define vst1q_lane_u8(__a, b, __c) __extension__ ({ \
   uint8x16_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 24); })
+  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 48); })
 #define vst1q_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x8_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 25); })
+  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 49); })
 #define vst1q_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x4_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 26); })
+  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 50); })
 #define vst1q_lane_u64(__a, b, __c) __extension__ ({ \
   uint64x2_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 27); })
+  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 51); })
 #define vst1q_lane_s8(__a, b, __c) __extension__ ({ \
   int8x16_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, __b, __c, 16); })
+  __builtin_neon_vst1q_lane_v(__a, __b, __c, 32); })
 #define vst1q_lane_s16(__a, b, __c) __extension__ ({ \
   int16x8_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 17); })
+  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 33); })
 #define vst1q_lane_s32(__a, b, __c) __extension__ ({ \
   int32x4_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 18); })
+  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 34); })
 #define vst1q_lane_s64(__a, b, __c) __extension__ ({ \
   int64x2_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 19); })
+  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 35); })
 #define vst1q_lane_f16(__a, b, __c) __extension__ ({ \
   float16x8_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 23); })
+  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 38); })
 #define vst1q_lane_f32(__a, b, __c) __extension__ ({ \
   float32x4_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 20); })
+  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 39); })
 #define vst1q_lane_p8(__a, b, __c) __extension__ ({ \
   poly8x16_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 21); })
+  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 36); })
 #define vst1q_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x8_t __b = (b); \
-  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 22); })
+  __builtin_neon_vst1q_lane_v(__a, (int8x16_t)__b, __c, 37); })
 #define vst1_lane_u8(__a, b, __c) __extension__ ({ \
   uint8x8_t __b = (b); \
-  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 8); })
+  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 16); })
 #define vst1_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x4_t __b = (b); \
-  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 9); })
+  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 17); })
 #define vst1_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x2_t __b = (b); \
-  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 10); })
+  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 18); })
 #define vst1_lane_u64(__a, b, __c) __extension__ ({ \
   uint64x1_t __b = (b); \
-  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 11); })
+  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 19); })
 #define vst1_lane_s8(__a, b, __c) __extension__ ({ \
   int8x8_t __b = (b); \
   __builtin_neon_vst1_lane_v(__a, __b, __c, 0); })
@@ -4360,59 +4360,59 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 3); })
 #define vst1_lane_f16(__a, b, __c) __extension__ ({ \
   float16x4_t __b = (b); \
-  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 7); })
+  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 6); })
 #define vst1_lane_f32(__a, b, __c) __extension__ ({ \
   float32x2_t __b = (b); \
-  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 4); })
+  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 7); })
 #define vst1_lane_p8(__a, b, __c) __extension__ ({ \
   poly8x8_t __b = (b); \
-  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 5); })
+  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 4); })
 #define vst1_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x4_t __b = (b); \
-  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 6); })
+  __builtin_neon_vst1_lane_v(__a, (int8x8_t)__b, __c, 5); })
 
 #define vst2q_u8(__a, b) __extension__ ({ \
   uint8x16x2_t __b = (b); \
-  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 24); })
+  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 48); })
 #define vst2q_u16(__a, b) __extension__ ({ \
   uint16x8x2_t __b = (b); \
-  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 25); })
+  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 49); })
 #define vst2q_u32(__a, b) __extension__ ({ \
   uint32x4x2_t __b = (b); \
-  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 26); })
+  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 50); })
 #define vst2q_s8(__a, b) __extension__ ({ \
   int8x16x2_t __b = (b); \
-  __builtin_neon_vst2q_v(__a, __b.val[0], __b.val[1], 16); })
+  __builtin_neon_vst2q_v(__a, __b.val[0], __b.val[1], 32); })
 #define vst2q_s16(__a, b) __extension__ ({ \
   int16x8x2_t __b = (b); \
-  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 17); })
+  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 33); })
 #define vst2q_s32(__a, b) __extension__ ({ \
   int32x4x2_t __b = (b); \
-  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 18); })
+  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 34); })
 #define vst2q_f16(__a, b) __extension__ ({ \
   float16x8x2_t __b = (b); \
-  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 23); })
+  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 38); })
 #define vst2q_f32(__a, b) __extension__ ({ \
   float32x4x2_t __b = (b); \
-  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 20); })
+  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 39); })
 #define vst2q_p8(__a, b) __extension__ ({ \
   poly8x16x2_t __b = (b); \
-  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 21); })
+  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 36); })
 #define vst2q_p16(__a, b) __extension__ ({ \
   poly16x8x2_t __b = (b); \
-  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 22); })
+  __builtin_neon_vst2q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], 37); })
 #define vst2_u8(__a, b) __extension__ ({ \
   uint8x8x2_t __b = (b); \
-  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 8); })
+  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 16); })
 #define vst2_u16(__a, b) __extension__ ({ \
   uint16x4x2_t __b = (b); \
-  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 9); })
+  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 17); })
 #define vst2_u32(__a, b) __extension__ ({ \
   uint32x2x2_t __b = (b); \
-  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 10); })
+  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 18); })
 #define vst2_u64(__a, b) __extension__ ({ \
   uint64x1x2_t __b = (b); \
-  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 11); })
+  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 19); })
 #define vst2_s8(__a, b) __extension__ ({ \
   int8x8x2_t __b = (b); \
   __builtin_neon_vst2_v(__a, __b.val[0], __b.val[1], 0); })
@@ -4427,47 +4427,47 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 3); })
 #define vst2_f16(__a, b) __extension__ ({ \
   float16x4x2_t __b = (b); \
-  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 7); })
+  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 6); })
 #define vst2_f32(__a, b) __extension__ ({ \
   float32x2x2_t __b = (b); \
-  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 4); })
+  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 7); })
 #define vst2_p8(__a, b) __extension__ ({ \
   poly8x8x2_t __b = (b); \
-  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 5); })
+  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 4); })
 #define vst2_p16(__a, b) __extension__ ({ \
   poly16x4x2_t __b = (b); \
-  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 6); })
+  __builtin_neon_vst2_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], 5); })
 
 #define vst2q_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x8x2_t __b = (b); \
-  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 25); })
+  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 49); })
 #define vst2q_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x4x2_t __b = (b); \
-  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 26); })
+  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 50); })
 #define vst2q_lane_s16(__a, b, __c) __extension__ ({ \
   int16x8x2_t __b = (b); \
-  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 17); })
+  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 33); })
 #define vst2q_lane_s32(__a, b, __c) __extension__ ({ \
   int32x4x2_t __b = (b); \
-  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 18); })
+  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 34); })
 #define vst2q_lane_f16(__a, b, __c) __extension__ ({ \
   float16x8x2_t __b = (b); \
-  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 23); })
+  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 38); })
 #define vst2q_lane_f32(__a, b, __c) __extension__ ({ \
   float32x4x2_t __b = (b); \
-  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 20); })
+  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 39); })
 #define vst2q_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x8x2_t __b = (b); \
-  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 22); })
+  __builtin_neon_vst2q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], __c, 37); })
 #define vst2_lane_u8(__a, b, __c) __extension__ ({ \
   uint8x8x2_t __b = (b); \
-  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 8); })
+  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 16); })
 #define vst2_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x4x2_t __b = (b); \
-  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 9); })
+  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 17); })
 #define vst2_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x2x2_t __b = (b); \
-  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 10); })
+  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 18); })
 #define vst2_lane_s8(__a, b, __c) __extension__ ({ \
   int8x8x2_t __b = (b); \
   __builtin_neon_vst2_lane_v(__a, __b.val[0], __b.val[1], __c, 0); })
@@ -4479,59 +4479,59 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 2); })
 #define vst2_lane_f16(__a, b, __c) __extension__ ({ \
   float16x4x2_t __b = (b); \
-  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 7); })
+  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 6); })
 #define vst2_lane_f32(__a, b, __c) __extension__ ({ \
   float32x2x2_t __b = (b); \
-  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 4); })
+  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 7); })
 #define vst2_lane_p8(__a, b, __c) __extension__ ({ \
   poly8x8x2_t __b = (b); \
-  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 5); })
+  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 4); })
 #define vst2_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x4x2_t __b = (b); \
-  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 6); })
+  __builtin_neon_vst2_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], __c, 5); })
 
 #define vst3q_u8(__a, b) __extension__ ({ \
   uint8x16x3_t __b = (b); \
-  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 24); })
+  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 48); })
 #define vst3q_u16(__a, b) __extension__ ({ \
   uint16x8x3_t __b = (b); \
-  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 25); })
+  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 49); })
 #define vst3q_u32(__a, b) __extension__ ({ \
   uint32x4x3_t __b = (b); \
-  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 26); })
+  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 50); })
 #define vst3q_s8(__a, b) __extension__ ({ \
   int8x16x3_t __b = (b); \
-  __builtin_neon_vst3q_v(__a, __b.val[0], __b.val[1], __b.val[2], 16); })
+  __builtin_neon_vst3q_v(__a, __b.val[0], __b.val[1], __b.val[2], 32); })
 #define vst3q_s16(__a, b) __extension__ ({ \
   int16x8x3_t __b = (b); \
-  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 17); })
+  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 33); })
 #define vst3q_s32(__a, b) __extension__ ({ \
   int32x4x3_t __b = (b); \
-  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 18); })
+  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 34); })
 #define vst3q_f16(__a, b) __extension__ ({ \
   float16x8x3_t __b = (b); \
-  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 23); })
+  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 38); })
 #define vst3q_f32(__a, b) __extension__ ({ \
   float32x4x3_t __b = (b); \
-  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 20); })
+  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 39); })
 #define vst3q_p8(__a, b) __extension__ ({ \
   poly8x16x3_t __b = (b); \
-  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 21); })
+  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 36); })
 #define vst3q_p16(__a, b) __extension__ ({ \
   poly16x8x3_t __b = (b); \
-  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 22); })
+  __builtin_neon_vst3q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], 37); })
 #define vst3_u8(__a, b) __extension__ ({ \
   uint8x8x3_t __b = (b); \
-  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 8); })
+  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 16); })
 #define vst3_u16(__a, b) __extension__ ({ \
   uint16x4x3_t __b = (b); \
-  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 9); })
+  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 17); })
 #define vst3_u32(__a, b) __extension__ ({ \
   uint32x2x3_t __b = (b); \
-  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 10); })
+  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 18); })
 #define vst3_u64(__a, b) __extension__ ({ \
   uint64x1x3_t __b = (b); \
-  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 11); })
+  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 19); })
 #define vst3_s8(__a, b) __extension__ ({ \
   int8x8x3_t __b = (b); \
   __builtin_neon_vst3_v(__a, __b.val[0], __b.val[1], __b.val[2], 0); })
@@ -4546,47 +4546,47 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 3); })
 #define vst3_f16(__a, b) __extension__ ({ \
   float16x4x3_t __b = (b); \
-  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 7); })
+  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 6); })
 #define vst3_f32(__a, b) __extension__ ({ \
   float32x2x3_t __b = (b); \
-  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 4); })
+  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 7); })
 #define vst3_p8(__a, b) __extension__ ({ \
   poly8x8x3_t __b = (b); \
-  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 5); })
+  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 4); })
 #define vst3_p16(__a, b) __extension__ ({ \
   poly16x4x3_t __b = (b); \
-  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 6); })
+  __builtin_neon_vst3_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], 5); })
 
 #define vst3q_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x8x3_t __b = (b); \
-  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 25); })
+  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 49); })
 #define vst3q_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x4x3_t __b = (b); \
-  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 26); })
+  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 50); })
 #define vst3q_lane_s16(__a, b, __c) __extension__ ({ \
   int16x8x3_t __b = (b); \
-  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 17); })
+  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 33); })
 #define vst3q_lane_s32(__a, b, __c) __extension__ ({ \
   int32x4x3_t __b = (b); \
-  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 18); })
+  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 34); })
 #define vst3q_lane_f16(__a, b, __c) __extension__ ({ \
   float16x8x3_t __b = (b); \
-  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 23); })
+  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 38); })
 #define vst3q_lane_f32(__a, b, __c) __extension__ ({ \
   float32x4x3_t __b = (b); \
-  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 20); })
+  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 39); })
 #define vst3q_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x8x3_t __b = (b); \
-  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 22); })
+  __builtin_neon_vst3q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], __c, 37); })
 #define vst3_lane_u8(__a, b, __c) __extension__ ({ \
   uint8x8x3_t __b = (b); \
-  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 8); })
+  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 16); })
 #define vst3_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x4x3_t __b = (b); \
-  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 9); })
+  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 17); })
 #define vst3_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x2x3_t __b = (b); \
-  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 10); })
+  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 18); })
 #define vst3_lane_s8(__a, b, __c) __extension__ ({ \
   int8x8x3_t __b = (b); \
   __builtin_neon_vst3_lane_v(__a, __b.val[0], __b.val[1], __b.val[2], __c, 0); })
@@ -4598,59 +4598,59 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 2); })
 #define vst3_lane_f16(__a, b, __c) __extension__ ({ \
   float16x4x3_t __b = (b); \
-  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 7); })
+  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 6); })
 #define vst3_lane_f32(__a, b, __c) __extension__ ({ \
   float32x2x3_t __b = (b); \
-  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 4); })
+  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 7); })
 #define vst3_lane_p8(__a, b, __c) __extension__ ({ \
   poly8x8x3_t __b = (b); \
-  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 5); })
+  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 4); })
 #define vst3_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x4x3_t __b = (b); \
-  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 6); })
+  __builtin_neon_vst3_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], __c, 5); })
 
 #define vst4q_u8(__a, b) __extension__ ({ \
   uint8x16x4_t __b = (b); \
-  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 24); })
+  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 48); })
 #define vst4q_u16(__a, b) __extension__ ({ \
   uint16x8x4_t __b = (b); \
-  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 25); })
+  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 49); })
 #define vst4q_u32(__a, b) __extension__ ({ \
   uint32x4x4_t __b = (b); \
-  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 26); })
+  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 50); })
 #define vst4q_s8(__a, b) __extension__ ({ \
   int8x16x4_t __b = (b); \
-  __builtin_neon_vst4q_v(__a, __b.val[0], __b.val[1], __b.val[2], __b.val[3], 16); })
+  __builtin_neon_vst4q_v(__a, __b.val[0], __b.val[1], __b.val[2], __b.val[3], 32); })
 #define vst4q_s16(__a, b) __extension__ ({ \
   int16x8x4_t __b = (b); \
-  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 17); })
+  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 33); })
 #define vst4q_s32(__a, b) __extension__ ({ \
   int32x4x4_t __b = (b); \
-  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 18); })
+  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 34); })
 #define vst4q_f16(__a, b) __extension__ ({ \
   float16x8x4_t __b = (b); \
-  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 23); })
+  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 38); })
 #define vst4q_f32(__a, b) __extension__ ({ \
   float32x4x4_t __b = (b); \
-  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 20); })
+  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 39); })
 #define vst4q_p8(__a, b) __extension__ ({ \
   poly8x16x4_t __b = (b); \
-  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 21); })
+  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 36); })
 #define vst4q_p16(__a, b) __extension__ ({ \
   poly16x8x4_t __b = (b); \
-  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 22); })
+  __builtin_neon_vst4q_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], 37); })
 #define vst4_u8(__a, b) __extension__ ({ \
   uint8x8x4_t __b = (b); \
-  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 8); })
+  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 16); })
 #define vst4_u16(__a, b) __extension__ ({ \
   uint16x4x4_t __b = (b); \
-  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 9); })
+  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 17); })
 #define vst4_u32(__a, b) __extension__ ({ \
   uint32x2x4_t __b = (b); \
-  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 10); })
+  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 18); })
 #define vst4_u64(__a, b) __extension__ ({ \
   uint64x1x4_t __b = (b); \
-  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 11); })
+  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 19); })
 #define vst4_s8(__a, b) __extension__ ({ \
   int8x8x4_t __b = (b); \
   __builtin_neon_vst4_v(__a, __b.val[0], __b.val[1], __b.val[2], __b.val[3], 0); })
@@ -4665,47 +4665,47 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 3); })
 #define vst4_f16(__a, b) __extension__ ({ \
   float16x4x4_t __b = (b); \
-  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 7); })
+  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 6); })
 #define vst4_f32(__a, b) __extension__ ({ \
   float32x2x4_t __b = (b); \
-  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 4); })
+  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 7); })
 #define vst4_p8(__a, b) __extension__ ({ \
   poly8x8x4_t __b = (b); \
-  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 5); })
+  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 4); })
 #define vst4_p16(__a, b) __extension__ ({ \
   poly16x4x4_t __b = (b); \
-  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 6); })
+  __builtin_neon_vst4_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], 5); })
 
 #define vst4q_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x8x4_t __b = (b); \
-  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 25); })
+  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 49); })
 #define vst4q_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x4x4_t __b = (b); \
-  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 26); })
+  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 50); })
 #define vst4q_lane_s16(__a, b, __c) __extension__ ({ \
   int16x8x4_t __b = (b); \
-  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 17); })
+  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 33); })
 #define vst4q_lane_s32(__a, b, __c) __extension__ ({ \
   int32x4x4_t __b = (b); \
-  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 18); })
+  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 34); })
 #define vst4q_lane_f16(__a, b, __c) __extension__ ({ \
   float16x8x4_t __b = (b); \
-  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 23); })
+  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 38); })
 #define vst4q_lane_f32(__a, b, __c) __extension__ ({ \
   float32x4x4_t __b = (b); \
-  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 20); })
+  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 39); })
 #define vst4q_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x8x4_t __b = (b); \
-  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 22); })
+  __builtin_neon_vst4q_lane_v(__a, (int8x16_t)__b.val[0], (int8x16_t)__b.val[1], (int8x16_t)__b.val[2], (int8x16_t)__b.val[3], __c, 37); })
 #define vst4_lane_u8(__a, b, __c) __extension__ ({ \
   uint8x8x4_t __b = (b); \
-  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 8); })
+  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 16); })
 #define vst4_lane_u16(__a, b, __c) __extension__ ({ \
   uint16x4x4_t __b = (b); \
-  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 9); })
+  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 17); })
 #define vst4_lane_u32(__a, b, __c) __extension__ ({ \
   uint32x2x4_t __b = (b); \
-  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 10); })
+  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 18); })
 #define vst4_lane_s8(__a, b, __c) __extension__ ({ \
   int8x8x4_t __b = (b); \
   __builtin_neon_vst4_lane_v(__a, __b.val[0], __b.val[1], __b.val[2], __b.val[3], __c, 0); })
@@ -4717,16 +4717,16 @@ __ai uint64x2_t vshlq_u64(uint64x2_t __a, int64x2_t __b) { \
   __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 2); })
 #define vst4_lane_f16(__a, b, __c) __extension__ ({ \
   float16x4x4_t __b = (b); \
-  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 7); })
+  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 6); })
 #define vst4_lane_f32(__a, b, __c) __extension__ ({ \
   float32x2x4_t __b = (b); \
-  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 4); })
+  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 7); })
 #define vst4_lane_p8(__a, b, __c) __extension__ ({ \
   poly8x8x4_t __b = (b); \
-  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 5); })
+  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 4); })
 #define vst4_lane_p16(__a, b, __c) __extension__ ({ \
   poly16x4x4_t __b = (b); \
-  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 6); })
+  __builtin_neon_vst4_lane_v(__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], __c, 5); })
 
 __ai int8x8_t vsub_s8(int8x8_t __a, int8x8_t __b) { \
   return __a - __b; }
@@ -4772,11 +4772,11 @@ __ai int16x4_t vsubhn_s32(int32x4_t __a, int32x4_t __b) { \
 __ai int32x2_t vsubhn_s64(int64x2_t __a, int64x2_t __b) { \
   return (int32x2_t)__builtin_neon_vsubhn_v((int8x16_t)__a, (int8x16_t)__b, 2); }
 __ai uint8x8_t vsubhn_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vsubhn_v((int8x16_t)__a, (int8x16_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vsubhn_v((int8x16_t)__a, (int8x16_t)__b, 16); }
 __ai uint16x4_t vsubhn_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vsubhn_v((int8x16_t)__a, (int8x16_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vsubhn_v((int8x16_t)__a, (int8x16_t)__b, 17); }
 __ai uint32x2_t vsubhn_u64(uint64x2_t __a, uint64x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vsubhn_v((int8x16_t)__a, (int8x16_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vsubhn_v((int8x16_t)__a, (int8x16_t)__b, 18); }
 
 __ai int16x8_t vsubl_s8(int8x8_t __a, int8x8_t __b) { \
   return vmovl_s8(__a) - vmovl_s8(__b); }
@@ -4805,60 +4805,60 @@ __ai uint64x2_t vsubw_u32(uint64x2_t __a, uint32x2_t __b) { \
   return __a - vmovl_u32(__b); }
 
 __ai uint8x8_t vtbl1_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vtbl1_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vtbl1_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai int8x8_t vtbl1_s8(int8x8_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vtbl1_v(__a, __b, 0); }
 __ai poly8x8_t vtbl1_p8(poly8x8_t __a, uint8x8_t __b) { \
-  return (poly8x8_t)__builtin_neon_vtbl1_v((int8x8_t)__a, (int8x8_t)__b, 5); }
+  return (poly8x8_t)__builtin_neon_vtbl1_v((int8x8_t)__a, (int8x8_t)__b, 4); }
 
 __ai uint8x8_t vtbl2_u8(uint8x8x2_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vtbl2_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vtbl2_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__b, 16); }
 __ai int8x8_t vtbl2_s8(int8x8x2_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vtbl2_v(__a.val[0], __a.val[1], __b, 0); }
 __ai poly8x8_t vtbl2_p8(poly8x8x2_t __a, uint8x8_t __b) { \
-  return (poly8x8_t)__builtin_neon_vtbl2_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__b, 5); }
+  return (poly8x8_t)__builtin_neon_vtbl2_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__b, 4); }
 
 __ai uint8x8_t vtbl3_u8(uint8x8x3_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vtbl3_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__a.val[2], (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vtbl3_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__a.val[2], (int8x8_t)__b, 16); }
 __ai int8x8_t vtbl3_s8(int8x8x3_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vtbl3_v(__a.val[0], __a.val[1], __a.val[2], __b, 0); }
 __ai poly8x8_t vtbl3_p8(poly8x8x3_t __a, uint8x8_t __b) { \
-  return (poly8x8_t)__builtin_neon_vtbl3_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__a.val[2], (int8x8_t)__b, 5); }
+  return (poly8x8_t)__builtin_neon_vtbl3_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__a.val[2], (int8x8_t)__b, 4); }
 
 __ai uint8x8_t vtbl4_u8(uint8x8x4_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vtbl4_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__a.val[2], (int8x8_t)__a.val[3], (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vtbl4_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__a.val[2], (int8x8_t)__a.val[3], (int8x8_t)__b, 16); }
 __ai int8x8_t vtbl4_s8(int8x8x4_t __a, int8x8_t __b) { \
   return (int8x8_t)__builtin_neon_vtbl4_v(__a.val[0], __a.val[1], __a.val[2], __a.val[3], __b, 0); }
 __ai poly8x8_t vtbl4_p8(poly8x8x4_t __a, uint8x8_t __b) { \
-  return (poly8x8_t)__builtin_neon_vtbl4_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__a.val[2], (int8x8_t)__a.val[3], (int8x8_t)__b, 5); }
+  return (poly8x8_t)__builtin_neon_vtbl4_v((int8x8_t)__a.val[0], (int8x8_t)__a.val[1], (int8x8_t)__a.val[2], (int8x8_t)__a.val[3], (int8x8_t)__b, 4); }
 
 __ai uint8x8_t vtbx1_u8(uint8x8_t __a, uint8x8_t __b, uint8x8_t __c) { \
-  return (uint8x8_t)__builtin_neon_vtbx1_v((int8x8_t)__a, (int8x8_t)__b, (int8x8_t)__c, 8); }
+  return (uint8x8_t)__builtin_neon_vtbx1_v((int8x8_t)__a, (int8x8_t)__b, (int8x8_t)__c, 16); }
 __ai int8x8_t vtbx1_s8(int8x8_t __a, int8x8_t __b, int8x8_t __c) { \
   return (int8x8_t)__builtin_neon_vtbx1_v(__a, __b, __c, 0); }
 __ai poly8x8_t vtbx1_p8(poly8x8_t __a, poly8x8_t __b, uint8x8_t __c) { \
-  return (poly8x8_t)__builtin_neon_vtbx1_v((int8x8_t)__a, (int8x8_t)__b, (int8x8_t)__c, 5); }
+  return (poly8x8_t)__builtin_neon_vtbx1_v((int8x8_t)__a, (int8x8_t)__b, (int8x8_t)__c, 4); }
 
 __ai uint8x8_t vtbx2_u8(uint8x8_t __a, uint8x8x2_t __b, uint8x8_t __c) { \
-  return (uint8x8_t)__builtin_neon_vtbx2_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__c, 8); }
+  return (uint8x8_t)__builtin_neon_vtbx2_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__c, 16); }
 __ai int8x8_t vtbx2_s8(int8x8_t __a, int8x8x2_t __b, int8x8_t __c) { \
   return (int8x8_t)__builtin_neon_vtbx2_v(__a, __b.val[0], __b.val[1], __c, 0); }
 __ai poly8x8_t vtbx2_p8(poly8x8_t __a, poly8x8x2_t __b, uint8x8_t __c) { \
-  return (poly8x8_t)__builtin_neon_vtbx2_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__c, 5); }
+  return (poly8x8_t)__builtin_neon_vtbx2_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__c, 4); }
 
 __ai uint8x8_t vtbx3_u8(uint8x8_t __a, uint8x8x3_t __b, uint8x8_t __c) { \
-  return (uint8x8_t)__builtin_neon_vtbx3_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__c, 8); }
+  return (uint8x8_t)__builtin_neon_vtbx3_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__c, 16); }
 __ai int8x8_t vtbx3_s8(int8x8_t __a, int8x8x3_t __b, int8x8_t __c) { \
   return (int8x8_t)__builtin_neon_vtbx3_v(__a, __b.val[0], __b.val[1], __b.val[2], __c, 0); }
 __ai poly8x8_t vtbx3_p8(poly8x8_t __a, poly8x8x3_t __b, uint8x8_t __c) { \
-  return (poly8x8_t)__builtin_neon_vtbx3_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__c, 5); }
+  return (poly8x8_t)__builtin_neon_vtbx3_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__c, 4); }
 
 __ai uint8x8_t vtbx4_u8(uint8x8_t __a, uint8x8x4_t __b, uint8x8_t __c) { \
-  return (uint8x8_t)__builtin_neon_vtbx4_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], (int8x8_t)__c, 8); }
+  return (uint8x8_t)__builtin_neon_vtbx4_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], (int8x8_t)__c, 16); }
 __ai int8x8_t vtbx4_s8(int8x8_t __a, int8x8x4_t __b, int8x8_t __c) { \
   return (int8x8_t)__builtin_neon_vtbx4_v(__a, __b.val[0], __b.val[1], __b.val[2], __b.val[3], __c, 0); }
 __ai poly8x8_t vtbx4_p8(poly8x8_t __a, poly8x8x4_t __b, uint8x8_t __c) { \
-  return (poly8x8_t)__builtin_neon_vtbx4_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], (int8x8_t)__c, 5); }
+  return (poly8x8_t)__builtin_neon_vtbx4_v((int8x8_t)__a, (int8x8_t)__b.val[0], (int8x8_t)__b.val[1], (int8x8_t)__b.val[2], (int8x8_t)__b.val[3], (int8x8_t)__c, 4); }
 
 __ai int8x8x2_t vtrn_s8(int8x8_t __a, int8x8_t __b) { \
   int8x8x2_t r; __builtin_neon_vtrn_v(&r, __a, __b, 0); return r; }
@@ -4867,64 +4867,64 @@ __ai int16x4x2_t vtrn_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2x2_t vtrn_s32(int32x2_t __a, int32x2_t __b) { \
   int32x2x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 2); return r; }
 __ai uint8x8x2_t vtrn_u8(uint8x8_t __a, uint8x8_t __b) { \
-  uint8x8x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 8); return r; }
+  uint8x8x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 16); return r; }
 __ai uint16x4x2_t vtrn_u16(uint16x4_t __a, uint16x4_t __b) { \
-  uint16x4x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 9); return r; }
+  uint16x4x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 17); return r; }
 __ai uint32x2x2_t vtrn_u32(uint32x2_t __a, uint32x2_t __b) { \
-  uint32x2x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 10); return r; }
+  uint32x2x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 18); return r; }
 __ai float32x2x2_t vtrn_f32(float32x2_t __a, float32x2_t __b) { \
-  float32x2x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 4); return r; }
+  float32x2x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 7); return r; }
 __ai poly8x8x2_t vtrn_p8(poly8x8_t __a, poly8x8_t __b) { \
-  poly8x8x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 5); return r; }
+  poly8x8x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 4); return r; }
 __ai poly16x4x2_t vtrn_p16(poly16x4_t __a, poly16x4_t __b) { \
-  poly16x4x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 6); return r; }
+  poly16x4x2_t r; __builtin_neon_vtrn_v(&r, (int8x8_t)__a, (int8x8_t)__b, 5); return r; }
 __ai int8x16x2_t vtrnq_s8(int8x16_t __a, int8x16_t __b) { \
-  int8x16x2_t r; __builtin_neon_vtrnq_v(&r, __a, __b, 16); return r; }
+  int8x16x2_t r; __builtin_neon_vtrnq_v(&r, __a, __b, 32); return r; }
 __ai int16x8x2_t vtrnq_s16(int16x8_t __a, int16x8_t __b) { \
-  int16x8x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 17); return r; }
+  int16x8x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 33); return r; }
 __ai int32x4x2_t vtrnq_s32(int32x4_t __a, int32x4_t __b) { \
-  int32x4x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 18); return r; }
+  int32x4x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 34); return r; }
 __ai uint8x16x2_t vtrnq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  uint8x16x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 24); return r; }
+  uint8x16x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 48); return r; }
 __ai uint16x8x2_t vtrnq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  uint16x8x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 25); return r; }
+  uint16x8x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 49); return r; }
 __ai uint32x4x2_t vtrnq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  uint32x4x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 26); return r; }
+  uint32x4x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 50); return r; }
 __ai float32x4x2_t vtrnq_f32(float32x4_t __a, float32x4_t __b) { \
-  float32x4x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 20); return r; }
+  float32x4x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 39); return r; }
 __ai poly8x16x2_t vtrnq_p8(poly8x16_t __a, poly8x16_t __b) { \
-  poly8x16x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 21); return r; }
+  poly8x16x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 36); return r; }
 __ai poly16x8x2_t vtrnq_p16(poly16x8_t __a, poly16x8_t __b) { \
-  poly16x8x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 22); return r; }
+  poly16x8x2_t r; __builtin_neon_vtrnq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 37); return r; }
 
 __ai uint8x8_t vtst_s8(int8x8_t __a, int8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vtst_v(__a, __b, 8); }
+  return (uint8x8_t)__builtin_neon_vtst_v(__a, __b, 16); }
 __ai uint16x4_t vtst_s16(int16x4_t __a, int16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vtst_s32(int32x2_t __a, int32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint8x8_t vtst_u8(uint8x8_t __a, uint8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint16x4_t vtst_u16(uint16x4_t __a, uint16x4_t __b) { \
-  return (uint16x4_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 9); }
+  return (uint16x4_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 17); }
 __ai uint32x2_t vtst_u32(uint32x2_t __a, uint32x2_t __b) { \
-  return (uint32x2_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 10); }
+  return (uint32x2_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 18); }
 __ai uint8x8_t vtst_p8(poly8x8_t __a, poly8x8_t __b) { \
-  return (uint8x8_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 8); }
+  return (uint8x8_t)__builtin_neon_vtst_v((int8x8_t)__a, (int8x8_t)__b, 16); }
 __ai uint8x16_t vtstq_s8(int8x16_t __a, int8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vtstq_v(__a, __b, 24); }
+  return (uint8x16_t)__builtin_neon_vtstq_v(__a, __b, 48); }
 __ai uint16x8_t vtstq_s16(int16x8_t __a, int16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vtstq_s32(int32x4_t __a, int32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai uint8x16_t vtstq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 24); }
+  return (uint8x16_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 48); }
 __ai uint16x8_t vtstq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  return (uint16x8_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 25); }
+  return (uint16x8_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 49); }
 __ai uint32x4_t vtstq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  return (uint32x4_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 26); }
+  return (uint32x4_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 50); }
 __ai uint8x16_t vtstq_p8(poly8x16_t __a, poly8x16_t __b) { \
-  return (uint8x16_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 24); }
+  return (uint8x16_t)__builtin_neon_vtstq_v((int8x16_t)__a, (int8x16_t)__b, 48); }
 
 __ai int8x8x2_t vuzp_s8(int8x8_t __a, int8x8_t __b) { \
   int8x8x2_t r; __builtin_neon_vuzp_v(&r, __a, __b, 0); return r; }
@@ -4933,35 +4933,35 @@ __ai int16x4x2_t vuzp_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2x2_t vuzp_s32(int32x2_t __a, int32x2_t __b) { \
   int32x2x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 2); return r; }
 __ai uint8x8x2_t vuzp_u8(uint8x8_t __a, uint8x8_t __b) { \
-  uint8x8x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 8); return r; }
+  uint8x8x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 16); return r; }
 __ai uint16x4x2_t vuzp_u16(uint16x4_t __a, uint16x4_t __b) { \
-  uint16x4x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 9); return r; }
+  uint16x4x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 17); return r; }
 __ai uint32x2x2_t vuzp_u32(uint32x2_t __a, uint32x2_t __b) { \
-  uint32x2x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 10); return r; }
+  uint32x2x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 18); return r; }
 __ai float32x2x2_t vuzp_f32(float32x2_t __a, float32x2_t __b) { \
-  float32x2x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 4); return r; }
+  float32x2x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 7); return r; }
 __ai poly8x8x2_t vuzp_p8(poly8x8_t __a, poly8x8_t __b) { \
-  poly8x8x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 5); return r; }
+  poly8x8x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 4); return r; }
 __ai poly16x4x2_t vuzp_p16(poly16x4_t __a, poly16x4_t __b) { \
-  poly16x4x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 6); return r; }
+  poly16x4x2_t r; __builtin_neon_vuzp_v(&r, (int8x8_t)__a, (int8x8_t)__b, 5); return r; }
 __ai int8x16x2_t vuzpq_s8(int8x16_t __a, int8x16_t __b) { \
-  int8x16x2_t r; __builtin_neon_vuzpq_v(&r, __a, __b, 16); return r; }
+  int8x16x2_t r; __builtin_neon_vuzpq_v(&r, __a, __b, 32); return r; }
 __ai int16x8x2_t vuzpq_s16(int16x8_t __a, int16x8_t __b) { \
-  int16x8x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 17); return r; }
+  int16x8x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 33); return r; }
 __ai int32x4x2_t vuzpq_s32(int32x4_t __a, int32x4_t __b) { \
-  int32x4x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 18); return r; }
+  int32x4x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 34); return r; }
 __ai uint8x16x2_t vuzpq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  uint8x16x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 24); return r; }
+  uint8x16x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 48); return r; }
 __ai uint16x8x2_t vuzpq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  uint16x8x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 25); return r; }
+  uint16x8x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 49); return r; }
 __ai uint32x4x2_t vuzpq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  uint32x4x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 26); return r; }
+  uint32x4x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 50); return r; }
 __ai float32x4x2_t vuzpq_f32(float32x4_t __a, float32x4_t __b) { \
-  float32x4x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 20); return r; }
+  float32x4x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 39); return r; }
 __ai poly8x16x2_t vuzpq_p8(poly8x16_t __a, poly8x16_t __b) { \
-  poly8x16x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 21); return r; }
+  poly8x16x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 36); return r; }
 __ai poly16x8x2_t vuzpq_p16(poly16x8_t __a, poly16x8_t __b) { \
-  poly16x8x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 22); return r; }
+  poly16x8x2_t r; __builtin_neon_vuzpq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 37); return r; }
 
 __ai int8x8x2_t vzip_s8(int8x8_t __a, int8x8_t __b) { \
   int8x8x2_t r; __builtin_neon_vzip_v(&r, __a, __b, 0); return r; }
@@ -4970,35 +4970,35 @@ __ai int16x4x2_t vzip_s16(int16x4_t __a, int16x4_t __b) { \
 __ai int32x2x2_t vzip_s32(int32x2_t __a, int32x2_t __b) { \
   int32x2x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 2); return r; }
 __ai uint8x8x2_t vzip_u8(uint8x8_t __a, uint8x8_t __b) { \
-  uint8x8x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 8); return r; }
+  uint8x8x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 16); return r; }
 __ai uint16x4x2_t vzip_u16(uint16x4_t __a, uint16x4_t __b) { \
-  uint16x4x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 9); return r; }
+  uint16x4x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 17); return r; }
 __ai uint32x2x2_t vzip_u32(uint32x2_t __a, uint32x2_t __b) { \
-  uint32x2x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 10); return r; }
+  uint32x2x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 18); return r; }
 __ai float32x2x2_t vzip_f32(float32x2_t __a, float32x2_t __b) { \
-  float32x2x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 4); return r; }
+  float32x2x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 7); return r; }
 __ai poly8x8x2_t vzip_p8(poly8x8_t __a, poly8x8_t __b) { \
-  poly8x8x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 5); return r; }
+  poly8x8x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 4); return r; }
 __ai poly16x4x2_t vzip_p16(poly16x4_t __a, poly16x4_t __b) { \
-  poly16x4x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 6); return r; }
+  poly16x4x2_t r; __builtin_neon_vzip_v(&r, (int8x8_t)__a, (int8x8_t)__b, 5); return r; }
 __ai int8x16x2_t vzipq_s8(int8x16_t __a, int8x16_t __b) { \
-  int8x16x2_t r; __builtin_neon_vzipq_v(&r, __a, __b, 16); return r; }
+  int8x16x2_t r; __builtin_neon_vzipq_v(&r, __a, __b, 32); return r; }
 __ai int16x8x2_t vzipq_s16(int16x8_t __a, int16x8_t __b) { \
-  int16x8x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 17); return r; }
+  int16x8x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 33); return r; }
 __ai int32x4x2_t vzipq_s32(int32x4_t __a, int32x4_t __b) { \
-  int32x4x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 18); return r; }
+  int32x4x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 34); return r; }
 __ai uint8x16x2_t vzipq_u8(uint8x16_t __a, uint8x16_t __b) { \
-  uint8x16x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 24); return r; }
+  uint8x16x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 48); return r; }
 __ai uint16x8x2_t vzipq_u16(uint16x8_t __a, uint16x8_t __b) { \
-  uint16x8x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 25); return r; }
+  uint16x8x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 49); return r; }
 __ai uint32x4x2_t vzipq_u32(uint32x4_t __a, uint32x4_t __b) { \
-  uint32x4x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 26); return r; }
+  uint32x4x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 50); return r; }
 __ai float32x4x2_t vzipq_f32(float32x4_t __a, float32x4_t __b) { \
-  float32x4x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 20); return r; }
+  float32x4x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 39); return r; }
 __ai poly8x16x2_t vzipq_p8(poly8x16_t __a, poly8x16_t __b) { \
-  poly8x16x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 21); return r; }
+  poly8x16x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 36); return r; }
 __ai poly16x8x2_t vzipq_p16(poly16x8_t __a, poly16x8_t __b) { \
-  poly16x8x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 22); return r; }
+  poly16x8x2_t r; __builtin_neon_vzipq_v(&r, (int8x16_t)__a, (int8x16_t)__b, 37); return r; }
 
 #undef __ai
 
