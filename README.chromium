@@ -3,8 +3,8 @@ URL: http://code.google.com/p/address-sanitizer/
      http://sites.google.com/a/chromium.org/dev/developers/testing/addresssanitizer
 Version: r148472
 Date: 2012-01-19
-Darwin ASan version: r148387
-Darwin date: 2012-01-18
+Darwin ASan version: r149862
+Darwin date: 2012-02-07
 License: Apache
 
 Description: ASAN (aka AddressSanitizer) is a fast memory error detector.
