@@ -1,8 +1,8 @@
 Name: asan
 URL: http://code.google.com/p/address-sanitizer/
      http://sites.google.com/a/chromium.org/dev/developers/testing/addresssanitizer
-Version: r148472
-Date: 2012-01-19
+Version: r152624
+Date: 2012-03-13
 Darwin ASan version: r149862
 Darwin date: 2012-02-07
 License: Apache
@@ -15,6 +15,10 @@ The directory 'asan_clang_Linux' contains the ASAN binaries for Linux
 built according to the instructions at the ASAN site.
 The directory 'asan_clang_Darwin' contains the ASAN binaries for Darwin.
 The versions for Linux and Darwin may differ slightly.
+
+As of February 2012 we're using the default Clang binaries to build ASANified
+Chromium on Mac and Linux x64. Please avoid using the binaries from
+deps/third_party/asan for anything but 32-bit Linux builds.
 
 The directory 'scripts' is a verbatim copy from the ASAN source tree.
 

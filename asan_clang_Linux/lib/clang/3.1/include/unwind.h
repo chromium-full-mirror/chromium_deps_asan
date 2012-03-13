@@ -23,10 +23,19 @@
 
 /* See "Data Definitions for libgcc_s" in the Linux Standard Base.*/
 
-#if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) && \
-    __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ >=  1070
-/* Starting in OS X Lion the SDK includes a unwind.h. We should just use it. */
-#include_next <unwind.h>
+#if __has_include_next(<unwind.h>)
+/* Darwin and libunwind provide an unwind.h. If that's available, use
+ * it. libunwind wraps some of its definitions in #ifdef _GNU_SOURCE,
+ * so define that around the include.*/
+# ifndef _GNU_SOURCE
+#  define _SHOULD_UNDEFINE_GNU_SOURCE
+#  define _GNU_SOURCE
+# endif
+# include_next <unwind.h>
+# ifdef _SHOULD_UNDEFINE_GNU_SOURCE
+#  undef _GNU_SOURCE
+#  undef _SHOULD_UNDEFINE_GNU_SOURCE
+# endif
 #else
 
 #include <stdint.h>
